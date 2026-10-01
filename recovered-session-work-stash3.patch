@@ -1,0 +1,1882 @@
+diff --git a/amplify.yml b/amplify.yml
+deleted file mode 100644
+index 8ea1fa5..0000000
+--- a/amplify.yml
++++ /dev/null
+@@ -1,26 +0,0 @@
+-version: 1
+-
+-env:
+-  variables:
+-    NODE_VERSION: "22"
+-    NODE_ENV: "production"
+-
+-frontend:
+-  phases:
+-    preBuild:
+-      commands:
+-        - npm ci
+-        - npm install
+-    build:
+-      commands:
+-        - npm run build
+-  
+-  artifacts:
+-    baseDirectory: .next
+-    files:
+-      - '**/*'
+-  
+-  cache:
+-    paths:
+-      - node_modules/**/*
+-      - .next/cache/**/*
+diff --git a/backend-dev.log b/backend-dev.log
+deleted file mode 100644
+index fa6e39c..0000000
+--- a/backend-dev.log
++++ /dev/null
+@@ -1,1593 +0,0 @@
+-[migrate] skip (applied): 001_init.sql
+-[migrate] skip (applied): 002_leads.sql
+-[migrate] skip (applied): 003_ledger_correction_reference.sql
+-[migrate] skip (applied): 004_policy_suggestions.sql
+-[migrate] skip (applied): 005_agent_registry.sql
+-[migrate] skip (applied): 006_delegated_authority.sql
+-[migrate] done.
+-[04:43:28] [32mINFO[39m: [36mServer listening at http://127.0.0.1:4000[39m
+-[04:43:28] [32mINFO[39m: [36mServer listening at http://172.16.45.103:4000[39m
+-[04:43:28] [32mINFO[39m: [36mVerya backend listening on http://localhost:4000[39m
+-[04:43:28] [32mINFO[39m: [36mDatabase: Neon Postgres configured[39m
+-[04:43:28] [32mINFO[39m: [36mAuth: Clerk (derived from publishable key)[39m
+-[04:43:32] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 55045
+-    }
+-[04:43:36] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-2"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53493
+-    }
+-[04:43:36] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-2"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:36] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-2"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 10.513599999998405
+-[04:43:37] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-3"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53495
+-    }
+-[04:43:37] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-3"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:37] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-3"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 2.4574999999967986
+-[04:43:38] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 6215.922000000002
+-[04:43:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-4"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53502
+-    }
+-[04:43:39] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-4"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:39] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-4"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 2.107799999997951
+-[04:43:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-5"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/delegations",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53505
+-    }
+-[04:43:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-6"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/delegations",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53507
+-    }
+-[04:43:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-7"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53509
+-    }
+-[04:43:39] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-7"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:39] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-7"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.5688999999983935
+-[04:43:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-8"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53513
+-    }
+-[04:43:39] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-8"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:39] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-8"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.701099999998405
+-[04:43:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-9"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53516
+-    }
+-[04:43:39] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-9"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:39] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-9"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 3.0684000000037486
+-[04:43:39] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-5"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 298.79849999999715
+-[04:43:39] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-6"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 296.4369999999981
+-[04:43:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-a"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 65289
+-    }
+-[04:43:39] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-a"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:39] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-a"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.6359000000011292
+-[04:43:43] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-b"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 54273
+-    }
+-[04:43:43] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-b"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:43:43] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-b"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 0.9835999999995693
+-[04:43:54] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-c"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 57697
+-    }
+-[04:43:58] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-c"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 4274.414699999994
+-[04:44:14] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-d"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 62002
+-    }
+-[04:44:18] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-d"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 3623.9945000000007
+-[04:44:33] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-e"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 55549
+-    }
+-[04:44:36] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-e"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 3219.883099999992
+-[04:44:38] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-f"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 62182
+-    }
+-[04:44:38] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-f"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:44:38] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-f"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 2.6092999999964377
+-[04:44:44] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-g"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/health",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 49269
+-    }
+-[04:44:44] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-g"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 1.3381999999983236
+-[04:44:44] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-h"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/ledger/records",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 49273
+-    }
+-[04:44:44] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-h"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:44:44] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-h"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.4818000000086613
+-[04:44:52] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-i"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50186
+-    }
+-[04:45:01] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-j"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50234
+-    }
+-[04:45:01] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-k"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/auth/events",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50236
+-    }
+-[04:45:02] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-k"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 1258.0166000000027
+-[04:45:04] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-j"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 3223.7630000000063
+-[04:45:04] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-l"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50244
+-    }
+-[04:45:04] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-l"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:04] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-l"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.826599999985774
+-[04:45:04] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-m"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/delegations",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50246
+-    }
+-[04:45:04] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-n"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/delegations",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50248
+-    }
+-[04:45:04] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-o"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50250
+-    }
+-[04:45:04] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-o"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:04] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-o"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.1682000000000698
+-[04:45:04] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-p"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50253
+-    }
+-[04:45:04] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-p"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:04] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-p"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.1499000000039814
+-[04:45:04] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-q"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50256
+-    }
+-[04:45:04] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-q"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:04] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-q"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.126299999988987
+-[04:45:05] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-n"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 298.31660000000556
+-[04:45:05] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-m"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 306.48719999998866
+-[04:45:08] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-r"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 52746
+-    }
+-[04:45:08] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-r"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:08] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-r"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.0190999999904307
+-[04:45:09] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-s"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 51557
+-    }
+-[04:45:09] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-s"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:09] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-s"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 0.7771000000066124
+-[04:45:19] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-t"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 51977
+-    }
+-[04:45:23] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-t"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 4418.0184999999765
+-[04:45:25] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-u"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 58427
+-    }
+-[04:45:25] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-u"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:25] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-u"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.6577000000106636
+-[04:45:39] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-v"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 58446
+-    }
+-[04:45:43] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-v"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 4390.792799999996
+-[04:45:53] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-w"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/auth/me",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 58491
+-    }
+-[04:45:53] [31mERROR[39m: [36mrequest failed[39m
+-    [35mreqId[39m: "req-w"
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:45:53] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-w"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.5956999999762047
+-[04:45:59] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-x"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 58498
+-    }
+-[04:46:02] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-y"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 63991
+-    }
+-[04:46:02] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-y"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:46:02] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-y"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 2.785100000008242
+-[04:46:04] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-x"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 5353.961899999995
+-[04:46:07] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-z"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50318
+-    }
+-[04:46:07] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-z"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:46:07] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-z"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.295799999992596
+-[04:46:19] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-10"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50335
+-    }
+-[04:46:25] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-10"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 5902.215800000005
+-[04:46:34] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-11"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 57118
+-    }
+-[04:46:34] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-11"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:46:34] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-11"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.2619999999878928
+-[04:46:41] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-12"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 49674
+-    }
+-[04:46:43] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-13"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 56391
+-    }
+-[04:46:43] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-14"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/auth/events",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 56393
+-    }
+-[04:46:45] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-12"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 3848.4317000000156
+-[04:46:46] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-14"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 3005.1714999999967
+-[04:46:49] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-13"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 5317.010800000018
+-[04:46:49] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-15"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 63367
+-    }
+-[04:46:49] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-15"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:46:49] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-15"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 1.1293000000005122
+-[04:46:49] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-16"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/delegations",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 63369
+-    }
+-[04:46:49] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-17"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/delegations",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 63371
+-    }
+-[04:46:49] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-18"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 62216
+-    }
+-[04:46:49] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-18"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:46:49] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-18"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 0.8306000000156928
+-[04:46:49] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-19"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60221
+-    }
+-[04:46:49] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-19"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:46:49] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-19"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 0.7731999999959953
+-[04:46:49] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1a"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/agents",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 52076
+-    }
+-[04:46:49] [32mINFO[39m: [36mMissing Authorization header[39m
+-    [35mreqId[39m: "req-1a"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    err: {
+-      "type": "Error",
+-      "message": "Missing Authorization header",
+-      "stack":
+-          Error: Missing Authorization header
+-              at authenticate (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\middleware\auth.ts:83:25)
+-              at Object.<anonymous> (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\app.ts:58:40)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-              at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:209:12
+-              at resolveOriginOption (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:162:129)
+-              at addCorsHeadersHandler (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:164:3)
+-              at Object.handleCors (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@fastify\cors\index.js:64:9)
+-              at hookIterator (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:412:10)
+-              at next (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\fastify\lib\hooks.js:242:18)
+-      "statusCode": 401
+-    }
+-[04:46:49] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1a"
+-    [35mres[39m: {
+-      "statusCode": 401
+-    }
+-    [35mresponseTime[39m: 0.998299999977462
+-[04:46:49] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-16"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 261.31359999999404
+-[04:46:49] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-17"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 263.0155000000086
+-[04:47:00] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1b"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60743
+-    }
+-[04:47:03] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1c"
+-    [35mreq[39m: {
+-      "method": "POST",
+-      "url": "/api/pipeline",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60766
+-    }
+-[04:47:05] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1c"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 1815.2930999999808
+-[04:47:05] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1d"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60770
+-    }
+-[04:47:05] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1d"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 267.54079999998794
+-[04:47:06] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1e"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 63530
+-    }
+-[04:47:06] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1e"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 279.56200000000536
+-[04:47:07] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1f"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60019
+-    }
+-[04:47:07] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1f"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 279.2250000000058
+-[04:47:08] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1g"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 54488
+-    }
+-[04:47:08] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1g"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 279.5766000000003
+-[04:47:09] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1h"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53723
+-    }
+-[04:47:10] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1h"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 269.1962000000058
+-[04:47:10] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1i"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 57219
+-    }
+-[04:47:11] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1i"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 264.0203999999794
+-[04:47:12] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1j"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 59744
+-    }
+-[04:47:12] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1j"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 275.60880000001634
+-[04:47:13] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1k"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 50836
+-    }
+-[04:47:13] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1k"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 295.22649999998976
+-[04:47:14] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1l"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60548
+-    }
+-[04:47:14] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1l"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 278.539300000004
+-[04:47:15] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1m"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 57046
+-    }
+-[04:47:15] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1m"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 277.0824999999895
+-[04:47:16] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1n"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 55243
+-    }
+-[04:47:16] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1n"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 267.6162000000186
+-[04:47:17] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1o"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60902
+-    }
+-[04:47:17] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1o"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 285.59309999999823
+-[04:47:18] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1p"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 54339
+-    }
+-[04:47:18] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1p"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 264.2019000000146
+-[04:47:19] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1q"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 54120
+-    }
+-[04:47:20] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1q"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 267.92230000000563
+-[04:47:20] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1r"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 60746
+-    }
+-[04:47:21] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1r"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 261.67439999998896
+-[04:47:22] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1s"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 63339
+-    }
+-[04:47:22] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1s"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 276.8807000000088
+-[04:47:23] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1t"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 55774
+-    }
+-[04:47:23] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1t"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 361.76329999999143
+-[04:47:24] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1u"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 52731
+-    }
+-[04:47:24] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1u"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 265.0408999999927
+-[ai] schema coercion repaired 2 model field(s) — validation passed
+-[04:47:25] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1v"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 53629
+-    }
+-[04:47:27] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1v"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 1614.2301999999909
+-[04:47:27] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1w"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/pipeline/b21a73a8-2633-49b8-b09d-f9e724b08108",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 56998
+-    }
+-[04:47:28] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1w"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 263.2361999999848
+-[04:47:32] [32mINFO[39m: [36mincoming request[39m
+-    [35mreqId[39m: "req-1x"
+-    [35mreq[39m: {
+-      "method": "GET",
+-      "url": "/api/dashboard",
+-      "host": "localhost:4000",
+-      "remoteAddress": "127.0.0.1",
+-      "remotePort": 57005
+-    }
+-[04:47:35] [32mINFO[39m: [36mrequest completed[39m
+-    [35mreqId[39m: "req-1x"
+-    [35mres[39m: {
+-      "statusCode": 200
+-    }
+-    [35mresponseTime[39m: 2787.7632999999914
+-C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@neondatabase\serverless\index.js:1086
+-n=o,t=u}).catch(o=>{throw Error.captureStackTrace(o),o});return{callback:i,result:s}}a(Dt,"promisify");
+-                                ^
+-
+-Error: Connection terminated unexpectedly
+-    at C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\node_modules\@neondatabase\serverless\index.js:1086:33
+-    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+-    at async query (C:\Users\Admin\Desktop\PROJECTS\verya\verya\backend\src\db\pool.ts:47:15)
+-
+-Node.js v22.22.3
+diff --git a/e2e-swiggy.err.log b/e2e-swiggy.err.log
+deleted file mode 100644
+index 98337aa..0000000
+--- a/e2e-swiggy.err.log
++++ /dev/null
+@@ -1,23 +0,0 @@
+-[ai] flaws/mistral: mistral-medium-latest attempt 0 failed: mistral returned HTTP 429: {"object":"error","message":"Rate limit exceeded","type":"rate_limited","param":null,"code":"1300","raw_status_code":429}
+-[ai] schema coercion repaired 1 model field(s) — validation passed
+-[ai] stack: gemini/gemini-3.6-flash attempt 0 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] stack: gemini/gemini-3.6-flash attempt 1 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] stack: gemini/gemini-3.6-flash attempt 2 failed: Schema validation failed: candidates.1.components.3.layer: Invalid option: expected one of "frontend"|"backend"|"database"|"cache"|"auth"|"hosting"|"jobs"|"storage"
+-[ai] stack: gemini/gemini-3.5-flash attempt 0 failed: Schema validation failed: candidates.0.components.4.layer: Invalid option: expected one of "frontend"|"backend"|"database"|"cache"|"auth"|"hosting"|"jobs"|"storage"; candidates.1.components.3.layer: Invalid option: expected one of "frontend"|"backend"|"database"|"cache"|"auth"|"hosting"|"jobs"|"storage"
+-[ai] stack: gemini/gemini-3.5-flash re-ask failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] algorithms: gemini/gemini-3.6-flash attempt 0 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] algorithms: gemini/gemini-3.6-flash attempt 1 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] algorithms: gemini/gemini-3.6-flash attempt 2 failed: Schema validation failed: tasks.0.options: Too small: expected array to have >=1 items; tasks.1.options: Too small: expected array to have >=1 items; tasks.2.options: Too small: expected array to have >=1 items
+-[ai] algorithms: gemini/gemini-3.5-flash attempt 0 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] algorithms: gemini/gemini-3.5-flash attempt 1 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] algorithms: gemini/gemini-3.5-flash attempt 2 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] algorithms: gemini/gemini-3.5-flash attempt 3 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.6-flash attempt 0 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.6-flash attempt 1 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.6-flash attempt 2 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.6-flash attempt 3 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.5-flash attempt 0 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.5-flash attempt 1 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.5-flash attempt 2 failed: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+-[ai] routing: gemini/gemini-3.5-flash attempt 3 failed: Schema validation failed: routes: Invalid input: expected array, received object
+-[ai] routing: gemini/gemini-3.1-flash-lite attempt 0 failed: Schema validation failed: routes.0.options: Invalid input: expected array, received undefined; routes.1.options: Invalid input: expected array, received undefined; routes.2.options: Invalid input: expected array, received undefined
+diff --git a/e2e-swiggy.out.log b/e2e-swiggy.out.log
+deleted file mode 100644
+index 9becf8d..0000000
+--- a/e2e-swiggy.out.log
++++ /dev/null
+@@ -1,43 +0,0 @@
+-[2026-10-01T08:58:55.475Z] [resume] session 1b204653-83a2-416d-8701-28daee9e47f2 at gate=suitability/awaiting_user
+-[2026-10-01T08:58:55.478Z] [checkpoint] workflow title: Swiggy Food Delivery Platform Clone
+-[2026-10-01T08:58:55.479Z] [checkpoint] 9 planned tasks (fidelity of the plan):
+-[2026-10-01T08:58:55.479Z]    - [database] Database Schema & Data Architecture
+-[2026-10-01T08:58:55.479Z]    - [auth] User Auth & Address Management API
+-[2026-10-01T08:58:55.480Z]    - [backend] Restaurant & Menu Backend APIs
+-[2026-10-01T08:58:55.480Z]    - [frontend] Home Feed & Restaurant Discovery UI
+-[2026-10-01T08:58:55.480Z]    - [frontend] Menu Browsing & Cart UI
+-[2026-10-01T08:58:55.480Z]    - [backend] Cart Validation & Order Creation Backend
+-[2026-10-01T08:58:55.481Z]    - [frontend] Checkout & Payment Screen UI
+-[2026-10-01T08:58:55.481Z]    - [integration] Real-Time Order Tracking Backend
+-[2026-10-01T08:58:55.481Z]    - [frontend] Order Tracking & Live Status UI
+-[2026-10-01T08:58:55.482Z] [checkpoint] UI/frontend tasks: 4
+-[2026-10-01T08:58:55.482Z] [action] suitability_choose (verdict=suitable)
+-[2026-10-01T08:58:57.587Z] [action] platform_choose (web target)
+-[2026-10-01T08:59:23.466Z] [checkpoint] flaw report: 4 flaws detected
+-[2026-10-01T08:59:23.472Z] [action] flaw_resolve (accept all fixes)
+-[2026-10-01T09:01:14.163Z] [checkpoint] stack candidates: Next.js Full-Stack | Node.js & React Split
+-[2026-10-01T09:01:14.165Z] [action] stack_choose (chose "Next.js Full-Stack")
+-[2026-10-01T09:01:16.847Z] [action] tasks_edit (confirm 9 tasks)
+-[2026-10-01T09:05:00.329Z] [checkpoint] algorithm tie-breaks needing human choice: 0/9
+-[2026-10-01T09:05:00.334Z] [checkpoint] model routing: Database Schema & Data Architecture → gemini-3.1-pro-preview; User Auth & Address Management API → magistral-medium-latest; Restaurant & Menu Backend APIs → codestral-latest; Home Feed & Restaurant Discovery UI → gemini-3.6-flash; Menu Browsing & Cart UI → gemini-3.6-flash; Cart Validation & Order Creation Backend → gemini-3.1-pro-preview; Checkout & Payment Screen UI → codestral-latest; Real-Time Order Tracking Backend → gemini-3.1-pro-preview; Order Tracking & Live Status UI → gemini-3.6-flash
+-[2026-10-01T09:05:00.335Z] [action] model_choose (tie for "Database Schema & Data Architecture")
+-[2026-10-01T09:05:03.135Z] [6] RUN — executing all tasks with real models (long step)…
+-[2026-10-01T09:08:49.945Z] NOTE trust budget exhausted before review {"consumed":100,"remaining":0}
+-[2026-10-01T09:08:49.947Z] [result] terminal state: gate=execution/awaiting_user, files=11, executions=7
+-[2026-10-01T09:08:49.948Z]    file prisma/schema.prisma (1250 chars, task=task-3, model=codestral-latest)
+-[2026-10-01T09:08:49.948Z]    file src/lib/auth.ts (2156 chars, task=task-2, model=magistral-medium-latest)
+-[2026-10-01T09:08:49.948Z]    file src/app/api/auth/register/route.ts (533 chars, task=task-2, model=magistral-medium-latest)
+-[2026-10-01T09:08:49.949Z]    file src/app/api/auth/login/route.ts (564 chars, task=task-2, model=magistral-medium-latest)
+-[2026-10-01T09:08:49.949Z]    file src/app/api/users/[id]/route.ts (1262 chars, task=task-2, model=magistral-medium-latest)
+-[2026-10-01T09:08:49.950Z]    file src/app/api/addresses/route.ts (1060 chars, task=task-2, model=magistral-medium-latest)
+-[2026-10-01T09:08:49.950Z]    file src/app/api/addresses/[id]/route.ts (920 chars, task=task-2, model=magistral-medium-latest)
+-[2026-10-01T09:08:49.950Z]    file src/lib/db.ts (425 chars, task=task-3, model=codestral-latest)
+-[2026-10-01T09:08:49.950Z]    file src/app/api/restaurants/route.ts (1016 chars, task=task-3, model=codestral-latest)
+-[2026-10-01T09:08:49.951Z]    file src/app/api/restaurants/[id]/route.ts (770 chars, task=task-3, model=codestral-latest)
+-[2026-10-01T09:08:49.951Z]    file src/app/api/menu/route.ts (643 chars, task=task-3, model=codestral-latest)
+-[2026-10-01T09:08:49.952Z] [result] stub/placeholder comments found: NONE ✓
+-[2026-10-01T09:08:49.952Z] [result] lorem-ipsum content: none ✓
+-[2026-10-01T09:08:49.953Z] [result] Swiggy signal scan: {"swiggyOrange_hex_or_name":false,"rupee_prices":false,"real_dishes":false,"ratings_present":true,"add_to_cart":false,"eta_delivery":true}
+-[2026-10-01T09:08:49.953Z] [result] verification summary: [{"taskId":"task-1","status":"verified","model":"gemini-3.1-pro-preview","topIssues":["No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks)."]},{"taskId":"task-2","status":"flagged","model":"magistral-medium-latest","topIssues":["References non-existent npm package \"@/lib\" (registry check)."]},{"taskId":"task-3","status":"flagged","model":"codestral-latest","topIssues":["References non-existent npm package \"@/lib\" (registry check)."]},{"taskId":"task-4","status":"verified","model":"gemini-3.6-flash","topIssues":["No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks)."]},{"taskId":"task-5","status":"flagged","model":"gemini-3.6-flash","topIssues":["No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks).","References non-existent npm package \"@/context\" (registry check)."]},{"taskId":"task-6","status":"verified","model":"gemini-3.1-pro-preview","topIssues":["- The `prisma/schema.prisma` file is incomplete – it ends abruptly inside the `OrderItem` model without closing braces or defining required fields such as `quantity`, `price`, and relations.  \n- No `src/lib/prisma.ts` file is provided, so the Prisma client singleton referenced in the description doe","No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks)."]},{"taskId":"task-7","status":"flagged","model":"codestral-latest","topIssues":["- The `src/context/UserContext.tsx` file is truncated and incomplete: it ends with `value={{ user, addresses, addAd` and is missing the rest of the provider JSX, the closing `</UserContext.Provider>` tag, the closing component brace, and the export of a `useUser` hook. This makes the UserContext unu","No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks)."]}]
+-[2026-10-01T09:08:49.954Z] [result] ✗ NO index.html entry file generated
+-[2026-10-01T09:08:49.955Z] E2E DONE {"sessionId":"1b204653-83a2-416d-8701-28daee9e47f2","files":11,"executions":7}
+diff --git a/frontend-dev.err.log b/frontend-dev.err.log
+index 5565407..e094acb 100644
+--- a/frontend-dev.err.log
++++ b/frontend-dev.err.log
+@@ -16,3 +16,19 @@ Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda
+ [Error: socket hang up] { code: 'ECONNRESET' }
+ Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [Error: socket hang up] { code: 'ECONNRESET' }
+ [Error: socket hang up] { code: 'ECONNRESET' }
++Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [Error: read ECONNRESET] {
++  errno: -4077,
++  code: 'ECONNRESET',
++  syscall: 'read'
++}
++[Error: read ECONNRESET] {
++  errno: -4077,
++  code: 'ECONNRESET',
++  syscall: 'read'
++}
++Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [AggregateError: ] { code: 'ECONNREFUSED' }
++[AggregateError: ] { code: 'ECONNREFUSED' }
++Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [AggregateError: ] { code: 'ECONNREFUSED' }
++[AggregateError: ] { code: 'ECONNREFUSED' }
++Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [AggregateError: ] { code: 'ECONNREFUSED' }
++[AggregateError: ] { code: 'ECONNREFUSED' }
+diff --git a/package-lock.json b/package-lock.json
+deleted file mode 100644
+index 35760f6..0000000
+--- a/package-lock.json
++++ /dev/null
+@@ -1,6 +0,0 @@
+-{
+-  "name": "verya",
+-  "lockfileVersion": 3,
+-  "requires": true,
+-  "packages": {}
+-}
+diff --git a/verya/backend/src/jobs/worker.ts b/verya/backend/src/jobs/worker.ts
+index 0b7f775..59d7d5b 100644
+--- a/verya/backend/src/jobs/worker.ts
++++ b/verya/backend/src/jobs/worker.ts
+@@ -53,6 +53,9 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
+       session.trustBudget.status = "exhausted";
+       session.gateStatus = "awaiting_user";
+       await recordToLedger({ orgId, sessionId, gate: "execution", eventType: "trust_budget_exhausted", actor: "system", detail: { summary: `Trust budget paused before ${task.title}`, required: budgetCost, budget: session.trustBudget } });
++      // Paused ≠ broken: scaffold + preview entry must exist for the workspace too.
++      await ensureProjectScaffolding(orgId, session);
++      await ensurePreviewEntry(orgId, session);
+       await saveSession(orgId, session);
+       return;
+     }
+@@ -92,6 +95,17 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
+         ? await geminiAdapters.verifyOutput({ task, algorithm, output: exec.output, model })
+         : await geminiAdapters.verifyRulesOnly({ task, output: exec.output });
+ 
++      // File-aware check (same rule as the inline executor): a coding task whose
++      // output contained no file operations cannot count as "verified".
++      if (ops.length === 0 && task.category !== "documentation") {
++        verification.passed = false;
++        verification.issues = [
++          ...verification.issues,
++          "No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks).",
++        ].slice(0, 12);
++        verification.checkedBy = `${verification.checkedBy} + fileops`;
++      }
++
+       const external = await checkExternalReferences(exec.output);
+       if (!external.passed) {
+         verification.passed = false;
+diff --git a/verya/backend/src/lib/ai/prompts.ts b/verya/backend/src/lib/ai/prompts.ts
+index 4b3e330..ee4ad65 100644
+--- a/verya/backend/src/lib/ai/prompts.ts
++++ b/verya/backend/src/lib/ai/prompts.ts
+@@ -130,9 +130,13 @@ RESPOND WITH EXACTLY ONE JSON OBJECT, no prose outside it:
+ }
+ 
+ RULES:
++- The "files" array is MANDATORY: every coding task MUST emit at least one file.
++  An empty "files" array or a text-only answer is a FAILED response.
+ - "path" is a RELATIVE path inside the project (e.g. "src/lib/auth.ts", "prisma/schema.prisma", "package.json"). NEVER absolute paths, never "..", never drive letters.
+ - "operation" is "create" for new files, "update" to rewrite an existing file in full, "delete" with empty content.
+ - "content" is the COMPLETE file content, ready to compile — no markdown fences inside it, no commentary.
++- Every file in "files" MUST be complete: if you are running out of room, emit FEWER files — never a truncated file (a file that ends mid-function, mid-object, or mid-tag is invalid).
++- Keep JSON valid: escape newlines and quotes inside "content" correctly; close every brace and bracket.
+ - Emit only files this task genuinely delivers. Code goes in source files (.ts/.tsx/.prisma/.json/.sql/.py ...); a design explanation may be "docs/<topic>.md".
+ - Follow the chosen approach; respect the stack.
+ 
+diff --git a/verya/backend/src/lib/ai/provider.ts b/verya/backend/src/lib/ai/provider.ts
+index 28cda90..f47cc3a 100644
+--- a/verya/backend/src/lib/ai/provider.ts
++++ b/verya/backend/src/lib/ai/provider.ts
+@@ -48,6 +48,10 @@ import type {
+ 
+ const GEMINI_TIMEOUT_MS = Number(process.env.GEMINI_TIMEOUT_MS || 60000);
+ const PROVIDER_TIMEOUT_MS = Number(process.env.PROVIDER_TIMEOUT_MS || GEMINI_TIMEOUT_MS);
++// Explicit output ceilings: provider defaults truncate long multi-file JSON payloads
++// mid-file (observed: prisma schema and React context cut off after ~half the file).
++const EXECUTION_MAX_OUTPUT_TOKENS = Number(process.env.VERYA_EXECUTION_MAX_OUTPUT_TOKENS || 16000);
++const DEFAULT_MAX_OUTPUT_TOKENS = Number(process.env.VERYA_MAX_OUTPUT_TOKENS || 8192);
+ // Gemini-only structured-output failover chain (same key, per-model daily quotas).
+ const GEMINI_FAILOVER_MODELS = (process.env.GEMINI_FAILOVER_MODELS ||
+   "gemini-3.5-flash,gemini-3.1-flash-lite,gemini-flash-latest,gemini-3.6-flash")
+@@ -205,6 +209,7 @@ async function geminiStructured<S extends z.ZodType>(
+         responseSchema: zodToGeminiSchema(zodSchema),
+         abortSignal: controller.signal,
+         temperature: 0.3,
++        maxOutputTokens: DEFAULT_MAX_OUTPUT_TOKENS,
+       },
+     });
+     const text = response.text ?? "";
+@@ -225,7 +230,7 @@ async function chatCompatible(
+   model: string,
+   system: string,
+   user: string,
+-  opts: { json?: boolean; jsonHint?: string; timeoutMs?: number }
++  opts: { json?: boolean; jsonHint?: string; timeoutMs?: number; maxOutputTokens?: number }
+ ): Promise<ChatResult> {
+   const started = Date.now();
+   const controller = new AbortController();
+@@ -245,6 +250,7 @@ async function chatCompatible(
+           { role: "user", content: userContent },
+         ],
+         temperature: 0.3,
++        max_tokens: opts.maxOutputTokens ?? DEFAULT_MAX_OUTPUT_TOKENS,
+         ...(opts.json ? { response_format: { type: "json_object" } } : {}),
+       }),
+       signal: controller.signal,
+@@ -651,6 +657,9 @@ export async function runModelText(
+       try {
+         const res = await chatCompatible(provider, model, system, user, {
+           timeoutMs: PROVIDER_TIMEOUT_MS * 2,
++          // Execution/preview tasks emit multi-file JSON — they need the big ceiling;
++          // verification/audit replies are prose and stay on the default.
++          maxOutputTokens: stage === "execution" ? EXECUTION_MAX_OUTPUT_TOKENS : DEFAULT_MAX_OUTPUT_TOKENS,
+         });
+         return { ...res, servedBy: model };
+       } catch (err) {
+diff --git a/verya/backend/src/lib/verification/external.ts b/verya/backend/src/lib/verification/external.ts
+index c59427a..a826843 100644
+--- a/verya/backend/src/lib/verification/external.ts
++++ b/verya/backend/src/lib/verification/external.ts
+@@ -37,6 +37,9 @@ export function extractNpmReferences(code: string): string[] {
+       // Strip relative/absolute paths and subpaths: 'pkg/sub' → 'pkg', '@scope/pkg/sub' stays scoped.
+       let dep = raw;
+       if (dep.startsWith(".") || dep.startsWith("/")) continue;
++      // TypeScript/webpack path aliases ("@/lib/db", "~/components/x") are project-internal
++      // imports, not registry packages — an empty scope must never be registry-checked.
++      if (dep.startsWith("@/") || dep.startsWith("~/")) continue;
+       if (dep.startsWith("@")) {
+         dep = dep.split("/").slice(0, 2).join("/");
+       } else {
+diff --git a/verya/backend/src/services/execution.ts b/verya/backend/src/services/execution.ts
+index 7e72084..1fd7a2a 100644
+--- a/verya/backend/src/services/execution.ts
++++ b/verya/backend/src/services/execution.ts
+@@ -174,6 +174,10 @@ export async function runExecution(orgId: string, sessionId: string): Promise<{
+       session.trustBudget = { ...(session.trustBudget ?? { initial: initialTrustBudget(), remaining: 0, consumed: 0 }), status: "exhausted" };
+       session.gateStatus = "awaiting_user";
+       await recordToLedger({ orgId, sessionId, gate: "execution", eventType: "trust_budget_exhausted", actor: "system", detail: { summary: `Trust budget paused before ${task.title}`, required: budgetCost, budget: session.trustBudget } });
++      // Paused ≠ broken: whatever exists so far must still be previewable and
++      // properly scaffolded when the user opens the workspace.
++      await ensureProjectScaffolding(orgId, session);
++      await ensurePreviewEntry(orgId, session);
+       await saveSession(orgId, session);
+       return { session };
+     }
+@@ -239,6 +243,7 @@ export async function runExecution(orgId: string, sessionId: string): Promise<{
+       // File-aware check: a task that produced NO usable file operations while its
+       // approach expects deliverables cannot be "verified" as a coding task.
+       if (filesChanged === 0 && ops.length === 0 && task.category !== "documentation") {
++        verification.passed = false; // a coding task that produced no files is a failure, not a pass
+         verification.issues = [
+           ...verification.issues,
+           "No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks).",

@@ -1,0 +1,71 @@
+diff --git a/verya/backend/src/jobs/worker.ts b/verya/backend/src/jobs/worker.ts
+index 0b7f775..9252f54 100644
+--- a/verya/backend/src/jobs/worker.ts
++++ b/verya/backend/src/jobs/worker.ts
+@@ -17,7 +17,7 @@ import { certificateFor } from "../lib/certificates";
+ import { codeArtifactOf, type ExecutionResult, type PipelineSession } from "../schemas/pipeline";
+ import { applyFileOpToSession } from "../services/workspace";
+ import { extractFileOps } from "../services/fileops";
+-import { assertModelsFinalized } from "../services/execution";
++import { assertModelsFinalized, ensureBudgetSizedToPlan } from "../services/execution";
+ import { ensurePreviewEntry, ensureProjectScaffolding } from "../services/scaffold";
+ 
+ async function executeSession(orgId: string, sessionId: string): Promise<void> {
+@@ -26,6 +26,7 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
+   // Same explicit Models-finalized gate as the inline HTTP path — no bypass via the queue.
+   assertModelsFinalized(session);
+   session.trustBudget ??= { initial: initialTrustBudget(), remaining: initialTrustBudget(), consumed: 0, status: "active" };
++  await ensureBudgetSizedToPlan(orgId, sessionId, session);
+ 
+   const stackText = stackTextOf(session);
+   const done = new Set(session.executions.map((e) => e.taskId));
+diff --git a/verya/backend/src/services/execution.ts b/verya/backend/src/services/execution.ts
+index 7e72084..46d17ec 100644
+--- a/verya/backend/src/services/execution.ts
++++ b/verya/backend/src/services/execution.ts
+@@ -40,6 +40,7 @@ export async function startExecution(orgId: string, sessionId: string): Promise<
+   session.gate = "execution";
+   session.gateStatus = "running";
+   session.trustBudget ??= { initial: initialTrustBudget(), remaining: initialTrustBudget(), consumed: 0, status: "active" };
++  await ensureBudgetSizedToPlan(orgId, sessionId, session);
+   await saveSession(orgId, session);
+ 
+   // With Redis configured, actOnPipeline already enqueued this session to BullMQ —
+@@ -68,6 +69,37 @@ export async function startExecution(orgId: string, sessionId: string): Promise<
+   return { session };
+ }
+ 
++/**
++ * Size the trust budget to the APPROVED plan: the task list was explicitly confirmed
++ * by the human at the Tasks gate, so it — not a generic default — defines the cost.
++ * A fresh run must never die mid-build just because the plan has more (riskier) tasks
++ * than the default allowance (e.g. 9 tasks ≈ 145 units vs the default 100).
++ * Only applies to a fresh run (nothing executed, nothing consumed yet).
++ */
++export async function ensureBudgetSizedToPlan(
++  orgId: string,
++  sessionId: string,
++  session: PipelineSession
++): Promise<void> {
++  if (!session.trustBudget || !session.workflow) return;
++  if (session.executions.length > 0 || session.trustBudget.consumed > 0) return;
++  const planCost = session.workflow.tasks.reduce((sum, t) => sum + trustCostFor(t.risk), 0);
++  const sized = Math.max(session.trustBudget.initial, planCost);
++  if (sized === session.trustBudget.initial) return;
++  session.trustBudget = { ...session.trustBudget, initial: sized, remaining: sized };
++  await recordToLedger({
++    orgId,
++    sessionId,
++    gate: "execution",
++    eventType: "trust_budget_sized",
++    actor: "system",
++    detail: {
++      summary: `Trust budget sized to the approved plan: ${sized} units for ${session.workflow.tasks.length} task(s)`,
++      budget: session.trustBudget,
++    },
++  });
++}
++
+ /** Re-run exactly one failed task (Part 16): clears its result, restarts the loop. */
+ export async function retryTask(orgId: string, sessionId: string, taskId: string): Promise<{ session: PipelineSession }> {
+   const session = await getSession(orgId, sessionId);

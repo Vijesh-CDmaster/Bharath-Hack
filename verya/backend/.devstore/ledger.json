@@ -107583,5 +107583,3385 @@
   "prevHash": "75052724000ca9ed92b0616d65c6a15ce12aafc95cacf5c1b0112e71bdbd27af",
   "chainHash": "4b7f95001ac74817372e83f08f160b2c1f587beefde9934898ba1de0e97a8ec0",
   "createdAt": "2026-10-01T08:06:15.167Z"
+ },
+ {
+  "orgId": "agent-test-org-1",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Planner Agent 1\" (agent-fe65e90b-c9bf-49d5-94df-41af7804a401) created",
+   "agentId": "agent-fe65e90b-c9bf-49d5-94df-41af7804a401",
+   "agentType": "planner",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 31,
+  "prevHash": "593702600df04efbab9140d706249002f29eb3e5b3f8e7f119e75fa12206cbb9",
+  "chainHash": "4157c9eaad95f42c8db9da0fd06280fc147cd085f5d00dad10b5bf50aab81b35",
+  "createdAt": "2026-10-01T11:46:55.089Z"
+ },
+ {
+  "orgId": "agent-test-org-2",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Analyzer Agent 2\" (agent-0f84dec0-a781-419d-b11c-f9cb40c3830d) created",
+   "agentId": "agent-0f84dec0-a781-419d-b11c-f9cb40c3830d",
+   "agentType": "analyzer",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 30,
+  "prevHash": "8bbca958e86ad4b2d9f7f9fbf8ba710c3052dd6a57bdaf56e4f8b298284f5c05",
+  "chainHash": "803ef69f4d406bbecfa8773d1585881d617c9e01f4e4af55f9c67e577657bae4",
+  "createdAt": "2026-10-01T11:46:55.240Z"
+ },
+ {
+  "orgId": "agent-test-org-3",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Verifier Alpha\" (agent-2c36ec1e-d686-4847-97a7-b96ab431ddf7) created",
+   "agentId": "agent-2c36ec1e-d686-4847-97a7-b96ab431ddf7",
+   "agentType": "verifier",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 29,
+  "prevHash": "1da1291962033bf65c0a5f7d31a74aa57c55e16f79c9aea16fa7676f8030185d",
+  "chainHash": "a6d86a5669c9ef993de79d7b0c35f98e91d3b1d467eff8f55cf54f3899a2556b",
+  "createdAt": "2026-10-01T11:46:55.385Z"
+ },
+ {
+  "orgId": "agent-test-org-4",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Initial Name\" (agent-c6cbcb8e-a39c-42ac-a3d0-b74a86fb7f15) created",
+   "agentId": "agent-c6cbcb8e-a39c-42ac-a3d0-b74a86fb7f15",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 57,
+  "prevHash": "6818ec7e7d9a4427656092548db80c44f0c5b85ec578c87e772742855f99a3b3",
+  "chainHash": "5d0560197b849845109c7a4e72e81104a89f602016d854925e0a1741b0b5b918",
+  "createdAt": "2026-10-01T11:46:55.561Z"
+ },
+ {
+  "orgId": "agent-test-org-4",
+  "gate": "governance",
+  "eventType": "agent_updated",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Updated Name\" (agent-c6cbcb8e-a39c-42ac-a3d0-b74a86fb7f15) updated to v2",
+   "agentId": "agent-c6cbcb8e-a39c-42ac-a3d0-b74a86fb7f15",
+   "version": 2,
+   "status": "active"
+  },
+  "seq": 58,
+  "prevHash": "5d0560197b849845109c7a4e72e81104a89f602016d854925e0a1741b0b5b918",
+  "chainHash": "c2b6baf01d2955957072256ac8013b1a4778f34e5a216f1e9d58bdeb8e0c38ea",
+  "createdAt": "2026-10-01T11:46:55.709Z"
+ },
+ {
+  "orgId": "agent-test-org-5",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Agent to Suspend\" (agent-59a1a921-4cee-42d5-b915-7e40a3ffb855) created",
+   "agentId": "agent-59a1a921-4cee-42d5-b915-7e40a3ffb855",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 60,
+  "prevHash": "b615d47c9b90e7cb1bac68cda35e50d57994998657a8243b73bcca21013c9eab",
+  "chainHash": "660c31ea072576cb6cb2fce8000cd18610c3d07ee7be4864336a145e71a93e23",
+  "createdAt": "2026-10-01T11:46:55.875Z"
+ },
+ {
+  "orgId": "agent-test-org-5",
+  "gate": "governance",
+  "eventType": "agent_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Agent to Suspend\" (agent-59a1a921-4cee-42d5-b915-7e40a3ffb855) transition -> suspended",
+   "agentId": "agent-59a1a921-4cee-42d5-b915-7e40a3ffb855",
+   "fromStatus": "active",
+   "toStatus": "suspended",
+   "version": 2
+  },
+  "seq": 61,
+  "prevHash": "660c31ea072576cb6cb2fce8000cd18610c3d07ee7be4864336a145e71a93e23",
+  "chainHash": "4eb29c57a27f6728e3444441d49727d1be45d0c7ceada38a7e54211232cf514c",
+  "createdAt": "2026-10-01T11:46:56.036Z"
+ },
+ {
+  "orgId": "agent-test-org-6",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Agent to Revoke\" (agent-00401a48-c82c-4d36-a514-b9ea0a97f979) created",
+   "agentId": "agent-00401a48-c82c-4d36-a514-b9ea0a97f979",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_3",
+   "riskLevel": "high",
+   "version": 1
+  },
+  "seq": 58,
+  "prevHash": "83183905ff1999bcd428276ff637c7a119cf34568b08e5e08380bb9fa1f56265",
+  "chainHash": "1c9be7741804a816555c77d967a7cf6c1c5e7a95b658a91630092ed0ee7b5a9e",
+  "createdAt": "2026-10-01T11:46:56.187Z"
+ },
+ {
+  "orgId": "agent-test-org-6",
+  "gate": "governance",
+  "eventType": "agent_revoked",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Agent to Revoke\" (agent-00401a48-c82c-4d36-a514-b9ea0a97f979) transition -> revoked",
+   "agentId": "agent-00401a48-c82c-4d36-a514-b9ea0a97f979",
+   "fromStatus": "active",
+   "toStatus": "revoked",
+   "version": 2
+  },
+  "seq": 59,
+  "prevHash": "1c9be7741804a816555c77d967a7cf6c1c5e7a95b658a91630092ed0ee7b5a9e",
+  "chainHash": "b8d4ee325e13156e853810c6ac6b9fbbbfb9a5e19a849e52319754ea9af6deef",
+  "createdAt": "2026-10-01T11:46:56.359Z"
+ },
+ {
+  "orgId": "agent-test-org-7",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Agent to Archive\" (agent-336ec212-7eba-4566-8d5f-fc8af08a4bff) created",
+   "agentId": "agent-336ec212-7eba-4566-8d5f-fc8af08a4bff",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 59,
+  "prevHash": "ff30296a84e219965cddc6adaffade3333b5a54d7d9aaedbfe34f3c1dc986437",
+  "chainHash": "60b68accc74f232fb2adb42313632a49f167bf9bb266eb8fb0b22a9dfcc5b2f2",
+  "createdAt": "2026-10-01T11:46:56.502Z"
+ },
+ {
+  "orgId": "agent-test-org-7",
+  "gate": "governance",
+  "eventType": "agent_archived",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Agent to Archive\" (agent-336ec212-7eba-4566-8d5f-fc8af08a4bff) transition -> archived",
+   "agentId": "agent-336ec212-7eba-4566-8d5f-fc8af08a4bff",
+   "fromStatus": "active",
+   "toStatus": "archived",
+   "version": 2
+  },
+  "seq": 60,
+  "prevHash": "60b68accc74f232fb2adb42313632a49f167bf9bb266eb8fb0b22a9dfcc5b2f2",
+  "chainHash": "90c090fa7e45d53b993c3a3bc7d7e3714a6bcfba1f3da50cc3b6dd27fa11d9a8",
+  "createdAt": "2026-10-01T11:46:56.662Z"
+ },
+ {
+  "orgId": "agent-test-org-8",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Server ID Agent\" (agent-fd0d703a-8a62-4f59-9719-036334eee86b) created",
+   "agentId": "agent-fd0d703a-8a62-4f59-9719-036334eee86b",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 32,
+  "prevHash": "d7efe9ffff55d5001da8d4d5b0742c975d876d95b0271d212d3776ef7e8bc894",
+  "chainHash": "2f757808102e41477d0ee867dd24f116d4f17cef253d2e04f370be61b3578533",
+  "createdAt": "2026-10-01T11:46:56.814Z"
+ },
+ {
+  "orgId": "agent-test-org-9",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Org Scoped Agent\" (agent-70d380ee-1f50-45d3-b00f-1d26a46f2b27) created",
+   "agentId": "agent-70d380ee-1f50-45d3-b00f-1d26a46f2b27",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 30,
+  "prevHash": "2b6a05ac8d8d116f98a6e364ec9b5d5600d94d4134fb4b33ec994737932e7c35",
+  "chainHash": "5890b8f3e780fc25e8b094e7e4a653f786b39bba7ff846dcc2e19b04ae8e0255",
+  "createdAt": "2026-10-01T11:46:56.960Z"
+ },
+ {
+  "orgId": "agent-test-org-10a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Org A Secret Agent\" (agent-461d7faf-d305-4507-8913-9bf519b7fd3c) created",
+   "agentId": "agent-461d7faf-d305-4507-8913-9bf519b7fd3c",
+   "agentType": "auditor",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "high",
+   "version": 1
+  },
+  "seq": 30,
+  "prevHash": "c8c17d207cb1c1c0fea4ad49735ecf93d0d6ed016e4aa93d7461b85dd34d8a79",
+  "chainHash": "41d0426dbc7783c3b395b7334ae1dfddc48571b6b644d920255d3d5ff26f06a6",
+  "createdAt": "2026-10-01T11:46:57.115Z"
+ },
+ {
+  "orgId": "agent-test-org-11a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Org A Agent\" (agent-fcf5adb4-6f57-4969-b6da-bf3d77ddfb22) created",
+   "agentId": "agent-fcf5adb4-6f57-4969-b6da-bf3d77ddfb22",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 30,
+  "prevHash": "8ab1334ffc39ec732295e2bed75991e6636e25c6b3269be88e1b0f063d8a2ae1",
+  "chainHash": "da76ef148c1c990eb6217d7b69e27d57aed88bef27378f97278ff870d946f21f",
+  "createdAt": "2026-10-01T11:46:57.273Z"
+ },
+ {
+  "orgId": "agent-test-org-12a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Org A Agent to Archive\" (agent-e99f0032-6eaa-4824-bda7-938198f4e5cb) created",
+   "agentId": "agent-e99f0032-6eaa-4824-bda7-938198f4e5cb",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 31,
+  "prevHash": "c7a76ef308bb17957f5af80441f41d40f3e5ee0acc52535ae0f7b960c13e1444",
+  "chainHash": "b846f4a5088f595b727b3df8d5aba29750c6a88d6554d4680382b2c5eeddd7b2",
+  "createdAt": "2026-10-01T11:46:57.435Z"
+ },
+ {
+  "orgId": "agent-test-org-13a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Org A Agent to Revoke\" (agent-4e2ac787-35c0-4555-96d2-57947d2e7e18) created",
+   "agentId": "agent-4e2ac787-35c0-4555-96d2-57947d2e7e18",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 28,
+  "prevHash": "e8fb3cf45d95236f59bb10e0dc4bc4774c3347dee42ba7c31a5f7806a2209c75",
+  "chainHash": "c48202b673e9203d75c6cdd9e0b1b922d29acd041f4a27bf4fed6e3d1b076d80",
+  "createdAt": "2026-10-01T11:46:57.609Z"
+ },
+ {
+  "orgId": "agent-test-org-14b",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Parent Agent in Org B\" (agent-acbd5129-cbcc-491f-bf28-a24621d59bda) created",
+   "agentId": "agent-acbd5129-cbcc-491f-bf28-a24621d59bda",
+   "agentType": "planner",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 29,
+  "prevHash": "44667c57477a618cac8fddff97e16786f1de02847fb546de27f000326cea3d70",
+  "chainHash": "bbb7e044cb8899be7ed8ce6a7e6b118801ce892005b735325b9ad8e5b06c8cb8",
+  "createdAt": "2026-10-01T11:46:57.772Z"
+ },
+ {
+  "orgId": "agent-test-org-19",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Lifecycle Agent\" (agent-1b3249df-3d46-4514-b894-7b5aba6d1477) created",
+   "agentId": "agent-1b3249df-3d46-4514-b894-7b5aba6d1477",
+   "agentType": "reviewer",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 120,
+  "prevHash": "8c12177c8ac41b59c6ab90998e5567b1099b6516056e7e3fe296d85a4eec9ad4",
+  "chainHash": "22ea1325fd7d55d2848d5b32ad176320c4a697ae3f498efea508a0e667fc207c",
+  "createdAt": "2026-10-01T11:46:57.947Z"
+ },
+ {
+  "orgId": "agent-test-org-19",
+  "gate": "governance",
+  "eventType": "agent_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Lifecycle Agent\" (agent-1b3249df-3d46-4514-b894-7b5aba6d1477) transition -> suspended",
+   "agentId": "agent-1b3249df-3d46-4514-b894-7b5aba6d1477",
+   "fromStatus": "active",
+   "toStatus": "suspended",
+   "version": 2
+  },
+  "seq": 121,
+  "prevHash": "22ea1325fd7d55d2848d5b32ad176320c4a697ae3f498efea508a0e667fc207c",
+  "chainHash": "49fbade4f1c6f22c120d6f3a403fd8cc5e0160b9263a76b031b1c5594f12edd2",
+  "createdAt": "2026-10-01T11:46:58.127Z"
+ },
+ {
+  "orgId": "agent-test-org-19",
+  "gate": "governance",
+  "eventType": "agent_reactivated",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Lifecycle Agent\" (agent-1b3249df-3d46-4514-b894-7b5aba6d1477) transition -> active",
+   "agentId": "agent-1b3249df-3d46-4514-b894-7b5aba6d1477",
+   "fromStatus": "suspended",
+   "toStatus": "active",
+   "version": 3
+  },
+  "seq": 122,
+  "prevHash": "49fbade4f1c6f22c120d6f3a403fd8cc5e0160b9263a76b031b1c5594f12edd2",
+  "chainHash": "b4a749c8e878214a19f890e73b2ea17ea9c1ba4fd14986a15a97718eb44cc0aa",
+  "createdAt": "2026-10-01T11:46:58.304Z"
+ },
+ {
+  "orgId": "agent-test-org-19",
+  "gate": "governance",
+  "eventType": "agent_archived",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Lifecycle Agent\" (agent-1b3249df-3d46-4514-b894-7b5aba6d1477) transition -> archived",
+   "agentId": "agent-1b3249df-3d46-4514-b894-7b5aba6d1477",
+   "fromStatus": "active",
+   "toStatus": "archived",
+   "version": 4
+  },
+  "seq": 123,
+  "prevHash": "b4a749c8e878214a19f890e73b2ea17ea9c1ba4fd14986a15a97718eb44cc0aa",
+  "chainHash": "471426f2c36c008bad365766c61cc01515fa29ec26aa9b50c38fd7e7a7985146",
+  "createdAt": "2026-10-01T11:46:58.462Z"
+ },
+ {
+  "orgId": "agent-test-org-20",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Audited Creation Agent\" (agent-ec4a698d-6153-43ea-8b4e-c35a847789c8) created",
+   "agentId": "agent-ec4a698d-6153-43ea-8b4e-c35a847789c8",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 32,
+  "prevHash": "353ef53493e39902d81833299bff1c91a7ccaf04aa89c168ec9cb0c761c1cd83",
+  "chainHash": "7d30bd045952f27660b64584260a68caa8ed075b096ad207e34bd9cb3f4bca11",
+  "createdAt": "2026-10-01T11:46:58.617Z"
+ },
+ {
+  "orgId": "agent-test-org-21",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Audited Update Agent\" (agent-ea8de01e-19ec-42b2-96a1-a01e8a5c6c02) created",
+   "agentId": "agent-ea8de01e-19ec-42b2-96a1-a01e8a5c6c02",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 63,
+  "prevHash": "4a1dcafa7b8d2fa28f2af324ba9445c6b12573f8b4eea375aaada5c1fc1bd73c",
+  "chainHash": "5a681f71e688bfdd40ce795221c135ca531320a52eb9a603296403c0ebf58df5",
+  "createdAt": "2026-10-01T11:46:58.835Z"
+ },
+ {
+  "orgId": "agent-test-org-21",
+  "gate": "governance",
+  "eventType": "agent_updated",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Renamed Audited Agent\" (agent-ea8de01e-19ec-42b2-96a1-a01e8a5c6c02) updated to v2",
+   "agentId": "agent-ea8de01e-19ec-42b2-96a1-a01e8a5c6c02",
+   "version": 2,
+   "status": "active"
+  },
+  "seq": 64,
+  "prevHash": "5a681f71e688bfdd40ce795221c135ca531320a52eb9a603296403c0ebf58df5",
+  "chainHash": "2038e2cba04ad465c1b1b611cffeb390344f98f150ce6f33507d6aa7989e8cd0",
+  "createdAt": "2026-10-01T11:46:58.998Z"
+ },
+ {
+  "orgId": "agent-test-org-22",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Audited Suspension Agent\" (agent-75c8cae3-eb70-4536-b627-8052ffd43e93) created",
+   "agentId": "agent-75c8cae3-eb70-4536-b627-8052ffd43e93",
+   "agentType": "custom",
+   "autonomyLevel": "LEVEL_1",
+   "riskLevel": "low",
+   "version": 1
+  },
+  "seq": 60,
+  "prevHash": "cfba10700fa5f6e243da569c520fafcfad56fb0b2d31a0a20b5a2222506bc2bf",
+  "chainHash": "d80d83d8ddbb48bb9801bd9207377908124d86584254ed9c3148f6cb5b2a6afb",
+  "createdAt": "2026-10-01T11:46:59.197Z"
+ },
+ {
+  "orgId": "agent-test-org-22",
+  "gate": "governance",
+  "eventType": "agent_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Audited Suspension Agent\" (agent-75c8cae3-eb70-4536-b627-8052ffd43e93) transition -> suspended",
+   "agentId": "agent-75c8cae3-eb70-4536-b627-8052ffd43e93",
+   "fromStatus": "active",
+   "toStatus": "suspended",
+   "version": 2
+  },
+  "seq": 61,
+  "prevHash": "d80d83d8ddbb48bb9801bd9207377908124d86584254ed9c3148f6cb5b2a6afb",
+  "chainHash": "00ec26f5550972e7661fe5ec0ca8d366be3b1f9c9f84c16bf57aca1af4711999",
+  "createdAt": "2026-10-01T11:46:59.353Z"
+ },
+ {
+  "orgId": "agent-test-org-23",
+  "sessionId": "655c9d6e-fd58-47ca-9314-52ccfa43f62f",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 64,
+  "prevHash": "4809b691d658c8a3e59b4dd11e67e97bd3cc9f54c29f48f15184ffc4f131e333",
+  "chainHash": "a70194b3d0389b8b40db59f3f25ef27d615dfcd138a2d617278afb717c1f5884",
+  "createdAt": "2026-10-01T11:46:59.550Z"
+ },
+ {
+  "orgId": "agent-test-org-23",
+  "sessionId": "655c9d6e-fd58-47ca-9314-52ccfa43f62f",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 4ms total, 0ms provider, 4ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 4,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 4,
+   "outcome": "failed"
+  },
+  "seq": 65,
+  "prevHash": "a70194b3d0389b8b40db59f3f25ef27d615dfcd138a2d617278afb717c1f5884",
+  "chainHash": "2ed41fccd13839dd45e1f6596c85335459ae76177702fbb005edccd1a051f667",
+  "createdAt": "2026-10-01T11:46:59.694Z"
+ },
+ {
+  "orgId": "delg-test-org-1",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Create Delegation Agent\" (agent-d3f49940-1113-44c4-8555-d15f8f94ba9a) created",
+   "agentId": "agent-d3f49940-1113-44c4-8555-d15f8f94ba9a",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 67,
+  "prevHash": "f92cea638d73b1715b1233e34617233a70ab01ff05fadf9452f10204f4866ff1",
+  "chainHash": "26be9b3f627a9ca1ade72b017072ed42f89d053fd739551feea6a9560eb0cbc0",
+  "createdAt": "2026-10-01T11:47:00.816Z"
+ },
+ {
+  "orgId": "delg-test-org-1",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Create Delegation Agent (agent-d3f49940-1113-44c4-8555-d15f8f94ba9a): Test delegation purpose",
+   "delegationId": "delg-7d06e646-8b62-43a6-8534-23c9eea1cd4e",
+   "agentId": "agent-d3f49940-1113-44c4-8555-d15f8f94ba9a",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 68,
+  "prevHash": "26be9b3f627a9ca1ade72b017072ed42f89d053fd739551feea6a9560eb0cbc0",
+  "chainHash": "5e7f36ff0ad0d5ca0e14597cb59c0358f44c1aff55dec34c3af35fdd8c6951fd",
+  "createdAt": "2026-10-01T11:47:00.950Z"
+ },
+ {
+  "orgId": "delg-test-org-2",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Get Delegation Agent\" (agent-52005c9a-fd5d-4164-a722-8d7ba2eda9a7) created",
+   "agentId": "agent-52005c9a-fd5d-4164-a722-8d7ba2eda9a7",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 67,
+  "prevHash": "bcaed2ad8d47297fab4fa5e9532f16b9eb26aead868540b0573f1774aaeaf0b0",
+  "chainHash": "c863865726f2bcdb3a0b1a8e1cc53dac45f54e9347948de29640d6c80462f317",
+  "createdAt": "2026-10-01T11:47:01.082Z"
+ },
+ {
+  "orgId": "delg-test-org-2",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Get Delegation Agent (agent-52005c9a-fd5d-4164-a722-8d7ba2eda9a7): Test delegation purpose",
+   "delegationId": "delg-f45291f7-f9b7-4409-bc12-2fb9cba01e5d",
+   "agentId": "agent-52005c9a-fd5d-4164-a722-8d7ba2eda9a7",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 68,
+  "prevHash": "c863865726f2bcdb3a0b1a8e1cc53dac45f54e9347948de29640d6c80462f317",
+  "chainHash": "0e41f498824db10061f109049747bc7f8988dd4ecab6a1b8c4c74caa82a7b241",
+  "createdAt": "2026-10-01T11:47:01.208Z"
+ },
+ {
+  "orgId": "delg-test-org-3",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"List Agent A\" (agent-48675acb-2afb-41e7-b844-7f7b19f0c2dc) created",
+   "agentId": "agent-48675acb-2afb-41e7-b844-7f7b19f0c2dc",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 195,
+  "prevHash": "76007c19453bc502bf3069be7a6f82aeb434fe56ca5a4abcb04c34bff3df482e",
+  "chainHash": "89c5e8aa771c2cafe155bb9e70f70e48474a7f2ae9fa933c90c7f53c6fbe20f7",
+  "createdAt": "2026-10-01T11:47:01.356Z"
+ },
+ {
+  "orgId": "delg-test-org-3",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"List Agent B\" (agent-07cfcdd3-4eac-4833-8591-47b03d5ba6dc) created",
+   "agentId": "agent-07cfcdd3-4eac-4833-8591-47b03d5ba6dc",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 196,
+  "prevHash": "89c5e8aa771c2cafe155bb9e70f70e48474a7f2ae9fa933c90c7f53c6fbe20f7",
+  "chainHash": "a7df903c5cea96076b100fce0a3103818c598ee8b0a31523850f9c10896f1110",
+  "createdAt": "2026-10-01T11:47:01.479Z"
+ },
+ {
+  "orgId": "delg-test-org-3",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent List Agent A (agent-48675acb-2afb-41e7-b844-7f7b19f0c2dc): Test delegation purpose",
+   "delegationId": "delg-912c95f3-23a9-4647-84ed-1b02861c6530",
+   "agentId": "agent-48675acb-2afb-41e7-b844-7f7b19f0c2dc",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 197,
+  "prevHash": "a7df903c5cea96076b100fce0a3103818c598ee8b0a31523850f9c10896f1110",
+  "chainHash": "e353b57b63278930797c4677cfb2a7a34a5dd5c6d30bfd2dc521d5d10e254464",
+  "createdAt": "2026-10-01T11:47:01.607Z"
+ },
+ {
+  "orgId": "delg-test-org-3",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent List Agent B (agent-07cfcdd3-4eac-4833-8591-47b03d5ba6dc): Test delegation purpose",
+   "delegationId": "delg-58d4e540-232f-417a-b23f-53b1d7be459e",
+   "agentId": "agent-07cfcdd3-4eac-4833-8591-47b03d5ba6dc",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 198,
+  "prevHash": "e353b57b63278930797c4677cfb2a7a34a5dd5c6d30bfd2dc521d5d10e254464",
+  "chainHash": "0234585398aa85d9697eb14cff6228810e06fcc776ea6e05851d9eb969bc43b8",
+  "createdAt": "2026-10-01T11:47:01.757Z"
+ },
+ {
+  "orgId": "delg-test-org-4",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Update Delegation Agent\" (agent-1eb0acdd-75e9-4804-a5c9-afe9d8caa325) created",
+   "agentId": "agent-1eb0acdd-75e9-4804-a5c9-afe9d8caa325",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "cf306f3d7450c00037a20dc122b6ee9cc7a14e472d6bdb78bccb488c8dd62f7c",
+  "chainHash": "fe10e0d9093d0466f455e9ab03def5cdc117b94ce3bf9840e44ef5840b840871",
+  "createdAt": "2026-10-01T11:47:01.911Z"
+ },
+ {
+  "orgId": "delg-test-org-4",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Update Delegation Agent (agent-1eb0acdd-75e9-4804-a5c9-afe9d8caa325): Test delegation purpose",
+   "delegationId": "delg-175b54d5-5120-4956-ac32-46c8b9f2df06",
+   "agentId": "agent-1eb0acdd-75e9-4804-a5c9-afe9d8caa325",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "fe10e0d9093d0466f455e9ab03def5cdc117b94ce3bf9840e44ef5840b840871",
+  "chainHash": "889e4c516e2af65815c765fab5d33cf72f7bdf2a4e3235053455f182858dc180",
+  "createdAt": "2026-10-01T11:47:02.026Z"
+ },
+ {
+  "orgId": "delg-test-org-4",
+  "gate": "governance",
+  "eventType": "delegation_updated",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-175b54d5-5120-4956-ac32-46c8b9f2df06 updated to v2",
+   "delegationId": "delg-175b54d5-5120-4956-ac32-46c8b9f2df06",
+   "version": 2
+  },
+  "seq": 102,
+  "prevHash": "889e4c516e2af65815c765fab5d33cf72f7bdf2a4e3235053455f182858dc180",
+  "chainHash": "f2a961b1d1a7efe19d5817068d3de8b1f050a39f548338764ba0d3e53e40c89b",
+  "createdAt": "2026-10-01T11:47:02.157Z"
+ },
+ {
+  "orgId": "delg-test-org-5",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Suspend Delegation Agent\" (agent-3cae6b7a-a458-4a99-814c-174f3e484955) created",
+   "agentId": "agent-3cae6b7a-a458-4a99-814c-174f3e484955",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "8675fc8ded62d615283583ba989a309b4c1327fb679e1755c5ef35b7baeae08a",
+  "chainHash": "35fa7496fbaa4218c772fc8a339163a722b5eae01ba7b00205003390b9be8003",
+  "createdAt": "2026-10-01T11:47:02.271Z"
+ },
+ {
+  "orgId": "delg-test-org-5",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Suspend Delegation Agent (agent-3cae6b7a-a458-4a99-814c-174f3e484955): Test delegation purpose",
+   "delegationId": "delg-89fcac03-de38-4a07-936c-b6f2cd47aecb",
+   "agentId": "agent-3cae6b7a-a458-4a99-814c-174f3e484955",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "35fa7496fbaa4218c772fc8a339163a722b5eae01ba7b00205003390b9be8003",
+  "chainHash": "01ee61670508cd05ff3628a1d3c25a48f4a156053c8b74df2dd1306ee9ee5daf",
+  "createdAt": "2026-10-01T11:47:02.405Z"
+ },
+ {
+  "orgId": "delg-test-org-5",
+  "gate": "governance",
+  "eventType": "delegation_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-89fcac03-de38-4a07-936c-b6f2cd47aecb transitioned to SUSPENDED",
+   "delegationId": "delg-89fcac03-de38-4a07-936c-b6f2cd47aecb",
+   "fromStatus": "ACTIVE",
+   "toStatus": "SUSPENDED"
+  },
+  "seq": 102,
+  "prevHash": "01ee61670508cd05ff3628a1d3c25a48f4a156053c8b74df2dd1306ee9ee5daf",
+  "chainHash": "b8ec599f9a28c1f273208f795154c79a4de11184a18b4d36ea1c9dc2425a0cd8",
+  "createdAt": "2026-10-01T11:47:02.514Z"
+ },
+ {
+  "orgId": "delg-test-org-6",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Revoke Delegation Agent\" (agent-e8e5a36d-8b1f-4398-bd76-7eb5a6ccb7c2) created",
+   "agentId": "agent-e8e5a36d-8b1f-4398-bd76-7eb5a6ccb7c2",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 95,
+  "prevHash": "98fa0e8a9218d314cba5b3ba2965c76408f9b76985568a196af910d73d8f86f3",
+  "chainHash": "2294d391a9ef9e7092fd0d0e0c66a184cf063d9c7631d03802b221c29443a4f9",
+  "createdAt": "2026-10-01T11:47:02.620Z"
+ },
+ {
+  "orgId": "delg-test-org-6",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Revoke Delegation Agent (agent-e8e5a36d-8b1f-4398-bd76-7eb5a6ccb7c2): Test delegation purpose",
+   "delegationId": "delg-1354c6a4-32f4-4838-bc85-0de13b23789d",
+   "agentId": "agent-e8e5a36d-8b1f-4398-bd76-7eb5a6ccb7c2",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 96,
+  "prevHash": "2294d391a9ef9e7092fd0d0e0c66a184cf063d9c7631d03802b221c29443a4f9",
+  "chainHash": "b755dd23caba32ae7251aa2593b562ebb65e662fe44dee8caed82ce86ef6f7b3",
+  "createdAt": "2026-10-01T11:47:02.726Z"
+ },
+ {
+  "orgId": "delg-test-org-6",
+  "gate": "governance",
+  "eventType": "delegation_revoked",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-1354c6a4-32f4-4838-bc85-0de13b23789d transitioned to REVOKED",
+   "delegationId": "delg-1354c6a4-32f4-4838-bc85-0de13b23789d",
+   "fromStatus": "ACTIVE",
+   "toStatus": "REVOKED"
+  },
+  "seq": 97,
+  "prevHash": "b755dd23caba32ae7251aa2593b562ebb65e662fe44dee8caed82ce86ef6f7b3",
+  "chainHash": "ca6e736a572d7ea7351b65837739af71751d2699de73df7d4d50befcf38d55d7",
+  "createdAt": "2026-10-01T11:47:02.834Z"
+ },
+ {
+  "orgId": "delg-test-org-7",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Reactivate Delegation Agent\" (agent-fc888745-d7cf-4d2b-ac96-26ec4ea3841c) created",
+   "agentId": "agent-fc888745-d7cf-4d2b-ac96-26ec4ea3841c",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 122,
+  "prevHash": "a7138bb2ab3e47faa39c91ece515111f889ce0d0c93e411e7fc85d303de5d2ab",
+  "chainHash": "419edc6e8948fb0d154117ab6fdb2f6a13e7cd5e5b83c03cd614c132701de3c7",
+  "createdAt": "2026-10-01T11:47:02.943Z"
+ },
+ {
+  "orgId": "delg-test-org-7",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Reactivate Delegation Agent (agent-fc888745-d7cf-4d2b-ac96-26ec4ea3841c): Test delegation purpose",
+   "delegationId": "delg-97a83de0-274f-4fd9-afdc-797b611486a3",
+   "agentId": "agent-fc888745-d7cf-4d2b-ac96-26ec4ea3841c",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 123,
+  "prevHash": "419edc6e8948fb0d154117ab6fdb2f6a13e7cd5e5b83c03cd614c132701de3c7",
+  "chainHash": "ed115607a6376df53232f72ec2fd9ab3fccdc5efe59d5d7c33417262f8a342b3",
+  "createdAt": "2026-10-01T11:47:03.117Z"
+ },
+ {
+  "orgId": "delg-test-org-7",
+  "gate": "governance",
+  "eventType": "delegation_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-97a83de0-274f-4fd9-afdc-797b611486a3 transitioned to SUSPENDED",
+   "delegationId": "delg-97a83de0-274f-4fd9-afdc-797b611486a3",
+   "fromStatus": "ACTIVE",
+   "toStatus": "SUSPENDED"
+  },
+  "seq": 124,
+  "prevHash": "ed115607a6376df53232f72ec2fd9ab3fccdc5efe59d5d7c33417262f8a342b3",
+  "chainHash": "5965e65921a4988898dfb47a80b59539eb3391679859d1c507bb38d0dfc1cd07",
+  "createdAt": "2026-10-01T11:47:03.255Z"
+ },
+ {
+  "orgId": "delg-test-org-7",
+  "gate": "governance",
+  "eventType": "delegation_reactivated",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-97a83de0-274f-4fd9-afdc-797b611486a3 transitioned to ACTIVE",
+   "delegationId": "delg-97a83de0-274f-4fd9-afdc-797b611486a3",
+   "fromStatus": "SUSPENDED",
+   "toStatus": "ACTIVE"
+  },
+  "seq": 125,
+  "prevHash": "5965e65921a4988898dfb47a80b59539eb3391679859d1c507bb38d0dfc1cd07",
+  "chainHash": "1ceea95bb2ad76038beba7c0b384ab9310a77ba0c7c8ac0bbc750c9fa302da91",
+  "createdAt": "2026-10-01T11:47:03.403Z"
+ },
+ {
+  "orgId": "delg-test-org-8",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Terminal Revoked Agent\" (agent-79e5f318-f698-4308-9771-db63b1395b9c) created",
+   "agentId": "agent-79e5f318-f698-4308-9771-db63b1395b9c",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 90,
+  "prevHash": "f71cdc113909767e5c72ab56511183bf8f0d641da98e2eba07fd025208f4fa60",
+  "chainHash": "f8668328e468ce27f211ccc130a61fe0f64c8ae48f7c835d99efd063057410f6",
+  "createdAt": "2026-10-01T11:47:03.543Z"
+ },
+ {
+  "orgId": "delg-test-org-8",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Terminal Revoked Agent (agent-79e5f318-f698-4308-9771-db63b1395b9c): Test delegation purpose",
+   "delegationId": "delg-5e31a950-6dea-4f7e-bd60-4fd298a56176",
+   "agentId": "agent-79e5f318-f698-4308-9771-db63b1395b9c",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 91,
+  "prevHash": "f8668328e468ce27f211ccc130a61fe0f64c8ae48f7c835d99efd063057410f6",
+  "chainHash": "c90ce7decc8735b081a39c64b5cbf0500cf1dfe1c16a858aec864cf6d8597047",
+  "createdAt": "2026-10-01T11:47:03.697Z"
+ },
+ {
+  "orgId": "delg-test-org-8",
+  "gate": "governance",
+  "eventType": "delegation_revoked",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-5e31a950-6dea-4f7e-bd60-4fd298a56176 transitioned to REVOKED",
+   "delegationId": "delg-5e31a950-6dea-4f7e-bd60-4fd298a56176",
+   "fromStatus": "ACTIVE",
+   "toStatus": "REVOKED"
+  },
+  "seq": 92,
+  "prevHash": "c90ce7decc8735b081a39c64b5cbf0500cf1dfe1c16a858aec864cf6d8597047",
+  "chainHash": "b295a445bb12f262e9731ea288a4b865b11305d3adf48b3040027362181c797d",
+  "createdAt": "2026-10-01T11:47:03.831Z"
+ },
+ {
+  "orgId": "delg-test-org-9",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Terminal Expired Agent\" (agent-8be4ed00-67e0-40ea-b661-ad3d8fcaddf0) created",
+   "agentId": "agent-8be4ed00-67e0-40ea-b661-ad3d8fcaddf0",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 90,
+  "prevHash": "91ea022d2d32e33c33149c186832325dc4c6981e7c05ee43395b7e133192353a",
+  "chainHash": "1c3fb8b1f2b12ac841358e27412357b81f32f1aef7cfd7c39eae1f35dacba044",
+  "createdAt": "2026-10-01T11:47:04.040Z"
+ },
+ {
+  "orgId": "delg-test-org-9",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Terminal Expired Agent (agent-8be4ed00-67e0-40ea-b661-ad3d8fcaddf0): Test delegation purpose",
+   "delegationId": "delg-b886965a-3b75-4576-8474-38f10f5f3fc6",
+   "agentId": "agent-8be4ed00-67e0-40ea-b661-ad3d8fcaddf0",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-01T11:47:04.155Z"
+  },
+  "seq": 91,
+  "prevHash": "1c3fb8b1f2b12ac841358e27412357b81f32f1aef7cfd7c39eae1f35dacba044",
+  "chainHash": "abc9d5637500d4b998054e1eb6c59ff337934ba2317e6a522982045fd04a79d6",
+  "createdAt": "2026-10-01T11:47:04.180Z"
+ },
+ {
+  "orgId": "delg-test-org-9",
+  "gate": "governance",
+  "eventType": "delegation_expired",
+  "actor": "system",
+  "detail": {
+   "summary": "Delegation delg-b886965a-3b75-4576-8474-38f10f5f3fc6 expired (lazy status repair)",
+   "delegationId": "delg-b886965a-3b75-4576-8474-38f10f5f3fc6",
+   "fromStatus": "ACTIVE",
+   "toStatus": "EXPIRED",
+   "version": 2
+  },
+  "seq": 92,
+  "prevHash": "abc9d5637500d4b998054e1eb6c59ff337934ba2317e6a522982045fd04a79d6",
+  "chainHash": "fb3d4badc4d53aa27936f7009cbe96f44bbad67a6fe5b2faacc371179c4923ac",
+  "createdAt": "2026-10-01T11:47:04.467Z"
+ },
+ {
+  "orgId": "delg-test-org-10",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Patch Status Agent\" (agent-378cbdce-9879-4b72-b789-49fdd29782ba) created",
+   "agentId": "agent-378cbdce-9879-4b72-b789-49fdd29782ba",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 59,
+  "prevHash": "a43b78b977a55158c063e23074f08b5af2592b4b51d233dd986744c723c0070c",
+  "chainHash": "29a0e85addaf424d6141dfbcfe3b1a460e11c76be687cdd6493bec2487bad2d2",
+  "createdAt": "2026-10-01T11:47:04.632Z"
+ },
+ {
+  "orgId": "delg-test-org-10",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Patch Status Agent (agent-378cbdce-9879-4b72-b789-49fdd29782ba): Test delegation purpose",
+   "delegationId": "delg-06db92fd-ee60-4cdc-8799-6555c05103bd",
+   "agentId": "agent-378cbdce-9879-4b72-b789-49fdd29782ba",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 60,
+  "prevHash": "29a0e85addaf424d6141dfbcfe3b1a460e11c76be687cdd6493bec2487bad2d2",
+  "chainHash": "87a59248a036ae4ff4da2ccf5d5cc23c5c8b82a378bfad9b96697d123265aad3",
+  "createdAt": "2026-10-01T11:47:04.780Z"
+ },
+ {
+  "orgId": "delg-test-org-11a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Secret Delegation Agent\" (agent-935ae2c8-047b-4e39-bbba-420f293890aa) created",
+   "agentId": "agent-935ae2c8-047b-4e39-bbba-420f293890aa",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 58,
+  "prevHash": "2b86c85d037c5b896ca61f08314f80c56145c96b4b63efd4accd4717d8c08ca6",
+  "chainHash": "9680c788e81968a50e24ee3306d8ac530306aa1e54d6277fab5057b194825967",
+  "createdAt": "2026-10-01T11:47:04.931Z"
+ },
+ {
+  "orgId": "delg-test-org-11a",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Secret Delegation Agent (agent-935ae2c8-047b-4e39-bbba-420f293890aa): Test delegation purpose",
+   "delegationId": "delg-124c1cd2-17cd-467a-8b4b-afc5ad29f6e2",
+   "agentId": "agent-935ae2c8-047b-4e39-bbba-420f293890aa",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 59,
+  "prevHash": "9680c788e81968a50e24ee3306d8ac530306aa1e54d6277fab5057b194825967",
+  "chainHash": "a6bd310f167519d8105a62d6a810f7584e988ec0eeaf2d80bbb9781eb7fe3bbf",
+  "createdAt": "2026-10-01T11:47:05.098Z"
+ },
+ {
+  "orgId": "delg-test-org-12a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Cross Modify Agent\" (agent-4a326204-455d-4eda-9b00-12acfafcff13) created",
+   "agentId": "agent-4a326204-455d-4eda-9b00-12acfafcff13",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 58,
+  "prevHash": "21eaa19d7893d13d9531b86086f62b7e68701acbe83655e537cdfa1707459e04",
+  "chainHash": "56f510a1f6e423d41fa4a2f78830f677a252ec5c3f0988fd1333cd6c7ef1b2cc",
+  "createdAt": "2026-10-01T11:47:05.255Z"
+ },
+ {
+  "orgId": "delg-test-org-12a",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Cross Modify Agent (agent-4a326204-455d-4eda-9b00-12acfafcff13): Test delegation purpose",
+   "delegationId": "delg-35ed205a-14f1-4c18-937a-9dcdecd8314f",
+   "agentId": "agent-4a326204-455d-4eda-9b00-12acfafcff13",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 59,
+  "prevHash": "56f510a1f6e423d41fa4a2f78830f677a252ec5c3f0988fd1333cd6c7ef1b2cc",
+  "chainHash": "e1273f35790cfd47ed640e62e411f5fc82fa214e1907c202346189ef90365c0b",
+  "createdAt": "2026-10-01T11:47:05.408Z"
+ },
+ {
+  "orgId": "delg-test-org-13a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Cross Revoke Agent\" (agent-1007478d-c76f-4a8f-8f7f-dcdfabc7f1c5) created",
+   "agentId": "agent-1007478d-c76f-4a8f-8f7f-dcdfabc7f1c5",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 61,
+  "prevHash": "dd247838d10f11e60fc7f9ea6c9a8ce6ddddf42d8a4b7c6536e9b88ba51f809f",
+  "chainHash": "c18e6f9efa7e737faffff008b61cffeeae1e7be723314fb1705db2d0d3246810",
+  "createdAt": "2026-10-01T11:47:05.547Z"
+ },
+ {
+  "orgId": "delg-test-org-13a",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Cross Revoke Agent (agent-1007478d-c76f-4a8f-8f7f-dcdfabc7f1c5): Test delegation purpose",
+   "delegationId": "delg-b4950374-d57e-4dbe-b922-73634ceea251",
+   "agentId": "agent-1007478d-c76f-4a8f-8f7f-dcdfabc7f1c5",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 62,
+  "prevHash": "c18e6f9efa7e737faffff008b61cffeeae1e7be723314fb1705db2d0d3246810",
+  "chainHash": "0143faf1fc8218679573d4de6ab763c6cf436bb4553fa7d902f1038a97e7ce44",
+  "createdAt": "2026-10-01T11:47:05.702Z"
+ },
+ {
+  "orgId": "delg-test-org-14b",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Cross Parent Agent\" (agent-517af577-9ab8-4cb6-9789-c4d85d56f888) created",
+   "agentId": "agent-517af577-9ab8-4cb6-9789-c4d85d56f888",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 61,
+  "prevHash": "746b8c49cdadd35f85746af1ec4c7e344168f429e9d92f696d15bda9821c393f",
+  "chainHash": "8e2e0b63071d5da01c7f60f276837c2546969b927a6ff53a957f7b352e868bae",
+  "createdAt": "2026-10-01T11:47:05.876Z"
+ },
+ {
+  "orgId": "delg-test-org-14b",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Cross Parent Agent (agent-517af577-9ab8-4cb6-9789-c4d85d56f888): Test delegation purpose",
+   "delegationId": "delg-102c1723-5495-459a-859b-400b9c30b859",
+   "agentId": "agent-517af577-9ab8-4cb6-9789-c4d85d56f888",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 62,
+  "prevHash": "8e2e0b63071d5da01c7f60f276837c2546969b927a6ff53a957f7b352e868bae",
+  "chainHash": "1e1681c418b0c42458673af11fe01c13a0101741dc31641742504e8afc0ae1a6",
+  "createdAt": "2026-10-01T11:47:05.998Z"
+ },
+ {
+  "orgId": "delg-test-org-14a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Cross Child Agent\" (agent-ca0aa33e-2206-4b20-9433-613a9ac9a202) created",
+   "agentId": "agent-ca0aa33e-2206-4b20-9433-613a9ac9a202",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 30,
+  "prevHash": "433b7a3ca4e2d6416767935876e134ba812729a282c1267d3d997f465b467c34",
+  "chainHash": "bf1ed34bbb1544d7f92cd4c300fb6d91a96550f2d4a14354f9020fff8dd3b82b",
+  "createdAt": "2026-10-01T11:47:06.139Z"
+ },
+ {
+  "orgId": "delg-test-org-15",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Escalate Risk Agent\" (agent-5d0e6044-8aad-4cde-bad8-ae95936045ad) created",
+   "agentId": "agent-5d0e6044-8aad-4cde-bad8-ae95936045ad",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 59,
+  "prevHash": "f10e0c705fd3b8c625e8931325c6e31a635322122b9e70133a5947a9bcfba128",
+  "chainHash": "8417e69f49c7ed86f17578a7d7fbd1a66871a0bb87936a96dcdde1d783679fe3",
+  "createdAt": "2026-10-01T11:47:06.302Z"
+ },
+ {
+  "orgId": "delg-test-org-15",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Escalate Risk Agent (agent-5d0e6044-8aad-4cde-bad8-ae95936045ad): Test delegation purpose",
+   "delegationId": "delg-6cb5e99d-bc86-4c55-a2f7-4a7b59af1344",
+   "agentId": "agent-5d0e6044-8aad-4cde-bad8-ae95936045ad",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 60,
+  "prevHash": "8417e69f49c7ed86f17578a7d7fbd1a66871a0bb87936a96dcdde1d783679fe3",
+  "chainHash": "9e4f4c03adc366e41f3cb3a563936062c77d7756d0ca8970b4349c1fb5be0a3c",
+  "createdAt": "2026-10-01T11:47:06.461Z"
+ },
+ {
+  "orgId": "delg-test-org-16",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Escalate Scope Agent\" (agent-218b285a-f951-43d8-bc77-7678722310a3) created",
+   "agentId": "agent-218b285a-f951-43d8-bc77-7678722310a3",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 61,
+  "prevHash": "50e8a0ae15ba16c0ecb74f1785384e9c5f85ac4dca5d3c4dbdf2fa096d5d8a8b",
+  "chainHash": "87f61c89ce4b88cd9189c49750296a51b2386a15b3a17b429aa21a96ec96f685",
+  "createdAt": "2026-10-01T11:47:06.663Z"
+ },
+ {
+  "orgId": "delg-test-org-16",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Escalate Scope Agent (agent-218b285a-f951-43d8-bc77-7678722310a3): Test delegation purpose",
+   "delegationId": "delg-0a4383a9-a305-4fd3-b9d7-07baf599784b",
+   "agentId": "agent-218b285a-f951-43d8-bc77-7678722310a3",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 62,
+  "prevHash": "87f61c89ce4b88cd9189c49750296a51b2386a15b3a17b429aa21a96ec96f685",
+  "chainHash": "9d95ba4128376c8f31c65f04fcb5204322e6e30279c8c47ebdecd98594cf4b7b",
+  "createdAt": "2026-10-01T11:47:06.799Z"
+ },
+ {
+  "orgId": "delg-test-org-17",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Escalate Action Agent\" (agent-072af114-ed73-4882-968d-defcf0699716) created",
+   "agentId": "agent-072af114-ed73-4882-968d-defcf0699716",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 63,
+  "prevHash": "e8ad8ebc591c85e87922e030421cb483d9c704ab398db50d7f68d29f79acd28f",
+  "chainHash": "24ea3ac1c07a53e65456888b9f42fe7c99452d978dd844436517d12c08193268",
+  "createdAt": "2026-10-01T11:47:06.960Z"
+ },
+ {
+  "orgId": "delg-test-org-17",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Escalate Action Agent (agent-072af114-ed73-4882-968d-defcf0699716): Test delegation purpose",
+   "delegationId": "delg-188f4416-95bf-46c1-9cc5-ef4c1502185e",
+   "agentId": "agent-072af114-ed73-4882-968d-defcf0699716",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 64,
+  "prevHash": "24ea3ac1c07a53e65456888b9f42fe7c99452d978dd844436517d12c08193268",
+  "chainHash": "718deeb88c8e8fb9bffddf11a9f411e2d3adc31f6c8fd231a0d63d5001832e23",
+  "createdAt": "2026-10-01T11:47:07.090Z"
+ },
+ {
+  "orgId": "delg-test-org-18",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Escalate Tool Agent\" (agent-5e5c0fc2-009f-4358-a921-734cd5b1186c) created",
+   "agentId": "agent-5e5c0fc2-009f-4358-a921-734cd5b1186c",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 64,
+  "prevHash": "4406097272c2d3930044641d042a96047c451e2f7291b522837f9b3fc92eb5b9",
+  "chainHash": "bcd8b85319acec92dabeef5747781455afcbb9b66e22087561b2d2e3e0cea1ef",
+  "createdAt": "2026-10-01T11:47:07.256Z"
+ },
+ {
+  "orgId": "delg-test-org-18",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Escalate Tool Agent (agent-5e5c0fc2-009f-4358-a921-734cd5b1186c): Test delegation purpose",
+   "delegationId": "delg-fb3939af-3300-4ba6-99b7-c8a3e589d047",
+   "agentId": "agent-5e5c0fc2-009f-4358-a921-734cd5b1186c",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 65,
+  "prevHash": "bcd8b85319acec92dabeef5747781455afcbb9b66e22087561b2d2e3e0cea1ef",
+  "chainHash": "e5d2b61dc74880eff00ce96eef0debf11adf67a35427dae117f7446ed775a9da",
+  "createdAt": "2026-10-01T11:47:07.412Z"
+ },
+ {
+  "orgId": "delg-test-org-19",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Escalate Resource Agent\" (agent-c19e6eef-6e97-4c2d-b7ed-08a6e7687a6b) created",
+   "agentId": "agent-c19e6eef-6e97-4c2d-b7ed-08a6e7687a6b",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 64,
+  "prevHash": "7a7c6e2503f717e9c66294a075d4256dc53e0e301bb54dcb9ce4ca0ca9605ca1",
+  "chainHash": "a0ace7988013a0e9d272daf1bfc1aa23316b99b66b82293195ab7eb933e344a4",
+  "createdAt": "2026-10-01T11:47:07.557Z"
+ },
+ {
+  "orgId": "delg-test-org-19",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Escalate Resource Agent (agent-c19e6eef-6e97-4c2d-b7ed-08a6e7687a6b): Test delegation purpose",
+   "delegationId": "delg-8ac95053-93a1-4bbd-8bcc-85160ff48b65",
+   "agentId": "agent-c19e6eef-6e97-4c2d-b7ed-08a6e7687a6b",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 65,
+  "prevHash": "a0ace7988013a0e9d272daf1bfc1aa23316b99b66b82293195ab7eb933e344a4",
+  "chainHash": "fe15f38386a205ee499ada5b2ce12a0df558e044dda546e94584f70bdca5c9d3",
+  "createdAt": "2026-10-01T11:47:07.699Z"
+ },
+ {
+  "orgId": "delg-test-org-20",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"No Subdelegate Agent\" (agent-e1408021-b5fa-46f7-961b-513a5ef6777e) created",
+   "agentId": "agent-e1408021-b5fa-46f7-961b-513a5ef6777e",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 65,
+  "prevHash": "d3b5fce9ed3d939b8968e558e7340e5077c8341d091450d9022683f4eb905a0d",
+  "chainHash": "4dc2cd3f452a0a771d8d33af4dfc236940b54a0fd9954b20f4d7d95de9de8a03",
+  "createdAt": "2026-10-01T11:47:07.865Z"
+ },
+ {
+  "orgId": "delg-test-org-20",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent No Subdelegate Agent (agent-e1408021-b5fa-46f7-961b-513a5ef6777e): Test delegation purpose",
+   "delegationId": "delg-36b7944d-7368-4b57-ab88-e19c7869d4fe",
+   "agentId": "agent-e1408021-b5fa-46f7-961b-513a5ef6777e",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 66,
+  "prevHash": "4dc2cd3f452a0a771d8d33af4dfc236940b54a0fd9954b20f4d7d95de9de8a03",
+  "chainHash": "551258de0b1250d9ba3fb2974ea3ca5685a0213372954e6bb91017458ea81051",
+  "createdAt": "2026-10-01T11:47:08.040Z"
+ },
+ {
+  "orgId": "delg-test-org-21",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Multi Level Agent\" (agent-ae29fd3a-36f5-4745-a47b-24d96399a21d) created",
+   "agentId": "agent-ae29fd3a-36f5-4745-a47b-24d96399a21d",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 98,
+  "prevHash": "8c9d07e667f618b09e1ae285ddbe52ed25245f22ac4cc2e887c0377430a426dc",
+  "chainHash": "ba291a8b3631c76a0ae453250ec4e16e5a48fda7b058129b348764a658a08599",
+  "createdAt": "2026-10-01T11:47:08.227Z"
+ },
+ {
+  "orgId": "delg-test-org-21",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Multi Level Agent (agent-ae29fd3a-36f5-4745-a47b-24d96399a21d): Test delegation purpose",
+   "delegationId": "delg-d09aa898-2229-4b97-9045-240db5a89293",
+   "agentId": "agent-ae29fd3a-36f5-4745-a47b-24d96399a21d",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 99,
+  "prevHash": "ba291a8b3631c76a0ae453250ec4e16e5a48fda7b058129b348764a658a08599",
+  "chainHash": "6f499c80fd25c39d431b6247200513a5c0301f5bd7f436f528b8a79253c09a60",
+  "createdAt": "2026-10-01T11:47:08.384Z"
+ },
+ {
+  "orgId": "delg-test-org-21",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Multi Level Agent (agent-ae29fd3a-36f5-4745-a47b-24d96399a21d): Test delegation purpose",
+   "delegationId": "delg-7d40e4a8-d02d-4b51-bf69-2eb6863fcfc4",
+   "agentId": "agent-ae29fd3a-36f5-4745-a47b-24d96399a21d",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 100,
+  "prevHash": "6f499c80fd25c39d431b6247200513a5c0301f5bd7f436f528b8a79253c09a60",
+  "chainHash": "e08c2658c6d02dab99bfac5272a60b90e5012bc8ce90157d9c7266d45e780eff",
+  "createdAt": "2026-10-01T11:47:08.543Z"
+ },
+ {
+  "orgId": "delg-test-org-22",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Revoked Chain Agent\" (agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd) created",
+   "agentId": "agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 166,
+  "prevHash": "12a416b048c888b06fcbf3b0b3af576ff9a1163ba93e7642d27de0f6333bd7ef",
+  "chainHash": "e8e67c5531e4810937e8eaf990912ed089fab60ca170a4abcdd62bef4ef8f236",
+  "createdAt": "2026-10-01T11:47:08.710Z"
+ },
+ {
+  "orgId": "delg-test-org-22",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Revoked Chain Agent (agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd): Test delegation purpose",
+   "delegationId": "delg-182ccfb5-838a-476f-b9ef-c5256de1e5c5",
+   "agentId": "agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 167,
+  "prevHash": "e8e67c5531e4810937e8eaf990912ed089fab60ca170a4abcdd62bef4ef8f236",
+  "chainHash": "d68670854f7bf1031d1eade6288bce2d7d253465f7885a7b67cc0a06117cc221",
+  "createdAt": "2026-10-01T11:47:08.946Z"
+ },
+ {
+  "orgId": "delg-test-org-22",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Revoked Chain Agent (agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd): Test delegation purpose",
+   "delegationId": "delg-5eec4d6f-9b2d-450d-a7b6-1fceaf685433",
+   "agentId": "agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 168,
+  "prevHash": "d68670854f7bf1031d1eade6288bce2d7d253465f7885a7b67cc0a06117cc221",
+  "chainHash": "62e8212bee207c8447592cd05341fedee2df005feb6c29961c985bdd566945dd",
+  "createdAt": "2026-10-01T11:47:09.089Z"
+ },
+ {
+  "orgId": "delg-test-org-22",
+  "gate": "governance",
+  "eventType": "delegation_revoked",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-182ccfb5-838a-476f-b9ef-c5256de1e5c5 transitioned to REVOKED",
+   "delegationId": "delg-182ccfb5-838a-476f-b9ef-c5256de1e5c5",
+   "fromStatus": "ACTIVE",
+   "toStatus": "REVOKED"
+  },
+  "seq": 169,
+  "prevHash": "62e8212bee207c8447592cd05341fedee2df005feb6c29961c985bdd566945dd",
+  "chainHash": "4fbc66cc755f9657adcedf9908b1d767b310546fcbbc5b36ceccc83655191218",
+  "createdAt": "2026-10-01T11:47:09.248Z"
+ },
+ {
+  "orgId": "delg-test-org-22",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd (read on postgres:db:main): PARENT_CHAIN_INVALID",
+   "agentId": "agent-4639a72e-8aa5-4962-8d8e-9a0a228e70bd",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "PARENT_CHAIN_INVALID"
+  },
+  "seq": 170,
+  "prevHash": "4fbc66cc755f9657adcedf9908b1d767b310546fcbbc5b36ceccc83655191218",
+  "chainHash": "fa8a16385b17eecf7026680f8d8756cfc36b5fe6fb30dbb5820bb6b719818416",
+  "createdAt": "2026-10-01T11:47:09.392Z"
+ },
+ {
+  "orgId": "delg-test-org-23",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Expired Chain Agent\" (agent-538b9247-c7fe-429f-9bc1-1eec62d94f46) created",
+   "agentId": "agent-538b9247-c7fe-429f-9bc1-1eec62d94f46",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 131,
+  "prevHash": "4dd4209ef0e204fac9ebee0ae7272705240be81794682f81ade8992f81972bda",
+  "chainHash": "9c2d0a3e751ffc9eb272c8901017c9f496bbcd699cb8420c4d739184fe8dda2a",
+  "createdAt": "2026-10-01T11:47:09.520Z"
+ },
+ {
+  "orgId": "delg-test-org-23",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Expired Chain Agent (agent-538b9247-c7fe-429f-9bc1-1eec62d94f46): Test delegation purpose",
+   "delegationId": "delg-a6eacb92-d15c-43cb-9d34-dcc9c4ec57e7",
+   "agentId": "agent-538b9247-c7fe-429f-9bc1-1eec62d94f46",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-01T12:47:09.609Z"
+  },
+  "seq": 132,
+  "prevHash": "9c2d0a3e751ffc9eb272c8901017c9f496bbcd699cb8420c4d739184fe8dda2a",
+  "chainHash": "02f618c1d43128d395c307d7f5fa389f1c6c23503a96fc10dee774bd6717a3c6",
+  "createdAt": "2026-10-01T11:47:09.683Z"
+ },
+ {
+  "orgId": "delg-test-org-23",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Expired Chain Agent (agent-538b9247-c7fe-429f-9bc1-1eec62d94f46): Test delegation purpose",
+   "delegationId": "delg-6d2802d8-ebc3-42dc-b796-d5ce2696cf1c",
+   "agentId": "agent-538b9247-c7fe-429f-9bc1-1eec62d94f46",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-03T11:47:09.760Z"
+  },
+  "seq": 133,
+  "prevHash": "02f618c1d43128d395c307d7f5fa389f1c6c23503a96fc10dee774bd6717a3c6",
+  "chainHash": "1477e864ec052b6e94fe405cd7cf36c07578b2c806d4027705956bfbaa3388bc",
+  "createdAt": "2026-10-01T11:47:09.843Z"
+ },
+ {
+  "orgId": "delg-test-org-23",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-538b9247-c7fe-429f-9bc1-1eec62d94f46 (read on postgres:db:main): PARENT_CHAIN_INVALID",
+   "agentId": "agent-538b9247-c7fe-429f-9bc1-1eec62d94f46",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "PARENT_CHAIN_INVALID"
+  },
+  "seq": 134,
+  "prevHash": "1477e864ec052b6e94fe405cd7cf36c07578b2c806d4027705956bfbaa3388bc",
+  "chainHash": "ec7c42672bfbff7909022700f4ce94bf576b3cf5a255729f452677d65d2636ca",
+  "createdAt": "2026-10-01T11:47:10.056Z"
+ },
+ {
+  "orgId": "delg-test-org-24",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Wildcard Root Agent\" (agent-ba7230d7-deaf-4edd-97e9-290a659e8de5) created",
+   "agentId": "agent-ba7230d7-deaf-4edd-97e9-290a659e8de5",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 34,
+  "prevHash": "395522fbdc006244aed077ee148e6d2063464755f2c3f6f2611aa398ffa29d7c",
+  "chainHash": "b2a9344384070c551e1934e6e71fcacbdd9fad3e3a1659c0fe77a837a18c108d",
+  "createdAt": "2026-10-01T11:47:10.206Z"
+ },
+ {
+  "orgId": "delg-test-org-25",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Critical Root Agent\" (agent-33d7edea-9ee6-4e65-b9b5-7e4fc385cedc) created",
+   "agentId": "agent-33d7edea-9ee6-4e65-b9b5-7e4fc385cedc",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 67,
+  "prevHash": "018d84007ca84cc2bbead6bee0b38658553f96636591d1f0e3da39f0794cafa5",
+  "chainHash": "a7110aa16e44a664f4d70a69928cc6b1732d57646d4830cf92317fc3090df96b",
+  "createdAt": "2026-10-01T11:47:10.358Z"
+ },
+ {
+  "orgId": "delg-test-org-25",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Critical Root Agent (agent-33d7edea-9ee6-4e65-b9b5-7e4fc385cedc): Test delegation purpose",
+   "delegationId": "delg-3dc4072f-993a-4558-a13d-1b52e888c445",
+   "agentId": "agent-33d7edea-9ee6-4e65-b9b5-7e4fc385cedc",
+   "maximumRisk": "critical",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 68,
+  "prevHash": "a7110aa16e44a664f4d70a69928cc6b1732d57646d4830cf92317fc3090df96b",
+  "chainHash": "3c33b5e5fd4ad93285e18b3311fa14a0d709bfb2011e59827156cae3420dbb16",
+  "createdAt": "2026-10-01T11:47:10.511Z"
+ },
+ {
+  "orgId": "delg-test-org-26",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Restricted Scope Agent\" (agent-5771fd59-04b2-40cd-aeb4-909780b3a69f) created",
+   "agentId": "agent-5771fd59-04b2-40cd-aeb4-909780b3a69f",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "7e6effb299e2101b2cb987d6d45845e49a1dd964897eb01d72cb5e3ff8928b0a",
+  "chainHash": "1fedd463d9f5f39636ddb3a988b7a0f843dcaf8422d17022623b86eb24fba674",
+  "createdAt": "2026-10-01T11:47:10.666Z"
+ },
+ {
+  "orgId": "delg-test-org-26",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Restricted Scope Agent (agent-5771fd59-04b2-40cd-aeb4-909780b3a69f): Test delegation purpose",
+   "delegationId": "delg-8d62a68e-6c08-4373-b917-504d5a49c3e6",
+   "agentId": "agent-5771fd59-04b2-40cd-aeb4-909780b3a69f",
+   "maximumRisk": "high",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "1fedd463d9f5f39636ddb3a988b7a0f843dcaf8422d17022623b86eb24fba674",
+  "chainHash": "743ddf817f4d5a1b4abb774d50b38960b3469906d2322f98e23263549ec5167c",
+  "createdAt": "2026-10-01T11:47:10.799Z"
+ },
+ {
+  "orgId": "delg-test-org-26",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Restricted Scope Agent (agent-5771fd59-04b2-40cd-aeb4-909780b3a69f): Test delegation purpose",
+   "delegationId": "delg-9d6c74c5-3a76-402e-b96a-ddf76d6a5976",
+   "agentId": "agent-5771fd59-04b2-40cd-aeb4-909780b3a69f",
+   "maximumRisk": "medium",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 102,
+  "prevHash": "743ddf817f4d5a1b4abb774d50b38960b3469906d2322f98e23263549ec5167c",
+  "chainHash": "bd35e8dab1ef56d804f70507d71c0d7c8bb9072d12af970ff358c58c449f1cef",
+  "createdAt": "2026-10-01T11:47:10.957Z"
+ },
+ {
+  "orgId": "delg-test-org-27",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Narrow Root Agent\" (agent-9b85caac-470a-4ace-a9a4-42f5865df31c) created",
+   "agentId": "agent-9b85caac-470a-4ace-a9a4-42f5865df31c",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 67,
+  "prevHash": "dac5708bad4e95629c8445bd64ac13f7d2a364011b239032a0595d89e7ce815e",
+  "chainHash": "77cdcb89029ece5c2231db5c94dcda185a9672168a88da8f025084ef220a3793",
+  "createdAt": "2026-10-01T11:47:11.105Z"
+ },
+ {
+  "orgId": "delg-test-org-27",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Narrow Root Agent (agent-9b85caac-470a-4ace-a9a4-42f5865df31c): Test delegation purpose",
+   "delegationId": "delg-0ed4cccf-95e7-489a-a821-fe91da6578d4",
+   "agentId": "agent-9b85caac-470a-4ace-a9a4-42f5865df31c",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 68,
+  "prevHash": "77cdcb89029ece5c2231db5c94dcda185a9672168a88da8f025084ef220a3793",
+  "chainHash": "8ff047bd41f8f7544e82684de9b43181016e5bc5c7c9b0547338177b763b1c6f",
+  "createdAt": "2026-10-01T11:47:11.255Z"
+ },
+ {
+  "orgId": "delg-test-org-28",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Allow Path Agent\" (agent-583e9eb8-f88e-4c23-b16c-c226d23afc94) created",
+   "agentId": "agent-583e9eb8-f88e-4c23-b16c-c226d23afc94",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "f894fbfc4f939fe202c4d4785e880cf4a1fbac59e34a4a0382050f5575a0f36e",
+  "chainHash": "52cb921e1875fd4c0f3f7408b06f05f10d7d4d697432f08394a84c58250d3c6c",
+  "createdAt": "2026-10-01T11:47:11.406Z"
+ },
+ {
+  "orgId": "delg-test-org-28",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Allow Path Agent (agent-583e9eb8-f88e-4c23-b16c-c226d23afc94): Test delegation purpose",
+   "delegationId": "delg-80604300-5139-4c95-a453-23cb7cbaeba3",
+   "agentId": "agent-583e9eb8-f88e-4c23-b16c-c226d23afc94",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "52cb921e1875fd4c0f3f7408b06f05f10d7d4d697432f08394a84c58250d3c6c",
+  "chainHash": "dc8de24740d790ddfbc5a198b8903aec8400054cee04d1f365868f42fd2a44b3",
+  "createdAt": "2026-10-01T11:47:11.536Z"
+ },
+ {
+  "orgId": "delg-test-org-28",
+  "gate": "governance",
+  "eventType": "authorization_allowed",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization ALLOW for agent-583e9eb8-f88e-4c23-b16c-c226d23afc94 (read on postgres:db:main): ALLOW",
+   "agentId": "agent-583e9eb8-f88e-4c23-b16c-c226d23afc94",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "ALLOW",
+   "reason": "ALLOW",
+   "delegationId": "delg-80604300-5139-4c95-a453-23cb7cbaeba3"
+  },
+  "seq": 102,
+  "prevHash": "dc8de24740d790ddfbc5a198b8903aec8400054cee04d1f365868f42fd2a44b3",
+  "chainHash": "e1b279f67e6d2947a51b430d926b73fa84cb76c40325b9f50a498401923948da",
+  "createdAt": "2026-10-01T11:47:11.691Z"
+ },
+ {
+  "orgId": "delg-test-org-29",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Missing Action Agent\" (agent-df3879d2-2665-4ef9-b75c-f038ca88cae3) created",
+   "agentId": "agent-df3879d2-2665-4ef9-b75c-f038ca88cae3",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "b4a803433c0fa3254d15b8a16225402f2b175c458bce570108427d3ad8751105",
+  "chainHash": "f10837c11ae2770195f13b8ba64613cb6fcd8a101013f20a990f3a1aa4911214",
+  "createdAt": "2026-10-01T11:47:11.836Z"
+ },
+ {
+  "orgId": "delg-test-org-29",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Missing Action Agent (agent-df3879d2-2665-4ef9-b75c-f038ca88cae3): Test delegation purpose",
+   "delegationId": "delg-974950e2-12b4-49fe-858b-d66816a163c4",
+   "agentId": "agent-df3879d2-2665-4ef9-b75c-f038ca88cae3",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "f10837c11ae2770195f13b8ba64613cb6fcd8a101013f20a990f3a1aa4911214",
+  "chainHash": "4a35192e687765f084dd5d89f88c9ae8805c69d5c5549ebcb8d7fc536b856bf0",
+  "createdAt": "2026-10-01T11:47:11.990Z"
+ },
+ {
+  "orgId": "delg-test-org-29",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-df3879d2-2665-4ef9-b75c-f038ca88cae3 (write on postgres:db:main): CAPABILITY_MISSING",
+   "agentId": "agent-df3879d2-2665-4ef9-b75c-f038ca88cae3",
+   "action": "write",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "CAPABILITY_MISSING"
+  },
+  "seq": 102,
+  "prevHash": "4a35192e687765f084dd5d89f88c9ae8805c69d5c5549ebcb8d7fc536b856bf0",
+  "chainHash": "489f8fd2ecd184e2a7c89e108569d38d9cf4b8b4c0adb7d1960355c5be59a71d",
+  "createdAt": "2026-10-01T11:47:12.151Z"
+ },
+ {
+  "orgId": "delg-test-org-30",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Wrong Tool Agent\" (agent-b4d6bd30-01eb-45e6-949f-ef4324dedfbf) created",
+   "agentId": "agent-b4d6bd30-01eb-45e6-949f-ef4324dedfbf",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "76ec95245a81c57233bf134198833b1de3c85e8d967f8a542f5c8d079a22dfeb",
+  "chainHash": "0ce71b3f4bb7703608c86d45688df48ac46a7ff905b0b217d77641d516555ab1",
+  "createdAt": "2026-10-01T11:47:12.314Z"
+ },
+ {
+  "orgId": "delg-test-org-30",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Wrong Tool Agent (agent-b4d6bd30-01eb-45e6-949f-ef4324dedfbf): Test delegation purpose",
+   "delegationId": "delg-b52d9523-2983-4a98-95bc-bba9fc7debb7",
+   "agentId": "agent-b4d6bd30-01eb-45e6-949f-ef4324dedfbf",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "0ce71b3f4bb7703608c86d45688df48ac46a7ff905b0b217d77641d516555ab1",
+  "chainHash": "f83cd4596d5b4423df946530ffb28edf3d5ea17d852ea4d85f8adcf825efaf58",
+  "createdAt": "2026-10-01T11:47:12.475Z"
+ },
+ {
+  "orgId": "delg-test-org-30",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-b4d6bd30-01eb-45e6-949f-ef4324dedfbf (read on github:repo:verya): CAPABILITY_MISSING",
+   "agentId": "agent-b4d6bd30-01eb-45e6-949f-ef4324dedfbf",
+   "action": "read",
+   "tool": "github",
+   "resource": "repo:verya",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "CAPABILITY_MISSING"
+  },
+  "seq": 102,
+  "prevHash": "f83cd4596d5b4423df946530ffb28edf3d5ea17d852ea4d85f8adcf825efaf58",
+  "chainHash": "32d2918d249aa4dd2df11a5a50f421820b10407efa90fbc2620d8050184b1374",
+  "createdAt": "2026-10-01T11:47:12.632Z"
+ },
+ {
+  "orgId": "delg-test-org-31",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Resource Scope Agent\" (agent-7884935d-d3e0-4015-b3ce-6e188d689b60) created",
+   "agentId": "agent-7884935d-d3e0-4015-b3ce-6e188d689b60",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 133,
+  "prevHash": "c5b7940cb3b05448abb8ed102dc364f5b95b7fbd5fe635cd679b2c104875f8f3",
+  "chainHash": "f1b5af56ee5aa2ba9fec0efbb3cea590794026eb1f59deaa0c767aff0e99d058",
+  "createdAt": "2026-10-01T11:47:12.775Z"
+ },
+ {
+  "orgId": "delg-test-org-31",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Resource Scope Agent (agent-7884935d-d3e0-4015-b3ce-6e188d689b60): Test delegation purpose",
+   "delegationId": "delg-bb1de543-894f-452f-b0f7-e31650e09290",
+   "agentId": "agent-7884935d-d3e0-4015-b3ce-6e188d689b60",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 134,
+  "prevHash": "f1b5af56ee5aa2ba9fec0efbb3cea590794026eb1f59deaa0c767aff0e99d058",
+  "chainHash": "3ae92336c1c8e29366c402c3e90e89a0f9c6fd292673782d327f8d2fcb3adc02",
+  "createdAt": "2026-10-01T11:47:12.944Z"
+ },
+ {
+  "orgId": "delg-test-org-31",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-7884935d-d3e0-4015-b3ce-6e188d689b60 (read on postgres:db:users): RESOURCE_NOT_ALLOWED",
+   "agentId": "agent-7884935d-d3e0-4015-b3ce-6e188d689b60",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:users",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "RESOURCE_NOT_ALLOWED"
+  },
+  "seq": 135,
+  "prevHash": "3ae92336c1c8e29366c402c3e90e89a0f9c6fd292673782d327f8d2fcb3adc02",
+  "chainHash": "5306b55407da82b673139aee69ffc858b4854aff663f848e60a17452145f7b16",
+  "createdAt": "2026-10-01T11:47:13.072Z"
+ },
+ {
+  "orgId": "delg-test-org-31",
+  "gate": "governance",
+  "eventType": "authorization_allowed",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization ALLOW for agent-7884935d-d3e0-4015-b3ce-6e188d689b60 (read on postgres:db:payments): ALLOW",
+   "agentId": "agent-7884935d-d3e0-4015-b3ce-6e188d689b60",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:payments",
+   "requestedRisk": "low",
+   "decision": "ALLOW",
+   "reason": "ALLOW",
+   "delegationId": "delg-bb1de543-894f-452f-b0f7-e31650e09290"
+  },
+  "seq": 136,
+  "prevHash": "5306b55407da82b673139aee69ffc858b4854aff663f848e60a17452145f7b16",
+  "chainHash": "d44aedc769732dc6a566d3cffd15353c8105338c51dcb8e27aeb53e401e9aa3e",
+  "createdAt": "2026-10-01T11:47:13.202Z"
+ },
+ {
+  "orgId": "delg-test-org-32",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Wrong Scope Agent\" (agent-17f5f0a4-73cc-47af-b4f8-e436e62da154) created",
+   "agentId": "agent-17f5f0a4-73cc-47af-b4f8-e436e62da154",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "d0e7fd206a8c715763c5e6d3c355b3da032166d3cf32797dde7119b4cf3c78ba",
+  "chainHash": "b23087d81a8eae1e889b976d202d3955e580780d976740448c4adb996375f4f4",
+  "createdAt": "2026-10-01T11:47:13.374Z"
+ },
+ {
+  "orgId": "delg-test-org-32",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Wrong Scope Agent (agent-17f5f0a4-73cc-47af-b4f8-e436e62da154): Test delegation purpose",
+   "delegationId": "delg-083b85c5-713b-4e7c-b0a1-c37286660d90",
+   "agentId": "agent-17f5f0a4-73cc-47af-b4f8-e436e62da154",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "b23087d81a8eae1e889b976d202d3955e580780d976740448c4adb996375f4f4",
+  "chainHash": "dfcf1c3e6f1c929171abe0a17f00365044929161d9d51453028c7117aa278ede",
+  "createdAt": "2026-10-01T11:47:13.532Z"
+ },
+ {
+  "orgId": "delg-test-org-32",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-17f5f0a4-73cc-47af-b4f8-e436e62da154 (read on postgres:db:main): OUT_OF_SCOPE",
+   "agentId": "agent-17f5f0a4-73cc-47af-b4f8-e436e62da154",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "OUT_OF_SCOPE"
+  },
+  "seq": 102,
+  "prevHash": "dfcf1c3e6f1c929171abe0a17f00365044929161d9d51453028c7117aa278ede",
+  "chainHash": "60c10bfea76a0b145540fdfe4d6721c82bbaf6f902808b227292fcee699d8e62",
+  "createdAt": "2026-10-01T11:47:13.684Z"
+ },
+ {
+  "orgId": "delg-test-org-33",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Excessive Risk Agent\" (agent-0d22b878-1e4a-4e35-ac29-b160c52cba60) created",
+   "agentId": "agent-0d22b878-1e4a-4e35-ac29-b160c52cba60",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "026838b14c5f029e89aeee08643d4812fe1f725a2ad3b8875ac12184b19e1935",
+  "chainHash": "4426b897e149fde88a25a250d11f088bea7f3759d7c23c364782b72de2444f0e",
+  "createdAt": "2026-10-01T11:47:13.823Z"
+ },
+ {
+  "orgId": "delg-test-org-33",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Excessive Risk Agent (agent-0d22b878-1e4a-4e35-ac29-b160c52cba60): Test delegation purpose",
+   "delegationId": "delg-7c5ec2a7-eeed-4f27-a3bb-061e934890de",
+   "agentId": "agent-0d22b878-1e4a-4e35-ac29-b160c52cba60",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "4426b897e149fde88a25a250d11f088bea7f3759d7c23c364782b72de2444f0e",
+  "chainHash": "8ff1bfe8581507e79367c4c3fdbe45b9d9f95e65a363aa65e1b7e9244ab65361",
+  "createdAt": "2026-10-01T11:47:13.974Z"
+ },
+ {
+  "orgId": "delg-test-org-33",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-0d22b878-1e4a-4e35-ac29-b160c52cba60 (read on postgres:db:main): RISK_EXCEEDED",
+   "agentId": "agent-0d22b878-1e4a-4e35-ac29-b160c52cba60",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "high",
+   "decision": "DENY",
+   "reason": "RISK_EXCEEDED"
+  },
+  "seq": 102,
+  "prevHash": "8ff1bfe8581507e79367c4c3fdbe45b9d9f95e65a363aa65e1b7e9244ab65361",
+  "chainHash": "231a5cc09068dce08411e40db74c42dd60b183f5a345d255be9b042343d70457",
+  "createdAt": "2026-10-01T11:47:14.110Z"
+ },
+ {
+  "orgId": "delg-test-org-34",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Expiry Eval Agent\" (agent-cf92d15b-6753-4b83-bfad-ea23ceb41118) created",
+   "agentId": "agent-cf92d15b-6753-4b83-bfad-ea23ceb41118",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 133,
+  "prevHash": "a7ad717ec0381583bec07e7786f0f5359d905ffc0943846ed23445983754bef3",
+  "chainHash": "27d70efc5d96de927fd0e1c480e51baa235b8e8203ea9f25ac9dcc5cfddcea21",
+  "createdAt": "2026-10-01T11:47:14.250Z"
+ },
+ {
+  "orgId": "delg-test-org-34",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Expiry Eval Agent (agent-cf92d15b-6753-4b83-bfad-ea23ceb41118): Test delegation purpose",
+   "delegationId": "delg-61c4adb9-0d3e-42ee-a275-9c039d6086c4",
+   "agentId": "agent-cf92d15b-6753-4b83-bfad-ea23ceb41118",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-01T11:47:14.361Z"
+  },
+  "seq": 134,
+  "prevHash": "27d70efc5d96de927fd0e1c480e51baa235b8e8203ea9f25ac9dcc5cfddcea21",
+  "chainHash": "ced96aa1a9145e435514f0b44289d02a8a1c120436b7fb466a9623609ca07c04",
+  "createdAt": "2026-10-01T11:47:14.400Z"
+ },
+ {
+  "orgId": "delg-test-org-34",
+  "gate": "governance",
+  "eventType": "delegation_expired",
+  "actor": "system",
+  "detail": {
+   "summary": "Delegation delg-61c4adb9-0d3e-42ee-a275-9c039d6086c4 expired (lazy status repair)",
+   "delegationId": "delg-61c4adb9-0d3e-42ee-a275-9c039d6086c4",
+   "fromStatus": "ACTIVE",
+   "toStatus": "EXPIRED",
+   "version": 2
+  },
+  "seq": 135,
+  "prevHash": "ced96aa1a9145e435514f0b44289d02a8a1c120436b7fb466a9623609ca07c04",
+  "chainHash": "be53902250522584210b8bc80f407a24c2bac94ad4b355c8f5b0de6fb2783f77",
+  "createdAt": "2026-10-01T11:47:14.655Z"
+ },
+ {
+  "orgId": "delg-test-org-34",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-cf92d15b-6753-4b83-bfad-ea23ceb41118 (read on postgres:db:main): EXPIRED",
+   "agentId": "agent-cf92d15b-6753-4b83-bfad-ea23ceb41118",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "EXPIRED"
+  },
+  "seq": 136,
+  "prevHash": "be53902250522584210b8bc80f407a24c2bac94ad4b355c8f5b0de6fb2783f77",
+  "chainHash": "d59d9b5d29bb42868a27712075a9480413579ea9f51f2c4b2ff19467ff4e79c9",
+  "createdAt": "2026-10-01T11:47:14.839Z"
+ },
+ {
+  "orgId": "delg-test-org-35",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Revoked Eval Agent\" (agent-696e6a86-6ebb-40c9-92c6-a5ea54cdfc07) created",
+   "agentId": "agent-696e6a86-6ebb-40c9-92c6-a5ea54cdfc07",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 133,
+  "prevHash": "3b53bcd337158349b220daf37aeb726efb1bc6b54021e75d3ab8c269bc098447",
+  "chainHash": "8c631bb7757545b76fefc2645a633d60afb378eef07a4c862db11fa99fcb85d8",
+  "createdAt": "2026-10-01T11:47:14.992Z"
+ },
+ {
+  "orgId": "delg-test-org-35",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Revoked Eval Agent (agent-696e6a86-6ebb-40c9-92c6-a5ea54cdfc07): Test delegation purpose",
+   "delegationId": "delg-f301caea-0e0a-4eaf-b24b-c41550573eb0",
+   "agentId": "agent-696e6a86-6ebb-40c9-92c6-a5ea54cdfc07",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 134,
+  "prevHash": "8c631bb7757545b76fefc2645a633d60afb378eef07a4c862db11fa99fcb85d8",
+  "chainHash": "ea07d2694ddc2358b054735e14b7b5935f4bcf8bf66d33c87b11211de6f07395",
+  "createdAt": "2026-10-01T11:47:15.122Z"
+ },
+ {
+  "orgId": "delg-test-org-35",
+  "gate": "governance",
+  "eventType": "delegation_revoked",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-f301caea-0e0a-4eaf-b24b-c41550573eb0 transitioned to REVOKED",
+   "delegationId": "delg-f301caea-0e0a-4eaf-b24b-c41550573eb0",
+   "fromStatus": "ACTIVE",
+   "toStatus": "REVOKED"
+  },
+  "seq": 135,
+  "prevHash": "ea07d2694ddc2358b054735e14b7b5935f4bcf8bf66d33c87b11211de6f07395",
+  "chainHash": "9dba9fd7dd20ec2e12ed13d42cf041c1e1fa8ef70d71d706a1701178a9d748f7",
+  "createdAt": "2026-10-01T11:47:15.286Z"
+ },
+ {
+  "orgId": "delg-test-org-35",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-696e6a86-6ebb-40c9-92c6-a5ea54cdfc07 (read on postgres:db:main): REVOKED",
+   "agentId": "agent-696e6a86-6ebb-40c9-92c6-a5ea54cdfc07",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "REVOKED"
+  },
+  "seq": 136,
+  "prevHash": "9dba9fd7dd20ec2e12ed13d42cf041c1e1fa8ef70d71d706a1701178a9d748f7",
+  "chainHash": "fb655322f41f61c2ca788c550e7004c779790ccd2ff623f30e0112e25b925f26",
+  "createdAt": "2026-10-01T11:47:15.430Z"
+ },
+ {
+  "orgId": "delg-test-org-36",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Suspended Eval Agent\" (agent-b56887db-555a-4ad2-bc19-0fdd63a66f75) created",
+   "agentId": "agent-b56887db-555a-4ad2-bc19-0fdd63a66f75",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 133,
+  "prevHash": "77db2f34387c3a5000b13d67f89559b1ef78a9beb30efa1ded4ad1d12b8b1504",
+  "chainHash": "b49aa35a0619ed0f6d82f44d5f173be2d23fd112141a5fc75bc38b5f085563dd",
+  "createdAt": "2026-10-01T11:47:15.552Z"
+ },
+ {
+  "orgId": "delg-test-org-36",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Suspended Eval Agent (agent-b56887db-555a-4ad2-bc19-0fdd63a66f75): Test delegation purpose",
+   "delegationId": "delg-0d1d7f93-c48f-4bde-a1a5-c44648f11a14",
+   "agentId": "agent-b56887db-555a-4ad2-bc19-0fdd63a66f75",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 134,
+  "prevHash": "b49aa35a0619ed0f6d82f44d5f173be2d23fd112141a5fc75bc38b5f085563dd",
+  "chainHash": "03310b858d5358d2f2429fc0e189dfe2e0c1f5963a1b345fa31d2c5009ada212",
+  "createdAt": "2026-10-01T11:47:15.718Z"
+ },
+ {
+  "orgId": "delg-test-org-36",
+  "gate": "governance",
+  "eventType": "delegation_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-0d1d7f93-c48f-4bde-a1a5-c44648f11a14 transitioned to SUSPENDED",
+   "delegationId": "delg-0d1d7f93-c48f-4bde-a1a5-c44648f11a14",
+   "fromStatus": "ACTIVE",
+   "toStatus": "SUSPENDED"
+  },
+  "seq": 135,
+  "prevHash": "03310b858d5358d2f2429fc0e189dfe2e0c1f5963a1b345fa31d2c5009ada212",
+  "chainHash": "441f694558f25745589e58cac45eefea768c9d34ee23af8d877a26c87fcb2b56",
+  "createdAt": "2026-10-01T11:47:15.904Z"
+ },
+ {
+  "orgId": "delg-test-org-36",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-b56887db-555a-4ad2-bc19-0fdd63a66f75 (read on postgres:db:main): SUSPENDED",
+   "agentId": "agent-b56887db-555a-4ad2-bc19-0fdd63a66f75",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "SUSPENDED"
+  },
+  "seq": 136,
+  "prevHash": "441f694558f25745589e58cac45eefea768c9d34ee23af8d877a26c87fcb2b56",
+  "chainHash": "9157c67da9e6d29fb02b8a04d6532aade2c30e9c1e23500e097d3c6b334dd290",
+  "createdAt": "2026-10-01T11:47:16.053Z"
+ },
+ {
+  "orgId": "delg-test-org-37",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Inactive Eval Agent\" (agent-c8df8959-0354-40da-bb7b-c6ccb879a273) created",
+   "agentId": "agent-c8df8959-0354-40da-bb7b-c6ccb879a273",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 133,
+  "prevHash": "e274e9127be2cfc251a331df726e61b38873d49d8fd6a15cc838b3d778297cea",
+  "chainHash": "ea636d65bf3d3936ac85aed40df8fe9e53f838df7194273b3f81aac7465d7fba",
+  "createdAt": "2026-10-01T11:47:16.196Z"
+ },
+ {
+  "orgId": "delg-test-org-37",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Inactive Eval Agent (agent-c8df8959-0354-40da-bb7b-c6ccb879a273): Test delegation purpose",
+   "delegationId": "delg-b6f23658-3ee7-4487-8de6-f64b93c9c756",
+   "agentId": "agent-c8df8959-0354-40da-bb7b-c6ccb879a273",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 134,
+  "prevHash": "ea636d65bf3d3936ac85aed40df8fe9e53f838df7194273b3f81aac7465d7fba",
+  "chainHash": "9b0e4c3c4167dd72d4d985ffa659d99eb391779a6d45cf8a7c64a4ff41ec9e05",
+  "createdAt": "2026-10-01T11:47:16.337Z"
+ },
+ {
+  "orgId": "delg-test-org-37",
+  "gate": "governance",
+  "eventType": "agent_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Inactive Eval Agent\" (agent-c8df8959-0354-40da-bb7b-c6ccb879a273) transition -> suspended",
+   "agentId": "agent-c8df8959-0354-40da-bb7b-c6ccb879a273",
+   "fromStatus": "active",
+   "toStatus": "suspended",
+   "version": 2
+  },
+  "seq": 135,
+  "prevHash": "9b0e4c3c4167dd72d4d985ffa659d99eb391779a6d45cf8a7c64a4ff41ec9e05",
+  "chainHash": "18c6e21e3b3367f4b47154543d4b383b54a44d3ec4bfa09d2d8231431c453821",
+  "createdAt": "2026-10-01T11:47:16.505Z"
+ },
+ {
+  "orgId": "delg-test-org-37",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-c8df8959-0354-40da-bb7b-c6ccb879a273 (read on postgres:db:main): AGENT_INACTIVE",
+   "agentId": "agent-c8df8959-0354-40da-bb7b-c6ccb879a273",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "AGENT_INACTIVE"
+  },
+  "seq": 136,
+  "prevHash": "18c6e21e3b3367f4b47154543d4b383b54a44d3ec4bfa09d2d8231431c453821",
+  "chainHash": "52a74d5d588d65a6802834679e530acb64f7d7442f8e5b17aecd4ed928f5e94a",
+  "createdAt": "2026-10-01T11:47:16.633Z"
+ },
+ {
+  "orgId": "delg-test-org-38",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-does-not-exist (read on postgres:db:main): AGENT_NOT_FOUND",
+   "agentId": "agent-does-not-exist",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "AGENT_NOT_FOUND"
+  },
+  "seq": 34,
+  "prevHash": "196ece02a75bc6e2b906a0da3d3ecbb8aacbe7dbe83a0ab6d48bd2284771d8af",
+  "chainHash": "75c74c52105058618580abbdd621dc124bd856e5206e67b392d63989a30de27a",
+  "createdAt": "2026-10-01T11:47:16.774Z"
+ },
+ {
+  "orgId": "delg-test-org-39",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Unknown Delg Eval Agent\" (agent-d7dcadb2-6d75-42fd-8907-0ee287b74f9c) created",
+   "agentId": "agent-d7dcadb2-6d75-42fd-8907-0ee287b74f9c",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "44454dc618eaa4e76700f760126d9e34f560a8645f1afed19cf10acb2132e197",
+  "chainHash": "176b18afff9e553cdae0443130fce60703e6c3b0ba3ccacb6a7cad5b8c71a2f1",
+  "createdAt": "2026-10-01T11:47:16.935Z"
+ },
+ {
+  "orgId": "delg-test-org-39",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Unknown Delg Eval Agent (agent-d7dcadb2-6d75-42fd-8907-0ee287b74f9c): Test delegation purpose",
+   "delegationId": "delg-d2e0fc51-74b5-47e4-89a7-d79c04b2ae7a",
+   "agentId": "agent-d7dcadb2-6d75-42fd-8907-0ee287b74f9c",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "176b18afff9e553cdae0443130fce60703e6c3b0ba3ccacb6a7cad5b8c71a2f1",
+  "chainHash": "c6718dbcb0a202123d7e806ff79c5ca619e6bb74e19a1daba5aec7a99ebaddfc",
+  "createdAt": "2026-10-01T11:47:17.085Z"
+ },
+ {
+  "orgId": "delg-test-org-39",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-d7dcadb2-6d75-42fd-8907-0ee287b74f9c (read on postgres:db:main): DELEGATION_NOT_FOUND",
+   "agentId": "agent-d7dcadb2-6d75-42fd-8907-0ee287b74f9c",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "DELEGATION_NOT_FOUND"
+  },
+  "seq": 102,
+  "prevHash": "c6718dbcb0a202123d7e806ff79c5ca619e6bb74e19a1daba5aec7a99ebaddfc",
+  "chainHash": "b3e3518933e6851723d1d281b65a0638b1dc31993eb4a6999958c19c9fdce3c2",
+  "createdAt": "2026-10-01T11:47:17.223Z"
+ },
+ {
+  "orgId": "delg-test-org-40a",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Tenant Eval Agent\" (agent-3be22170-9d6d-4b8d-90f3-13637e75c39f) created",
+   "agentId": "agent-3be22170-9d6d-4b8d-90f3-13637e75c39f",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 67,
+  "prevHash": "4815eaa1fa3e04e00f79906c9abed46e2105de48919f83f20a93b7ab311d2d97",
+  "chainHash": "8facee12b06e33e2d142467927f4f375167f52f571086d95fd6b20ecf65d9ec2",
+  "createdAt": "2026-10-01T11:47:17.364Z"
+ },
+ {
+  "orgId": "delg-test-org-40a",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Tenant Eval Agent (agent-3be22170-9d6d-4b8d-90f3-13637e75c39f): Test delegation purpose",
+   "delegationId": "delg-8f8b711b-51c5-47b7-9913-8f85bd90480f",
+   "agentId": "agent-3be22170-9d6d-4b8d-90f3-13637e75c39f",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 68,
+  "prevHash": "8facee12b06e33e2d142467927f4f375167f52f571086d95fd6b20ecf65d9ec2",
+  "chainHash": "7f1dbe7bc11c680d3557d34c396105daccd45c42d91cf90a8a385b6172ec7903",
+  "createdAt": "2026-10-01T11:47:17.527Z"
+ },
+ {
+  "orgId": "delg-test-org-40b",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-3be22170-9d6d-4b8d-90f3-13637e75c39f (read on postgres:db:main): AGENT_NOT_FOUND",
+   "agentId": "agent-3be22170-9d6d-4b8d-90f3-13637e75c39f",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "AGENT_NOT_FOUND"
+  },
+  "seq": 34,
+  "prevHash": "fbb30e0598198c1bd8e193d180b30349c91725a919e1402bfa6d9b48d61acf55",
+  "chainHash": "22a795bb8fa7a4778a1f205f0739350fcc7bb8744100d2a5980f8fa9bdca5d8c",
+  "createdAt": "2026-10-01T11:47:17.657Z"
+ },
+ {
+  "orgId": "",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-x (read on postgres:db:main): TENANT_MISMATCH",
+   "agentId": "agent-x",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "TENANT_MISMATCH"
+  },
+  "seq": 34,
+  "prevHash": "bcf0770f61ccd04864f1f89c992f73fe5fe0f5114135c39072060b8f2c94190a",
+  "chainHash": "7e8961e21a88c2969acdccc04b9097206fa0a4fd0bd40eb9cdb7ed8c9d37bf2e",
+  "createdAt": "2026-10-01T11:47:17.763Z"
+ },
+ {
+  "orgId": "delg-test-org-45",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Audited Delegation Agent\" (agent-0d38cdd5-e4ac-4b37-90e8-eabdb676e2d4) created",
+   "agentId": "agent-0d38cdd5-e4ac-4b37-90e8-eabdb676e2d4",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 199,
+  "prevHash": "d54b42b8e436927db0b08458f906fee646717d8ff060f1777f589d74217a3ba2",
+  "chainHash": "c636797f3d1aab5ee39d9b63caa3d2d03aac3870b6d954b7776618aa4d291a13",
+  "createdAt": "2026-10-01T11:47:17.908Z"
+ },
+ {
+  "orgId": "delg-test-org-45",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Audited Delegation Agent (agent-0d38cdd5-e4ac-4b37-90e8-eabdb676e2d4): Test delegation purpose",
+   "delegationId": "delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7",
+   "agentId": "agent-0d38cdd5-e4ac-4b37-90e8-eabdb676e2d4",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 200,
+  "prevHash": "c636797f3d1aab5ee39d9b63caa3d2d03aac3870b6d954b7776618aa4d291a13",
+  "chainHash": "4ac7a95b2151a392651805416022363f7349a877de065dcf9686355c65651039",
+  "createdAt": "2026-10-01T11:47:18.069Z"
+ },
+ {
+  "orgId": "delg-test-org-45",
+  "gate": "governance",
+  "eventType": "delegation_updated",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7 updated to v2",
+   "delegationId": "delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7",
+   "version": 2
+  },
+  "seq": 201,
+  "prevHash": "4ac7a95b2151a392651805416022363f7349a877de065dcf9686355c65651039",
+  "chainHash": "8e709c1ccff6bb8c9dc449356a49c85183ba98a4331b42a33ec691ed936199bf",
+  "createdAt": "2026-10-01T11:47:18.214Z"
+ },
+ {
+  "orgId": "delg-test-org-45",
+  "gate": "governance",
+  "eventType": "delegation_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7 transitioned to SUSPENDED",
+   "delegationId": "delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7",
+   "fromStatus": "ACTIVE",
+   "toStatus": "SUSPENDED"
+  },
+  "seq": 202,
+  "prevHash": "8e709c1ccff6bb8c9dc449356a49c85183ba98a4331b42a33ec691ed936199bf",
+  "chainHash": "8f7ad86cb5b9532508fb996b5e7e53335089bd9bc14a359bcce41d31db4ac6cd",
+  "createdAt": "2026-10-01T11:47:18.365Z"
+ },
+ {
+  "orgId": "delg-test-org-45",
+  "gate": "governance",
+  "eventType": "delegation_reactivated",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7 transitioned to ACTIVE",
+   "delegationId": "delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7",
+   "fromStatus": "SUSPENDED",
+   "toStatus": "ACTIVE"
+  },
+  "seq": 203,
+  "prevHash": "8f7ad86cb5b9532508fb996b5e7e53335089bd9bc14a359bcce41d31db4ac6cd",
+  "chainHash": "41dbb6f3dbe2c5724cb815428b8618fc06639c1b3040436104e4129c351c5f0a",
+  "createdAt": "2026-10-01T11:47:18.520Z"
+ },
+ {
+  "orgId": "delg-test-org-45",
+  "gate": "governance",
+  "eventType": "delegation_revoked",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7 transitioned to REVOKED",
+   "delegationId": "delg-f30d5994-ae71-46bc-bfe2-7ec1e3cc67d7",
+   "fromStatus": "ACTIVE",
+   "toStatus": "REVOKED"
+  },
+  "seq": 204,
+  "prevHash": "41dbb6f3dbe2c5724cb815428b8618fc06639c1b3040436104e4129c351c5f0a",
+  "chainHash": "868be55cc5ef13d230e85c352b677b2e7d139b0fd7861c84c2fffd05bbcc685f",
+  "createdAt": "2026-10-01T11:47:18.667Z"
+ },
+ {
+  "orgId": "delg-test-org-46",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Audited Eval Agent\" (agent-cb45a8c1-019a-4068-8587-42a75cd28e68) created",
+   "agentId": "agent-cb45a8c1-019a-4068-8587-42a75cd28e68",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 133,
+  "prevHash": "b8dc7c1d26298863e3dd0785a8dfedc095de210eb7c9e1cacd9874473aa43c4a",
+  "chainHash": "a1fd51d60d4d627eb184d2470037304e79a8712d71012bc43169b1de1375db4c",
+  "createdAt": "2026-10-01T11:47:19.057Z"
+ },
+ {
+  "orgId": "delg-test-org-46",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Audited Eval Agent (agent-cb45a8c1-019a-4068-8587-42a75cd28e68): Test delegation purpose",
+   "delegationId": "delg-d24e0cb3-ab41-4c98-ba67-b363670d73b5",
+   "agentId": "agent-cb45a8c1-019a-4068-8587-42a75cd28e68",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 134,
+  "prevHash": "a1fd51d60d4d627eb184d2470037304e79a8712d71012bc43169b1de1375db4c",
+  "chainHash": "006b86e12d50e9313c5bcbe8301fe5bf26a63a240979ea149a62b41532f80a91",
+  "createdAt": "2026-10-01T11:47:19.223Z"
+ },
+ {
+  "orgId": "delg-test-org-46",
+  "gate": "governance",
+  "eventType": "authorization_allowed",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization ALLOW for agent-cb45a8c1-019a-4068-8587-42a75cd28e68 (read on postgres:db:main): ALLOW",
+   "agentId": "agent-cb45a8c1-019a-4068-8587-42a75cd28e68",
+   "action": "read",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "ALLOW",
+   "reason": "ALLOW",
+   "delegationId": "delg-d24e0cb3-ab41-4c98-ba67-b363670d73b5"
+  },
+  "seq": 135,
+  "prevHash": "006b86e12d50e9313c5bcbe8301fe5bf26a63a240979ea149a62b41532f80a91",
+  "chainHash": "dea8f57c2c65f6715f24caade8d1f8002bc63121978fc1edb182c070c8b918c2",
+  "createdAt": "2026-10-01T11:47:19.364Z"
+ },
+ {
+  "orgId": "delg-test-org-46",
+  "gate": "governance",
+  "eventType": "authorization_denied",
+  "actor": "system",
+  "detail": {
+   "summary": "Authorization DENY for agent-cb45a8c1-019a-4068-8587-42a75cd28e68 (write on postgres:db:main): CAPABILITY_MISSING",
+   "agentId": "agent-cb45a8c1-019a-4068-8587-42a75cd28e68",
+   "action": "write",
+   "tool": "postgres",
+   "resource": "db:main",
+   "requestedRisk": "low",
+   "decision": "DENY",
+   "reason": "CAPABILITY_MISSING"
+  },
+  "seq": 136,
+  "prevHash": "dea8f57c2c65f6715f24caade8d1f8002bc63121978fc1edb182c070c8b918c2",
+  "chainHash": "710b335c05af49970f734b0b973803dfc63ea61d8cd3c3c0f4f5e9fa04723512",
+  "createdAt": "2026-10-01T11:47:19.502Z"
+ },
+ {
+  "orgId": "delg-test-org-47",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Inactive Target Agent\" (agent-e99e2273-ee04-42f3-b9bf-20d38c0b040e) created",
+   "agentId": "agent-e99e2273-ee04-42f3-b9bf-20d38c0b040e",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 67,
+  "prevHash": "3aed36cb133e5041ec64a7838c4cdc7cb9fde1dabc91af52209c4f7ec6c4c00e",
+  "chainHash": "6807bcc6ac417424785e70eec6c9f4653c23f3737bc3e74f16c1f9555b5eb709",
+  "createdAt": "2026-10-01T11:47:19.723Z"
+ },
+ {
+  "orgId": "delg-test-org-47",
+  "gate": "governance",
+  "eventType": "agent_suspended",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Inactive Target Agent\" (agent-e99e2273-ee04-42f3-b9bf-20d38c0b040e) transition -> suspended",
+   "agentId": "agent-e99e2273-ee04-42f3-b9bf-20d38c0b040e",
+   "fromStatus": "active",
+   "toStatus": "suspended",
+   "version": 2
+  },
+  "seq": 68,
+  "prevHash": "6807bcc6ac417424785e70eec6c9f4653c23f3737bc3e74f16c1f9555b5eb709",
+  "chainHash": "aa9d4928f37eb46350068ad86272aa6f089745dde784663e8b55f22698a6a3ab",
+  "createdAt": "2026-10-01T11:47:19.881Z"
+ },
+ {
+  "orgId": "delg-test-org-48",
+  "gate": "governance",
+  "eventType": "agent_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Agent \"Update Escalation Agent\" (agent-370fcec4-4d3d-4513-a749-ee563923775a) created",
+   "agentId": "agent-370fcec4-4d3d-4513-a749-ee563923775a",
+   "agentType": "executor",
+   "autonomyLevel": "LEVEL_2",
+   "riskLevel": "medium",
+   "version": 1
+  },
+  "seq": 100,
+  "prevHash": "0a8615b883bef56dd7b3d91569f9541839e7c154313a77a20abab4bc87406276",
+  "chainHash": "93cfde1e40ec7f1237c4872884cef83e57d80827ed764c7d026c41e781259af9",
+  "createdAt": "2026-10-01T11:47:20.034Z"
+ },
+ {
+  "orgId": "delg-test-org-48",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Update Escalation Agent (agent-370fcec4-4d3d-4513-a749-ee563923775a): Test delegation purpose",
+   "delegationId": "delg-0ad4e0a2-3565-4f17-b72a-87fdbaf65979",
+   "agentId": "agent-370fcec4-4d3d-4513-a749-ee563923775a",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 101,
+  "prevHash": "93cfde1e40ec7f1237c4872884cef83e57d80827ed764c7d026c41e781259af9",
+  "chainHash": "ed5e6c0c7004be92f0a27a4cfab82f83a12b34e3ef2edc9a908f562e9d7c18fb",
+  "createdAt": "2026-10-01T11:47:20.246Z"
+ },
+ {
+  "orgId": "delg-test-org-48",
+  "gate": "governance",
+  "eventType": "delegation_created",
+  "actor": "human",
+  "detail": {
+   "summary": "Delegation created for agent Update Escalation Agent (agent-370fcec4-4d3d-4513-a749-ee563923775a): Test delegation purpose",
+   "delegationId": "delg-6ba7e0dc-e99c-42bb-95bc-0f4d6c8c1cd7",
+   "agentId": "agent-370fcec4-4d3d-4513-a749-ee563923775a",
+   "maximumRisk": "low",
+   "expiresAt": "2026-10-02T11:47:00.706Z"
+  },
+  "seq": 102,
+  "prevHash": "ed5e6c0c7004be92f0a27a4cfab82f83a12b34e3ef2edc9a908f562e9d7c18fb",
+  "chainHash": "adb8c942d35798f5e11250c588231f78abafdebc5ca278dc309a47b3c26605a1",
+  "createdAt": "2026-10-01T11:47:20.407Z"
+ },
+ {
+  "orgId": "test-tenant-1a",
+  "sessionId": "758b88f6-f295-439a-939a-f4a273ab9451",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 67,
+  "prevHash": "a0f5cd858e07e562d2fa6f0b095a7b1ba6f38d17da742f2ba3f69c04948110b8",
+  "chainHash": "943297a3878f3cfcb796354196091c57592b8ce3a26d1018f08bc6b0a7b31771",
+  "createdAt": "2026-10-01T11:47:22.656Z"
+ },
+ {
+  "orgId": "test-tenant-1a",
+  "sessionId": "758b88f6-f295-439a-939a-f4a273ab9451",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 3ms total, 0ms provider, 3ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 3,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 3,
+   "outcome": "failed"
+  },
+  "seq": 68,
+  "prevHash": "943297a3878f3cfcb796354196091c57592b8ce3a26d1018f08bc6b0a7b31771",
+  "chainHash": "9ad346ef6bfd41e597a777931c6c229834478a06b6f1579d059c1520c3acbe90",
+  "createdAt": "2026-10-01T11:47:22.798Z"
+ },
+ {
+  "orgId": "test-tenant-2a",
+  "sessionId": "baba8eb0-1784-4246-ba2f-6f3242387250",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 65,
+  "prevHash": "f7c550fc0e6f81db81a7d6152b73c0c67ab6cb588bfb971733485120d1117baa",
+  "chainHash": "bcde6b5683c4ae8af6a21f7792165682e54d1d722443bd5dc06b33ef67a433dc",
+  "createdAt": "2026-10-01T11:47:22.922Z"
+ },
+ {
+  "orgId": "test-tenant-2a",
+  "sessionId": "baba8eb0-1784-4246-ba2f-6f3242387250",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 66,
+  "prevHash": "bcde6b5683c4ae8af6a21f7792165682e54d1d722443bd5dc06b33ef67a433dc",
+  "chainHash": "fb8ce1d158c6f83e55bbd54e2d1d37d5d4d22defa1b4d971bcb619c735ea2fec",
+  "createdAt": "2026-10-01T11:47:23.069Z"
+ },
+ {
+  "orgId": "test-tenant-3a",
+  "sessionId": "e893831d-ffd7-4950-b6f9-4b8a8db9218b",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 67,
+  "prevHash": "a95f8907280aca8ffa117a085e85359f19ba17a2f1a5b8f8c14fbe078dad7a3e",
+  "chainHash": "3de01790c452ca6f3e9d8513c01111109aca7a14920b797390b406f2e8c946f4",
+  "createdAt": "2026-10-01T11:47:23.154Z"
+ },
+ {
+  "orgId": "test-tenant-3a",
+  "sessionId": "e893831d-ffd7-4950-b6f9-4b8a8db9218b",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 68,
+  "prevHash": "3de01790c452ca6f3e9d8513c01111109aca7a14920b797390b406f2e8c946f4",
+  "chainHash": "4b56bb25ebc417b68a78d717968e601070d92de9eb390d0ad892037d48cfd8fb",
+  "createdAt": "2026-10-01T11:47:23.306Z"
+ },
+ {
+  "orgId": "test-tenant-4a",
+  "sessionId": "988e58a7-0bad-4da3-b17f-9c2b0536e22f",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 66,
+  "prevHash": "0b606c099289c85e3756d3c3e0893cf77d5327f4be53c075b8544ff99bd3216e",
+  "chainHash": "c5513ce67fd74359697282f3786e674db5e9a64194c5023ec396208d7c24012e",
+  "createdAt": "2026-10-01T11:47:23.411Z"
+ },
+ {
+  "orgId": "test-tenant-4a",
+  "sessionId": "988e58a7-0bad-4da3-b17f-9c2b0536e22f",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 1ms total, 0ms provider, 1ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 1,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 1,
+   "outcome": "failed"
+  },
+  "seq": 67,
+  "prevHash": "c5513ce67fd74359697282f3786e674db5e9a64194c5023ec396208d7c24012e",
+  "chainHash": "590c4c0e570b566ec4177ef01286cb2fd9aa7a283ea8bda551df02f63d3244c5",
+  "createdAt": "2026-10-01T11:47:23.560Z"
+ },
+ {
+  "orgId": "test-tenant-5a",
+  "sessionId": "c118a841-5c58-4578-9868-0dabbc406000",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 66,
+  "prevHash": "f7232172b7bbfee5e23b8298d51e1906e26c9b1e84d1cefd952c2c156095fd9a",
+  "chainHash": "82074cc7dadb6f010e0a137333bde4475502f6b397db68eb5d7e6828e0ad4c19",
+  "createdAt": "2026-10-01T11:47:23.664Z"
+ },
+ {
+  "orgId": "test-tenant-5a",
+  "sessionId": "c118a841-5c58-4578-9868-0dabbc406000",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 67,
+  "prevHash": "82074cc7dadb6f010e0a137333bde4475502f6b397db68eb5d7e6828e0ad4c19",
+  "chainHash": "acb8d8823d76f8c5e84fb81d3a7b82ab86b8bd3494ae241290f738df075c0bd2",
+  "createdAt": "2026-10-01T11:47:23.805Z"
+ },
+ {
+  "orgId": "test-tenant-5b",
+  "sessionId": "4be143b8-89c3-43af-a206-6816a55659d9",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 64,
+  "prevHash": "6a93761d5e3aa614eaa50697b79b807830366cf7f54e0f3bb81f050530fa961a",
+  "chainHash": "75099d68b9238704ec10bf0af9ea67e9418bb2ca192f8988307670e7efd27d00",
+  "createdAt": "2026-10-01T11:47:23.896Z"
+ },
+ {
+  "orgId": "test-tenant-5b",
+  "sessionId": "4be143b8-89c3-43af-a206-6816a55659d9",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 65,
+  "prevHash": "75099d68b9238704ec10bf0af9ea67e9418bb2ca192f8988307670e7efd27d00",
+  "chainHash": "7975881af3cec049db8ba79e6369fcf4dd7fd1de7993a73c513d35b7d559baf2",
+  "createdAt": "2026-10-01T11:47:24.075Z"
+ },
+ {
+  "orgId": "test-tenant-7a",
+  "sessionId": "c0a529c0-979a-4d02-bcd3-c8deb6eb76ed",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 68,
+  "prevHash": "7f4b37fb3e8c723d35b27df620f68ee904bf437e780350e5d75d1ad358ea9388",
+  "chainHash": "4f829eaab6a8edf2f1e6163455971472781e3e22de1ad5e5861f3aaabca22aca",
+  "createdAt": "2026-10-01T11:47:24.219Z"
+ },
+ {
+  "orgId": "test-tenant-7a",
+  "sessionId": "c0a529c0-979a-4d02-bcd3-c8deb6eb76ed",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 69,
+  "prevHash": "4f829eaab6a8edf2f1e6163455971472781e3e22de1ad5e5861f3aaabca22aca",
+  "chainHash": "8bf645d92d4b79a8f0857116c436150612b5d648425622623f84e4c733721e8a",
+  "createdAt": "2026-10-01T11:47:24.400Z"
+ },
+ {
+  "orgId": "test-tenant-9a",
+  "sessionId": "sess-9a",
+  "gate": "intake",
+  "eventType": "test_event_9a",
+  "detail": {
+   "summary": "Ledger entry for tenant 9A"
+  },
+  "seq": 36,
+  "prevHash": "49dfc77b61ee14a1427759c0e620e81dd0bb6038e1a0f99454dc1468428e3764",
+  "chainHash": "b8f2cbc0ff2377bfad4c24a29a7067903455d75b0781fceda8720967412ee7b8",
+  "createdAt": "2026-10-01T11:47:24.606Z"
+ },
+ {
+  "orgId": "test-tenant-9b",
+  "sessionId": "sess-9b",
+  "gate": "intake",
+  "eventType": "test_event_9b",
+  "detail": {
+   "summary": "Ledger entry for tenant 9B"
+  },
+  "seq": 34,
+  "prevHash": "98df8628399f625749491b1540208b7c1ff8ae0097e0f22877b68c372feb8584",
+  "chainHash": "4bc1c115937c5f34bc8c3cf62e64925d9fd1d658325222e0733a1d6c306a532a",
+  "createdAt": "2026-10-01T11:47:24.719Z"
+ },
+ {
+  "orgId": "test-tenant-10a",
+  "sessionId": "sess-10a-0",
+  "gate": "execution",
+  "eventType": "task_failed",
+  "detail": {
+   "taskCategory": "auth",
+   "summary": "flagged failure for policy test"
+  },
+  "model": "google/gemini-2.5-flash",
+  "seq": 98,
+  "prevHash": "aa80e576aba0d933bc67e906caced3a6971695aebce1b363561b66d59fc32e9e",
+  "chainHash": "2f07ec89523aec493366ece51bb4ba87c5b641c5b454fb6218506c10957938af",
+  "createdAt": "2026-10-01T11:47:24.941Z"
+ },
+ {
+  "orgId": "test-tenant-10a",
+  "sessionId": "sess-10a-1",
+  "gate": "execution",
+  "eventType": "task_failed",
+  "detail": {
+   "taskCategory": "auth",
+   "summary": "flagged failure for policy test"
+  },
+  "model": "google/gemini-2.5-flash",
+  "seq": 99,
+  "prevHash": "2f07ec89523aec493366ece51bb4ba87c5b641c5b454fb6218506c10957938af",
+  "chainHash": "14f9c72f8f4e5b6483074785c13b54d6950a4dd3d390d722f676138502929eda",
+  "createdAt": "2026-10-01T11:47:25.062Z"
+ },
+ {
+  "orgId": "test-tenant-10a",
+  "sessionId": "sess-10a-0",
+  "gate": "execution",
+  "eventType": "task_failed",
+  "detail": {
+   "taskCategory": "auth",
+   "summary": "flagged failure for policy test"
+  },
+  "model": "google/gemini-2.5-flash",
+  "seq": 100,
+  "prevHash": "14f9c72f8f4e5b6483074785c13b54d6950a4dd3d390d722f676138502929eda",
+  "chainHash": "413dacb33430b8d179162950128afb02232fac593e7181390cee3788b4b3ef61",
+  "createdAt": "2026-10-01T11:47:25.175Z"
+ },
+ {
+  "orgId": "test-tenant-12b",
+  "sessionId": "sess-12b",
+  "gate": "intake",
+  "eventType": "compliance_test",
+  "detail": {
+   "summary": "CONFIDENTIAL_TENANT_12B_SECRET_DATA"
+  },
+  "seq": 34,
+  "prevHash": "c2f95ae4b5348997b364c5478af3fa99b01c7811aa1dbd7110bbb7c295a68ca9",
+  "chainHash": "355da8fc8aebab15197235358bfc240fc435517dad9f41a5eb42285c1e8ffc87",
+  "createdAt": "2026-10-01T11:47:25.393Z"
+ },
+ {
+  "orgId": "ws-gate-1-1790855247373",
+  "sessionId": "c55ce693-0a66-4a14-948c-1a12557029b9",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 1,
+  "prevHash": "GENESIS",
+  "chainHash": "ddc97f6f502e12dd5fc8a9f3fc69b1f76a16fcfe3c50fcbdcac2169b0413bab1",
+  "createdAt": "2026-10-01T11:47:27.496Z"
+ },
+ {
+  "orgId": "ws-gate-1-1790855247373",
+  "sessionId": "c55ce693-0a66-4a14-948c-1a12557029b9",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 4ms total, 0ms provider, 4ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 4,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 4,
+   "outcome": "failed"
+  },
+  "seq": 2,
+  "prevHash": "ddc97f6f502e12dd5fc8a9f3fc69b1f76a16fcfe3c50fcbdcac2169b0413bab1",
+  "chainHash": "320f49ce44e0d16493dd619d613e34a3f4ff6fab59b4dcc5b4de6830d2d2d850",
+  "createdAt": "2026-10-01T11:47:27.601Z"
+ },
+ {
+  "orgId": "ws-gate-ties-2-1790855247572",
+  "sessionId": "e0aefd23-d8dc-469d-a39b-6739839dbf4d",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 1,
+  "prevHash": "GENESIS",
+  "chainHash": "8a65906d0b52ddf2f12aec59a5ae9e534e4c7783c441adb3af9fe436558c3cb9",
+  "createdAt": "2026-10-01T11:47:27.739Z"
+ },
+ {
+  "orgId": "ws-gate-ties-2-1790855247572",
+  "sessionId": "e0aefd23-d8dc-469d-a39b-6739839dbf4d",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 2,
+  "prevHash": "8a65906d0b52ddf2f12aec59a5ae9e534e4c7783c441adb3af9fe436558c3cb9",
+  "chainHash": "da02de9119203ade91e3c8f40759ba95201dda5ae4bc5890fa1bdb2045ba2e9e",
+  "createdAt": "2026-10-01T11:47:27.882Z"
+ },
+ {
+  "orgId": "ws-gate-notfinal-3-1790855247929",
+  "sessionId": "db57d92b-61e3-4188-a694-02b27a571011",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 1,
+  "prevHash": "GENESIS",
+  "chainHash": "255134fb8e0c65222800e1742be008bbddd735933f6ac12d26310be6e26d0057",
+  "createdAt": "2026-10-01T11:47:28.013Z"
+ },
+ {
+  "orgId": "ws-gate-notfinal-3-1790855247929",
+  "sessionId": "db57d92b-61e3-4188-a694-02b27a571011",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 2,
+  "prevHash": "255134fb8e0c65222800e1742be008bbddd735933f6ac12d26310be6e26d0057",
+  "chainHash": "73b995a8ef7fa5aa90901f38b6373d62c900d0b5a91f7cd338ffe3edd5791337",
+  "createdAt": "2026-10-01T11:47:28.145Z"
+ },
+ {
+  "orgId": "ws-gate-final-4-1790855248194",
+  "sessionId": "62a376d8-4323-45b0-91e4-494df1ed113f",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 1,
+  "prevHash": "GENESIS",
+  "chainHash": "282ae96072eafca7525f0ada52fd24a138585f73ba9eef8976145e498f03004b",
+  "createdAt": "2026-10-01T11:47:28.299Z"
+ },
+ {
+  "orgId": "ws-gate-final-4-1790855248194",
+  "sessionId": "62a376d8-4323-45b0-91e4-494df1ed113f",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 2,
+  "prevHash": "282ae96072eafca7525f0ada52fd24a138585f73ba9eef8976145e498f03004b",
+  "chainHash": "5911063a6c59fe2a4e119d7d6a631dc6beb71bc347d9af114e8c07d3ff65cf45",
+  "createdAt": "2026-10-01T11:47:28.408Z"
+ },
+ {
+  "orgId": "ws-gate-final-4-1790855248194",
+  "sessionId": "62a376d8-4323-45b0-91e4-494df1ed113f",
+  "gate": "models",
+  "eventType": "models_finalized",
+  "actor": "human",
+  "detail": {
+   "summary": "Human finalized model routing — coding workspace Run unlocked",
+   "routes": 1
+  },
+  "seq": 3,
+  "prevHash": "5911063a6c59fe2a4e119d7d6a631dc6beb71bc347d9af114e8c07d3ff65cf45",
+  "chainHash": "c1cbcf07163373b7ef71d41d714704573525d065d7b06d9a2d378853dfd265a6",
+  "createdAt": "2026-10-01T11:47:28.514Z"
+ },
+ {
+  "orgId": "ws-retry-5-1790855248605",
+  "sessionId": "cd9dc139-67d3-4dad-9f2d-917f16541f1e",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 1,
+  "prevHash": "GENESIS",
+  "chainHash": "f3acd0c37480883826a6d2b5b5e395826af5776c4c1191e4a5309edd7d7af2dd",
+  "createdAt": "2026-10-01T11:47:28.681Z"
+ },
+ {
+  "orgId": "ws-retry-5-1790855248605",
+  "sessionId": "cd9dc139-67d3-4dad-9f2d-917f16541f1e",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 2,
+  "prevHash": "f3acd0c37480883826a6d2b5b5e395826af5776c4c1191e4a5309edd7d7af2dd",
+  "chainHash": "adca6b342a7562a4ba811130b36ffe3e3e89a48d1037e04eed666f61bf25453a",
+  "createdAt": "2026-10-01T11:47:28.861Z"
+ },
+ {
+  "orgId": "ws-iso-a-6-1790855248788",
+  "sessionId": "43c8cecf-2191-4b7e-8770-2fd60948d45e",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 1,
+  "prevHash": "GENESIS",
+  "chainHash": "ff708b765c5875b4ec022d7f6debb73d15df464eecf812689a9f2366ebef94a2",
+  "createdAt": "2026-10-01T11:47:28.980Z"
+ },
+ {
+  "orgId": "ws-iso-a-6-1790855248788",
+  "sessionId": "43c8cecf-2191-4b7e-8770-2fd60948d45e",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 1ms total, 0ms provider, 1ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 1,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 1,
+   "outcome": "failed"
+  },
+  "seq": 2,
+  "prevHash": "ff708b765c5875b4ec022d7f6debb73d15df464eecf812689a9f2366ebef94a2",
+  "chainHash": "d771470e1867e96ab33f2fb48f5971b9c3e3711331c5f03258f5b542661c2b72",
+  "createdAt": "2026-10-01T11:47:29.146Z"
+ },
+ {
+  "orgId": "ws-iso-b-7-1790855248788",
+  "sessionId": "a9166bbf-517f-465e-b0cf-6ba055c558c4",
+  "gate": "intake",
+  "eventType": "injection_scan_clean",
+  "actor": "system",
+  "detail": {
+   "summary": "No prompt-injection patterns detected.",
+   "risk": 0,
+   "findings": []
+  },
+  "seq": 1,
+  "prevHash": "GENESIS",
+  "chainHash": "dccce413511bb6ee14a195bc55746682dc0b37d77f9cc2dde6c4e69da562b82f",
+  "createdAt": "2026-10-01T11:47:29.284Z"
+ },
+ {
+  "orgId": "ws-iso-b-7-1790855248788",
+  "sessionId": "a9166bbf-517f-465e-b0cf-6ba055c558c4",
+  "gate": "suitability",
+  "eventType": "stage_timing",
+  "actor": "system",
+  "detail": {
+   "summary": "suitability stage: 0ms total, 0ms provider, 0ms Verya overhead (0 provider call(s))",
+   "gate": "suitability",
+   "stageMs": 0,
+   "providerMs": 0,
+   "providerCalls": 0,
+   "overheadMs": 0,
+   "outcome": "failed"
+  },
+  "seq": 2,
+  "prevHash": "dccce413511bb6ee14a195bc55746682dc0b37d77f9cc2dde6c4e69da562b82f",
+  "chainHash": "0da625e262c320063b9482277950a496f0e53b9d32e79f5fd004e4a5088c3f51",
+  "createdAt": "2026-10-01T11:47:29.439Z"
  }
 ]

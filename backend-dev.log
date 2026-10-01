@@ -1,0 +1,24 @@
+
+> verya-backend@0.1.0 predev
+> npm run migrate
+
+
+> verya-backend@0.1.0 migrate
+> tsx src/db/migrate.ts
+
+[migrate] skip (applied): 001_init.sql
+[migrate] skip (applied): 002_leads.sql
+[migrate] skip (applied): 003_ledger_correction_reference.sql
+[migrate] skip (applied): 004_policy_suggestions.sql
+[migrate] skip (applied): 005_agent_registry.sql
+[migrate] skip (applied): 006_delegated_authority.sql
+[migrate] done.
+
+> verya-backend@0.1.0 dev
+> tsx watch src/server.ts
+
+[11:51:14] [32mINFO[39m: [36mServer listening at http://127.0.0.1:4000[39m
+[11:51:14] [32mINFO[39m: [36mServer listening at http://10.255.154.1:4000[39m
+[11:51:14] [32mINFO[39m: [36mVerya backend listening on http://localhost:4000[39m
+[11:51:14] [32mINFO[39m: [36mDatabase: Neon Postgres configured[39m
+[11:51:14] [32mINFO[39m: [36mAuth: Clerk (derived from publishable key)[39m

@@ -48,6 +48,10 @@ import type {
 
 const GEMINI_TIMEOUT_MS = Number(process.env.GEMINI_TIMEOUT_MS || 60000);
 const PROVIDER_TIMEOUT_MS = Number(process.env.PROVIDER_TIMEOUT_MS || GEMINI_TIMEOUT_MS);
+// Explicit output ceilings: provider defaults truncate long multi-file JSON payloads
+// mid-file (observed: prisma schema and React context cut off after ~half the file).
+const EXECUTION_MAX_OUTPUT_TOKENS = Number(process.env.VERYA_EXECUTION_MAX_OUTPUT_TOKENS || 16000);
+const DEFAULT_MAX_OUTPUT_TOKENS = Number(process.env.VERYA_MAX_OUTPUT_TOKENS || 8192);
 // Gemini-only structured-output failover chain (same key, per-model daily quotas).
 const GEMINI_FAILOVER_MODELS = (process.env.GEMINI_FAILOVER_MODELS ||
   "gemini-3.5-flash,gemini-3.1-flash-lite,gemini-flash-latest,gemini-3.6-flash")
@@ -205,6 +209,7 @@ async function geminiStructured<S extends z.ZodType>(
         responseSchema: zodToGeminiSchema(zodSchema),
         abortSignal: controller.signal,
         temperature: 0.3,
+        maxOutputTokens: DEFAULT_MAX_OUTPUT_TOKENS,
       },
     });
     const text = response.text ?? "";
@@ -225,7 +230,7 @@ async function chatCompatible(
   model: string,
   system: string,
   user: string,
-  opts: { json?: boolean; jsonHint?: string; timeoutMs?: number }
+  opts: { json?: boolean; jsonHint?: string; timeoutMs?: number; maxOutputTokens?: number }
 ): Promise<ChatResult> {
   const started = Date.now();
   const controller = new AbortController();
@@ -245,6 +250,7 @@ async function chatCompatible(
           { role: "user", content: userContent },
         ],
         temperature: 0.3,
+        max_tokens: opts.maxOutputTokens ?? DEFAULT_MAX_OUTPUT_TOKENS,
         ...(opts.json ? { response_format: { type: "json_object" } } : {}),
       }),
       signal: controller.signal,
@@ -651,6 +657,9 @@ export async function runModelText(
       try {
         const res = await chatCompatible(provider, model, system, user, {
           timeoutMs: PROVIDER_TIMEOUT_MS * 2,
+          // Execution/preview tasks emit multi-file JSON — they need the big ceiling;
+          // verification/audit replies are prose and stay on the default.
+          maxOutputTokens: stage === "execution" ? EXECUTION_MAX_OUTPUT_TOKENS : DEFAULT_MAX_OUTPUT_TOKENS,
         });
         return { ...res, servedBy: model };
       } catch (err) {

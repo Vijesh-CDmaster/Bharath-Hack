@@ -1,64 +1,13 @@
+
+> verya-app@0.1.0 dev
+> next dev --turbopack
+
    ▲ Next.js 15.5.25 (Turbopack)
-   - Local:        http://localhost:3000
-   - Network:      http://172.16.45.103:3000
+   - Local:        http://localhost:58960
+   - Network:      http://10.255.154.1:58960
    - Environments: .env.local
 
  ✓ Starting...
  ○ Compiling middleware ...
- ✓ Compiled middleware in 559ms
- ✓ Ready in 4.2s
- ○ Compiling / ...
- ✓ Compiled / in 5.7s
-Attention: Clerk collects telemetry data from its SDKs when connected to development instances.
-The data collected is used to inform Clerk's product roadmap.
-To learn more, including how to opt-out from the telemetry program, visit: https://clerk.com/docs/telemetry.
-
- GET / 200 in 7496ms
- GET / 200 in 938ms
- ○ Compiling /workspace ...
- ✓ Compiled /workspace in 1537ms
- GET /workspace 200 in 1862ms
- ✓ Compiled in 460ms
- ✓ Compiled in 327ms
- ✓ Compiled in 366ms
- ✓ Compiled in 400ms
- ✓ Compiled in 341ms
- ✓ Compiled in 606ms
- ✓ Compiled in 379ms
- ✓ Compiled in 449ms
- ✓ Compiled in 421ms
- GET / 200 in 1107ms
- ✓ Compiled in 460ms
- ✓ Compiled in 649ms
- ✓ Compiled in 651ms
- ✓ Compiled in 524ms
- ✓ Compiled in 532ms
- GET / 200 in 779ms
- ○ Compiling /favicon.ico ...
- ✓ Compiled /favicon.ico in 844ms
- GET /workspace 200 in 2169ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 2866ms
- ✓ Compiled in 394ms
- ✓ Compiled in 459ms
- ✓ Compiled in 669ms
- GET / 200 in 1992ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 2401ms
- GET /workspace 200 in 2351ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 570ms
- ✓ Compiled in 371ms
- ✓ Compiled in 547ms
- ✓ Compiled in 399ms
- GET /workspace 200 in 1920ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 2043ms
- GET / 200 in 1005ms
- GET /?session=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6&view=ide 200 in 999ms
- ✓ Compiled in 474ms
- GET / 200 in 685ms
- GET /?session=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6&view=ide 200 in 871ms
- GET /workspace?session=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6&view=ide 200 in 1882ms
- ○ Compiling /_error ...
- ✓ Compiled /_error in 2.5s
- GET / 200 in 852ms
- ○ Compiling /_not-found/page ...
- ✓ Compiled /_not-found/page in 1145ms
- GET /restaurants.html 404 in 1687ms
+ ✓ Compiled middleware in 1218ms
+ ✓ Ready in 12.8s

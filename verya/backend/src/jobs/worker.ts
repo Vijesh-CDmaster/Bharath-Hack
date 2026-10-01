@@ -17,7 +17,7 @@ import { certificateFor } from "../lib/certificates";
 import { codeArtifactOf, type ExecutionResult, type PipelineSession } from "../schemas/pipeline";
 import { applyFileOpToSession } from "../services/workspace";
 import { extractFileOps } from "../services/fileops";
-import { assertModelsFinalized } from "../services/execution";
+import { assertModelsFinalized, ensureBudgetSizedToPlan } from "../services/execution";
 import { ensurePreviewEntry, ensureProjectScaffolding } from "../services/scaffold";
 
 async function executeSession(orgId: string, sessionId: string): Promise<void> {
@@ -26,6 +26,7 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
   // Same explicit Models-finalized gate as the inline HTTP path — no bypass via the queue.
   assertModelsFinalized(session);
   session.trustBudget ??= { initial: initialTrustBudget(), remaining: initialTrustBudget(), consumed: 0, status: "active" };
+  await ensureBudgetSizedToPlan(orgId, sessionId, session);
 
   const stackText = stackTextOf(session);
   const done = new Set(session.executions.map((e) => e.taskId));
@@ -53,6 +54,9 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
       session.trustBudget.status = "exhausted";
       session.gateStatus = "awaiting_user";
       await recordToLedger({ orgId, sessionId, gate: "execution", eventType: "trust_budget_exhausted", actor: "system", detail: { summary: `Trust budget paused before ${task.title}`, required: budgetCost, budget: session.trustBudget } });
+      // Paused ≠ broken: scaffold + preview entry must exist for the workspace too.
+      await ensureProjectScaffolding(orgId, session);
+      await ensurePreviewEntry(orgId, session);
       await saveSession(orgId, session);
       return;
     }
@@ -91,6 +95,17 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
       const verification = needsSecondModel
         ? await geminiAdapters.verifyOutput({ task, algorithm, output: exec.output, model })
         : await geminiAdapters.verifyRulesOnly({ task, output: exec.output });
+
+      // File-aware check (same rule as the inline executor): a coding task whose
+      // output contained no file operations cannot count as "verified".
+      if (ops.length === 0 && task.category !== "documentation") {
+        verification.passed = false;
+        verification.issues = [
+          ...verification.issues,
+          "No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks).",
+        ].slice(0, 12);
+        verification.checkedBy = `${verification.checkedBy} + fileops`;
+      }
 
       const external = await checkExternalReferences(exec.output);
       if (!external.passed) {

@@ -37,6 +37,9 @@ export function extractNpmReferences(code: string): string[] {
       // Strip relative/absolute paths and subpaths: 'pkg/sub' → 'pkg', '@scope/pkg/sub' stays scoped.
       let dep = raw;
       if (dep.startsWith(".") || dep.startsWith("/")) continue;
+      // TypeScript/webpack path aliases ("@/lib/db", "~/components/x") are project-internal
+      // imports, not registry packages — an empty scope must never be registry-checked.
+      if (dep.startsWith("@/") || dep.startsWith("~/")) continue;
       if (dep.startsWith("@")) {
         dep = dep.split("/").slice(0, 2).join("/");
       } else {

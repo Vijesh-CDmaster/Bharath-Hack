@@ -40,6 +40,7 @@ export async function startExecution(orgId: string, sessionId: string): Promise<
   session.gate = "execution";
   session.gateStatus = "running";
   session.trustBudget ??= { initial: initialTrustBudget(), remaining: initialTrustBudget(), consumed: 0, status: "active" };
+  await ensureBudgetSizedToPlan(orgId, sessionId, session);
   await saveSession(orgId, session);
 
   // With Redis configured, actOnPipeline already enqueued this session to BullMQ —
@@ -66,6 +67,37 @@ export async function startExecution(orgId: string, sessionId: string): Promise<
       .finally(() => executing.delete(sessionId));
   }
   return { session };
+}
+
+/**
+ * Size the trust budget to the APPROVED plan: the task list was explicitly confirmed
+ * by the human at the Tasks gate, so it — not a generic default — defines the cost.
+ * A fresh run must never die mid-build just because the plan has more (riskier) tasks
+ * than the default allowance (e.g. 9 tasks ≈ 145 units vs the default 100).
+ * Only applies to a fresh run (nothing executed, nothing consumed yet).
+ */
+export async function ensureBudgetSizedToPlan(
+  orgId: string,
+  sessionId: string,
+  session: PipelineSession
+): Promise<void> {
+  if (!session.trustBudget || !session.workflow) return;
+  if (session.executions.length > 0 || session.trustBudget.consumed > 0) return;
+  const planCost = session.workflow.tasks.reduce((sum, t) => sum + trustCostFor(t.risk), 0);
+  const sized = Math.max(session.trustBudget.initial, planCost);
+  if (sized === session.trustBudget.initial) return;
+  session.trustBudget = { ...session.trustBudget, initial: sized, remaining: sized };
+  await recordToLedger({
+    orgId,
+    sessionId,
+    gate: "execution",
+    eventType: "trust_budget_sized",
+    actor: "system",
+    detail: {
+      summary: `Trust budget sized to the approved plan: ${sized} units for ${session.workflow.tasks.length} task(s)`,
+      budget: session.trustBudget,
+    },
+  });
 }
 
 /** Re-run exactly one failed task (Part 16): clears its result, restarts the loop. */
@@ -174,6 +206,10 @@ export async function runExecution(orgId: string, sessionId: string): Promise<{ 
       session.trustBudget = { ...(session.trustBudget ?? { initial: initialTrustBudget(), remaining: 0, consumed: 0 }), status: "exhausted" };
       session.gateStatus = "awaiting_user";
       await recordToLedger({ orgId, sessionId, gate: "execution", eventType: "trust_budget_exhausted", actor: "system", detail: { summary: `Trust budget paused before ${task.title}`, required: budgetCost, budget: session.trustBudget } });
+      // Paused ≠ broken: whatever exists so far must still be previewable and
+      // properly scaffolded when the user opens the workspace.
+      await ensureProjectScaffolding(orgId, session);
+      await ensurePreviewEntry(orgId, session);
       await saveSession(orgId, session);
       return { session };
     }
@@ -239,6 +275,7 @@ export async function runExecution(orgId: string, sessionId: string): Promise<{ 
       // File-aware check: a task that produced NO usable file operations while its
       // approach expects deliverables cannot be "verified" as a coding task.
       if (filesChanged === 0 && ops.length === 0 && task.category !== "documentation") {
+        verification.passed = false; // a coding task that produced no files is a failure, not a pass
         verification.issues = [
           ...verification.issues,
           "No structured file operations found in model output (expected {files:[...]} JSON or path-declared code blocks).",

@@ -130,9 +130,13 @@ RESPOND WITH EXACTLY ONE JSON OBJECT, no prose outside it:
 }
 
 RULES:
+- The "files" array is MANDATORY: every coding task MUST emit at least one file.
+  An empty "files" array or a text-only answer is a FAILED response.
 - "path" is a RELATIVE path inside the project (e.g. "src/lib/auth.ts", "prisma/schema.prisma", "package.json"). NEVER absolute paths, never "..", never drive letters.
 - "operation" is "create" for new files, "update" to rewrite an existing file in full, "delete" with empty content.
 - "content" is the COMPLETE file content, ready to compile — no markdown fences inside it, no commentary.
+- Every file in "files" MUST be complete: if you are running out of room, emit FEWER files — never a truncated file (a file that ends mid-function, mid-object, or mid-tag is invalid).
+- Keep JSON valid: escape newlines and quotes inside "content" correctly; close every brace and bracket.
 - Emit only files this task genuinely delivers. Code goes in source files (.ts/.tsx/.prisma/.json/.sql/.py ...); a design explanation may be "docs/<topic>.md".
 - Follow the chosen approach; respect the stack.
 
