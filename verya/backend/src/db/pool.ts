@@ -43,6 +43,14 @@ export const pool: PgPool = forceTcp
       connectionTimeoutMillis: 15000,
     }) as unknown as PgPoolType);
 
+// A dropped WebSocket (idle Neon connection closed by the network/CDN) surfaces as
+// an "error" event on the pool. Without a listener, Node turns it into an
+// uncaught exception and KILLS the whole API process. Log and keep serving —
+// the next query opens a fresh connection; in-flight queries get their own error.
+pool.on("error", (err: Error) => {
+  console.warn("[db] idle pool client error (connection will be re-established):", err.message);
+});
+
 export async function query<T = unknown>(text: string, params?: unknown[]): Promise<T[]> {
   const res = await pool.query(text, params as never[]);
   return res.rows as T[];

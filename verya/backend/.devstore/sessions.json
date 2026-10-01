@@ -21978,5 +21978,2521 @@
    },
    "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
   }
+ },
+ {
+  "id": "f1cf97cf-8f48-4d37-a1db-38190e188453",
+  "orgId": "ws-gate-1-1790837674990",
+  "title": "Build a small note-taking API with search",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T06:54:35.031Z",
+  "updatedAt": "2026-10-01T06:54:35.504Z",
+  "state": {
+   "id": "f1cf97cf-8f48-4d37-a1db-38190e188453",
+   "createdAt": "2026-10-01T06:54:34.990Z",
+   "updatedAt": "2026-10-01T06:54:35.458Z",
+   "input": "Build a small note-taking API with search",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T06:54:34.993Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "880635a5-3964-49c5-93a0-808ee1e4920b",
+  "orgId": "ws-gate-ties-2-1790837675251",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T06:54:35.391Z",
+  "updatedAt": "2026-10-01T06:54:35.899Z",
+  "state": {
+   "id": "880635a5-3964-49c5-93a0-808ee1e4920b",
+   "createdAt": "2026-10-01T06:54:35.251Z",
+   "updatedAt": "2026-10-01T06:54:35.869Z",
+   "input": "Build a small invoicing API with recurring billing",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": true,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T06:54:35.252Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "69df9b0c-2375-4ea3-800e-553e02a6bb25",
+  "orgId": "ws-gate-notfinal-3-1790837675808",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T06:54:35.833Z",
+  "updatedAt": "2026-10-01T06:54:36.366Z",
+  "state": {
+   "id": "69df9b0c-2375-4ea3-800e-553e02a6bb25",
+   "createdAt": "2026-10-01T06:54:35.808Z",
+   "updatedAt": "2026-10-01T06:54:36.305Z",
+   "input": "Build a small URL shortener with analytics",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T06:54:35.808Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "77a2b35a-08ec-4c4c-b902-60c4c0f21174",
+  "orgId": "ws-gate-final-4-1790837676247",
+  "title": "T",
+  "gate": "execution",
+  "gateStatus": "pending",
+  "createdAt": "2026-10-01T06:54:36.265Z",
+  "updatedAt": "2026-10-01T06:54:37.020Z",
+  "state": {
+   "id": "77a2b35a-08ec-4c4c-b902-60c4c0f21174",
+   "createdAt": "2026-10-01T06:54:36.249Z",
+   "updatedAt": "2026-10-01T06:54:37.002Z",
+   "input": "Build a small habit tracker with streaks",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "execution",
+   "gateStatus": "pending",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T06:54:36.249Z"
+   },
+   "modelsFinalized": true
+  }
+ },
+ {
+  "id": "ea806932-05fe-46f5-a7ec-35e765918b4b",
+  "orgId": "ws-retry-5-1790837677052",
+  "title": "Build a small wiki API with versioning",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T06:54:37.084Z",
+  "updatedAt": "2026-10-01T06:54:37.523Z",
+  "state": {
+   "id": "ea806932-05fe-46f5-a7ec-35e765918b4b",
+   "createdAt": "2026-10-01T06:54:37.056Z",
+   "updatedAt": "2026-10-01T06:54:37.480Z",
+   "input": "Build a small wiki API with versioning",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T06:54:37.056Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "6d8c91bd-c5a6-4a88-9d7c-11eada3f666a",
+  "orgId": "ws-iso-a-6-1790837677294",
+  "title": "Org A project: task board with comments",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T06:54:37.312Z",
+  "updatedAt": "2026-10-01T06:54:37.878Z",
+  "state": {
+   "id": "6d8c91bd-c5a6-4a88-9d7c-11eada3f666a",
+   "createdAt": "2026-10-01T06:54:37.294Z",
+   "updatedAt": "2026-10-01T06:54:37.841Z",
+   "input": "Org A project: task board with comments",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T06:54:37.294Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "4f6e8597-9f31-4bd5-a805-879cad8960fb",
+  "orgId": "ws-iso-b-7-1790837677294",
+  "title": "Org B project: recipe box with tags",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T06:54:37.665Z",
+  "updatedAt": "2026-10-01T06:54:38.181Z",
+  "state": {
+   "id": "4f6e8597-9f31-4bd5-a805-879cad8960fb",
+   "createdAt": "2026-10-01T06:54:37.635Z",
+   "updatedAt": "2026-10-01T06:54:38.167Z",
+   "input": "Org B project: recipe box with tags",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T06:54:37.636Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "54ca32ae-c256-459a-892c-d8d594f7c4d3",
+  "orgId": "agent-test-org-23",
+  "title": "Build a customer feedback workflow for mobile app",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:17.793Z",
+  "updatedAt": "2026-10-01T07:14:18.261Z",
+  "state": {
+   "id": "54ca32ae-c256-459a-892c-d8d594f7c4d3",
+   "createdAt": "2026-10-01T07:14:17.775Z",
+   "updatedAt": "2026-10-01T07:14:18.241Z",
+   "input": "Build a customer feedback workflow for mobile app",
+   "statedStack": "React Native, Fastify",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:17.779Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "3e715258-110c-44ac-895a-408d0bc76abf",
+  "orgId": "test-tenant-1a",
+  "title": "Build an inventory management system with real-time tracking",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:54.652Z",
+  "updatedAt": "2026-10-01T07:14:55.097Z",
+  "state": {
+   "id": "3e715258-110c-44ac-895a-408d0bc76abf",
+   "createdAt": "2026-10-01T07:14:54.629Z",
+   "updatedAt": "2026-10-01T07:14:55.014Z",
+   "input": "Build an inventory management system with real-time tracking.",
+   "statedStack": "Next.js, Postgres",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:54.633Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "dafdb173-45c1-4a5d-906b-5ff3f0fc1e99",
+  "orgId": "test-tenant-2a",
+  "title": "Build a customer feedback portal with analytics dashboard.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:54.838Z",
+  "updatedAt": "2026-10-01T07:14:55.401Z",
+  "state": {
+   "id": "dafdb173-45c1-4a5d-906b-5ff3f0fc1e99",
+   "createdAt": "2026-10-01T07:14:54.824Z",
+   "updatedAt": "2026-10-01T07:14:55.320Z",
+   "input": "Build a customer feedback portal with analytics dashboard.",
+   "statedStack": "React, Node.js",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:54.824Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "130f0840-93e7-4f62-989c-98935a885a63",
+  "orgId": "test-tenant-3a",
+  "title": "Build an invoice processing workflow for finance teams.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:55.167Z",
+  "updatedAt": "2026-10-01T07:14:55.675Z",
+  "state": {
+   "id": "130f0840-93e7-4f62-989c-98935a885a63",
+   "createdAt": "2026-10-01T07:14:55.153Z",
+   "updatedAt": "2026-10-01T07:14:55.635Z",
+   "input": "Build an invoice processing workflow for finance teams.",
+   "statedStack": "TypeScript, Python",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:55.153Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "67ab0a2f-f7f0-48df-93b6-d3b30a5c5465",
+  "orgId": "test-tenant-4a",
+  "title": "Build a document archive system with strict retention.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:55.494Z",
+  "updatedAt": "2026-10-01T07:14:56.146Z",
+  "state": {
+   "id": "67ab0a2f-f7f0-48df-93b6-d3b30a5c5465",
+   "createdAt": "2026-10-01T07:14:55.466Z",
+   "updatedAt": "2026-10-01T07:14:56.067Z",
+   "input": "Build a document archive system with strict retention.",
+   "statedStack": "Fastify, PostgreSQL",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:55.466Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "4c0756ed-ddfc-474d-8625-bd837dfea44f",
+  "orgId": "test-tenant-5a",
+  "title": "Workflow for tenant 5A",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:55.861Z",
+  "updatedAt": "2026-10-01T07:14:56.650Z",
+  "state": {
+   "id": "4c0756ed-ddfc-474d-8625-bd837dfea44f",
+   "createdAt": "2026-10-01T07:14:55.841Z",
+   "updatedAt": "2026-10-01T07:14:56.516Z",
+   "input": "Workflow for tenant 5A",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:55.841Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "2d063448-877a-4435-ac11-db6b9ca5ee11",
+  "orgId": "test-tenant-5b",
+  "title": "Workflow for tenant 5B",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:56.322Z",
+  "updatedAt": "2026-10-01T07:14:57.022Z",
+  "state": {
+   "id": "2d063448-877a-4435-ac11-db6b9ca5ee11",
+   "createdAt": "2026-10-01T07:14:56.285Z",
+   "updatedAt": "2026-10-01T07:14:56.980Z",
+   "input": "Workflow for tenant 5B",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:56.285Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "4541746c-0eab-4df2-89f5-980770651ef7",
+  "orgId": "test-tenant-7a",
+  "title": "Workflow for worker isolation test",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:14:56.904Z",
+  "updatedAt": "2026-10-01T07:14:57.528Z",
+  "state": {
+   "id": "4541746c-0eab-4df2-89f5-980770651ef7",
+   "createdAt": "2026-10-01T07:14:56.784Z",
+   "updatedAt": "2026-10-01T07:14:57.510Z",
+   "input": "Workflow for worker isolation test",
+   "statedStack": "Node.js",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:14:56.784Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "f90b90c6-3196-4e1c-a6ec-494e5abf44e2",
+  "orgId": "ws-gate-1-1790838900734",
+  "title": "Build a small note-taking API with search",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:15:00.773Z",
+  "updatedAt": "2026-10-01T07:15:01.156Z",
+  "state": {
+   "id": "f90b90c6-3196-4e1c-a6ec-494e5abf44e2",
+   "createdAt": "2026-10-01T07:15:00.735Z",
+   "updatedAt": "2026-10-01T07:15:01.124Z",
+   "input": "Build a small note-taking API with search",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:15:00.737Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "3189c62f-bf8e-4622-b97f-4ea5de884e1a",
+  "orgId": "ws-gate-ties-2-1790838900972",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:15:01.051Z",
+  "updatedAt": "2026-10-01T07:15:01.447Z",
+  "state": {
+   "id": "3189c62f-bf8e-4622-b97f-4ea5de884e1a",
+   "createdAt": "2026-10-01T07:15:00.972Z",
+   "updatedAt": "2026-10-01T07:15:01.428Z",
+   "input": "Build a small invoicing API with recurring billing",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": true,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:15:00.972Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "76f7399b-c9a4-432b-90b8-1e9e1dc80ae0",
+  "orgId": "ws-gate-notfinal-3-1790838901401",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:15:01.409Z",
+  "updatedAt": "2026-10-01T07:15:01.792Z",
+  "state": {
+   "id": "76f7399b-c9a4-432b-90b8-1e9e1dc80ae0",
+   "createdAt": "2026-10-01T07:15:01.401Z",
+   "updatedAt": "2026-10-01T07:15:01.753Z",
+   "input": "Build a small URL shortener with analytics",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:15:01.401Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "56a9cca1-2a24-483f-a457-f7ca5a371f51",
+  "orgId": "ws-gate-final-4-1790838901743",
+  "title": "T",
+  "gate": "execution",
+  "gateStatus": "pending",
+  "createdAt": "2026-10-01T07:15:01.759Z",
+  "updatedAt": "2026-10-01T07:15:02.334Z",
+  "state": {
+   "id": "56a9cca1-2a24-483f-a457-f7ca5a371f51",
+   "createdAt": "2026-10-01T07:15:01.744Z",
+   "updatedAt": "2026-10-01T07:15:02.308Z",
+   "input": "Build a small habit tracker with streaks",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "execution",
+   "gateStatus": "pending",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:15:01.745Z"
+   },
+   "modelsFinalized": true
+  }
+ },
+ {
+  "id": "c5c41cdb-dfef-44e9-bb39-2cf2b24a867c",
+  "orgId": "ws-retry-5-1790838902359",
+  "title": "Build a small wiki API with versioning",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:15:02.375Z",
+  "updatedAt": "2026-10-01T07:15:02.850Z",
+  "state": {
+   "id": "c5c41cdb-dfef-44e9-bb39-2cf2b24a867c",
+   "createdAt": "2026-10-01T07:15:02.360Z",
+   "updatedAt": "2026-10-01T07:15:02.830Z",
+   "input": "Build a small wiki API with versioning",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:15:02.360Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "8b33e932-a0f6-4f6e-b2c7-e73ea0e223c6",
+  "orgId": "ws-iso-a-6-1790838902613",
+  "title": "Org A project: task board with comments",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:15:02.630Z",
+  "updatedAt": "2026-10-01T07:15:03.349Z",
+  "state": {
+   "id": "8b33e932-a0f6-4f6e-b2c7-e73ea0e223c6",
+   "createdAt": "2026-10-01T07:15:02.613Z",
+   "updatedAt": "2026-10-01T07:15:03.285Z",
+   "input": "Org A project: task board with comments",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:15:02.613Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "25b75c98-4416-4eca-98c2-e01372a74165",
+  "orgId": "ws-iso-b-7-1790838902613",
+  "title": "Org B project: recipe box with tags",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:15:03.027Z",
+  "updatedAt": "2026-10-01T07:15:03.730Z",
+  "state": {
+   "id": "25b75c98-4416-4eca-98c2-e01372a74165",
+   "createdAt": "2026-10-01T07:15:02.982Z",
+   "updatedAt": "2026-10-01T07:15:03.715Z",
+   "input": "Org B project: recipe box with tags",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:15:02.982Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "472fa49f-e32a-43aa-9518-ad3aa02cd990",
+  "orgId": "test-tenant-1a",
+  "title": "Build an inventory management system with real-time tracking",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:39.472Z",
+  "updatedAt": "2026-10-01T07:34:39.962Z",
+  "state": {
+   "id": "472fa49f-e32a-43aa-9518-ad3aa02cd990",
+   "createdAt": "2026-10-01T07:34:39.448Z",
+   "updatedAt": "2026-10-01T07:34:39.875Z",
+   "input": "Build an inventory management system with real-time tracking.",
+   "statedStack": "Next.js, Postgres",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:39.452Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "a5d79dd8-ced8-4fd6-a52f-efd624acb6c1",
+  "orgId": "test-tenant-2a",
+  "title": "Build a customer feedback portal with analytics dashboard.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:39.694Z",
+  "updatedAt": "2026-10-01T07:34:40.296Z",
+  "state": {
+   "id": "a5d79dd8-ced8-4fd6-a52f-efd624acb6c1",
+   "createdAt": "2026-10-01T07:34:39.677Z",
+   "updatedAt": "2026-10-01T07:34:40.241Z",
+   "input": "Build a customer feedback portal with analytics dashboard.",
+   "statedStack": "React, Node.js",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:39.677Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "315b236a-8fee-444d-a10c-1d52505090fc",
+  "orgId": "test-tenant-3a",
+  "title": "Build an invoice processing workflow for finance teams.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:40.047Z",
+  "updatedAt": "2026-10-01T07:34:40.814Z",
+  "state": {
+   "id": "315b236a-8fee-444d-a10c-1d52505090fc",
+   "createdAt": "2026-10-01T07:34:40.026Z",
+   "updatedAt": "2026-10-01T07:34:40.681Z",
+   "input": "Build an invoice processing workflow for finance teams.",
+   "statedStack": "TypeScript, Python",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:40.026Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "32fee7f0-72b3-4ea2-a02a-f27c71dccf28",
+  "orgId": "test-tenant-4a",
+  "title": "Build a document archive system with strict retention.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:40.500Z",
+  "updatedAt": "2026-10-01T07:34:41.322Z",
+  "state": {
+   "id": "32fee7f0-72b3-4ea2-a02a-f27c71dccf28",
+   "createdAt": "2026-10-01T07:34:40.482Z",
+   "updatedAt": "2026-10-01T07:34:41.197Z",
+   "input": "Build a document archive system with strict retention.",
+   "statedStack": "Fastify, PostgreSQL",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:40.482Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "a780d46d-464a-45f5-ac56-5ee2fa184f07",
+  "orgId": "test-tenant-5a",
+  "title": "Workflow for tenant 5A",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:40.958Z",
+  "updatedAt": "2026-10-01T07:34:41.699Z",
+  "state": {
+   "id": "a780d46d-464a-45f5-ac56-5ee2fa184f07",
+   "createdAt": "2026-10-01T07:34:40.933Z",
+   "updatedAt": "2026-10-01T07:34:41.637Z",
+   "input": "Workflow for tenant 5A",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:40.934Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "9c1b0739-20bf-4ed9-8ebf-d3807c648c3f",
+  "orgId": "test-tenant-5b",
+  "title": "Workflow for tenant 5B",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:41.448Z",
+  "updatedAt": "2026-10-01T07:34:42.315Z",
+  "state": {
+   "id": "9c1b0739-20bf-4ed9-8ebf-d3807c648c3f",
+   "createdAt": "2026-10-01T07:34:41.388Z",
+   "updatedAt": "2026-10-01T07:34:42.166Z",
+   "input": "Workflow for tenant 5B",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:41.388Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "2fe5a094-8732-4760-a5fb-1adcf43de2a6",
+  "orgId": "test-tenant-7a",
+  "title": "Workflow for worker isolation test",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:42.044Z",
+  "updatedAt": "2026-10-01T07:34:42.701Z",
+  "state": {
+   "id": "2fe5a094-8732-4760-a5fb-1adcf43de2a6",
+   "createdAt": "2026-10-01T07:34:41.903Z",
+   "updatedAt": "2026-10-01T07:34:42.679Z",
+   "input": "Workflow for worker isolation test",
+   "statedStack": "Node.js",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:41.903Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "9c4e4e99-54b5-4eec-86af-0e7c6160c880",
+  "orgId": "ws-gate-1-1790840085912",
+  "title": "Build a small note-taking API with search",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:45.946Z",
+  "updatedAt": "2026-10-01T07:34:46.399Z",
+  "state": {
+   "id": "9c4e4e99-54b5-4eec-86af-0e7c6160c880",
+   "createdAt": "2026-10-01T07:34:45.913Z",
+   "updatedAt": "2026-10-01T07:34:46.357Z",
+   "input": "Build a small note-taking API with search",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:45.915Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "ad7b5c50-25ee-4cb6-a65b-76a8411fb350",
+  "orgId": "ws-gate-ties-2-1790840086157",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:46.240Z",
+  "updatedAt": "2026-10-01T07:34:46.703Z",
+  "state": {
+   "id": "ad7b5c50-25ee-4cb6-a65b-76a8411fb350",
+   "createdAt": "2026-10-01T07:34:46.157Z",
+   "updatedAt": "2026-10-01T07:34:46.680Z",
+   "input": "Build a small invoicing API with recurring billing",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": true,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:46.157Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "af7bd22b-694b-49a7-a3b6-627fd151b5c5",
+  "orgId": "ws-gate-notfinal-3-1790840086656",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:46.665Z",
+  "updatedAt": "2026-10-01T07:34:47.130Z",
+  "state": {
+   "id": "af7bd22b-694b-49a7-a3b6-627fd151b5c5",
+   "createdAt": "2026-10-01T07:34:46.656Z",
+   "updatedAt": "2026-10-01T07:34:47.069Z",
+   "input": "Build a small URL shortener with analytics",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:46.656Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "a7ac9b53-e8c3-4f9e-ac49-bf132e976bfa",
+  "orgId": "ws-gate-final-4-1790840087005",
+  "title": "T",
+  "gate": "execution",
+  "gateStatus": "pending",
+  "createdAt": "2026-10-01T07:34:47.029Z",
+  "updatedAt": "2026-10-01T07:34:47.770Z",
+  "state": {
+   "id": "a7ac9b53-e8c3-4f9e-ac49-bf132e976bfa",
+   "createdAt": "2026-10-01T07:34:47.014Z",
+   "updatedAt": "2026-10-01T07:34:47.752Z",
+   "input": "Build a small habit tracker with streaks",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "execution",
+   "gateStatus": "pending",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:47.014Z"
+   },
+   "modelsFinalized": true
+  }
+ },
+ {
+  "id": "0aca2e24-1952-4908-868c-ab347932b8d5",
+  "orgId": "ws-retry-5-1790840087797",
+  "title": "Build a small wiki API with versioning",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:47.819Z",
+  "updatedAt": "2026-10-01T07:34:48.319Z",
+  "state": {
+   "id": "0aca2e24-1952-4908-868c-ab347932b8d5",
+   "createdAt": "2026-10-01T07:34:47.799Z",
+   "updatedAt": "2026-10-01T07:34:48.296Z",
+   "input": "Build a small wiki API with versioning",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:47.799Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "0dc2719b-ac30-4a7c-bd0e-ca54703e1bf5",
+  "orgId": "ws-iso-a-6-1790840088057",
+  "title": "Org A project: task board with comments",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:48.076Z",
+  "updatedAt": "2026-10-01T07:34:48.791Z",
+  "state": {
+   "id": "0dc2719b-ac30-4a7c-bd0e-ca54703e1bf5",
+   "createdAt": "2026-10-01T07:34:48.058Z",
+   "updatedAt": "2026-10-01T07:34:48.727Z",
+   "input": "Org A project: task board with comments",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:48.058Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "314fc0ad-8b80-4e0e-9053-1363811239e2",
+  "orgId": "ws-iso-b-7-1790840088057",
+  "title": "Org B project: recipe box with tags",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T07:34:48.503Z",
+  "updatedAt": "2026-10-01T07:34:49.123Z",
+  "state": {
+   "id": "314fc0ad-8b80-4e0e-9053-1363811239e2",
+   "createdAt": "2026-10-01T07:34:48.472Z",
+   "updatedAt": "2026-10-01T07:34:49.105Z",
+   "input": "Org B project: recipe box with tags",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T07:34:48.472Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "d2ae9862-7cc5-4c8d-8285-4aa57aca0825",
+  "orgId": "agent-test-org-23",
+  "title": "Build a customer feedback workflow for mobile app",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:05:31.417Z",
+  "updatedAt": "2026-10-01T08:05:31.883Z",
+  "state": {
+   "id": "d2ae9862-7cc5-4c8d-8285-4aa57aca0825",
+   "createdAt": "2026-10-01T08:05:31.396Z",
+   "updatedAt": "2026-10-01T08:05:31.866Z",
+   "input": "Build a customer feedback workflow for mobile app",
+   "statedStack": "React Native, Fastify",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:05:31.401Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "6912982c-9f58-40f6-882d-9a8f24923020",
+  "orgId": "test-tenant-1a",
+  "title": "Build an inventory management system with real-time tracking",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:04.615Z",
+  "updatedAt": "2026-10-01T08:06:05.125Z",
+  "state": {
+   "id": "6912982c-9f58-40f6-882d-9a8f24923020",
+   "createdAt": "2026-10-01T08:06:04.591Z",
+   "updatedAt": "2026-10-01T08:06:05.041Z",
+   "input": "Build an inventory management system with real-time tracking.",
+   "statedStack": "Next.js, Postgres",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:04.595Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "532ad6d8-865e-4054-8970-e47413ea14e2",
+  "orgId": "test-tenant-2a",
+  "title": "Build a customer feedback portal with analytics dashboard.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:04.868Z",
+  "updatedAt": "2026-10-01T08:06:05.483Z",
+  "state": {
+   "id": "532ad6d8-865e-4054-8970-e47413ea14e2",
+   "createdAt": "2026-10-01T08:06:04.855Z",
+   "updatedAt": "2026-10-01T08:06:05.369Z",
+   "input": "Build a customer feedback portal with analytics dashboard.",
+   "statedStack": "React, Node.js",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:04.855Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "d1d5f7ee-394e-4a60-a355-e2452906d612",
+  "orgId": "test-tenant-3a",
+  "title": "Build an invoice processing workflow for finance teams.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:05.244Z",
+  "updatedAt": "2026-10-01T08:06:05.804Z",
+  "state": {
+   "id": "d1d5f7ee-394e-4a60-a355-e2452906d612",
+   "createdAt": "2026-10-01T08:06:05.228Z",
+   "updatedAt": "2026-10-01T08:06:05.720Z",
+   "input": "Build an invoice processing workflow for finance teams.",
+   "statedStack": "TypeScript, Python",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:05.228Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "3a1678de-6385-4b8b-9186-5fbda520336f",
+  "orgId": "test-tenant-4a",
+  "title": "Build a document archive system with strict retention.",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:05.570Z",
+  "updatedAt": "2026-10-01T08:06:06.249Z",
+  "state": {
+   "id": "3a1678de-6385-4b8b-9186-5fbda520336f",
+   "createdAt": "2026-10-01T08:06:05.553Z",
+   "updatedAt": "2026-10-01T08:06:06.167Z",
+   "input": "Build a document archive system with strict retention.",
+   "statedStack": "Fastify, PostgreSQL",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:05.553Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "b214ffe1-5042-425a-b90e-49fc164b2e59",
+  "orgId": "test-tenant-5a",
+  "title": "Workflow for tenant 5A",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:05.980Z",
+  "updatedAt": "2026-10-01T08:06:06.686Z",
+  "state": {
+   "id": "b214ffe1-5042-425a-b90e-49fc164b2e59",
+   "createdAt": "2026-10-01T08:06:05.947Z",
+   "updatedAt": "2026-10-01T08:06:06.613Z",
+   "input": "Workflow for tenant 5A",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:05.947Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "b4fb7cb0-049e-4153-a93c-40eb6e26493e",
+  "orgId": "test-tenant-5b",
+  "title": "Workflow for tenant 5B",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:06.393Z",
+  "updatedAt": "2026-10-01T08:06:07.323Z",
+  "state": {
+   "id": "b4fb7cb0-049e-4153-a93c-40eb6e26493e",
+   "createdAt": "2026-10-01T08:06:06.362Z",
+   "updatedAt": "2026-10-01T08:06:07.176Z",
+   "input": "Workflow for tenant 5B",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:06.362Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "ba12e4b0-782f-4873-b507-c8c95908dfad",
+  "orgId": "test-tenant-7a",
+  "title": "Workflow for worker isolation test",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:07.021Z",
+  "updatedAt": "2026-10-01T08:06:07.750Z",
+  "state": {
+   "id": "ba12e4b0-782f-4873-b507-c8c95908dfad",
+   "createdAt": "2026-10-01T08:06:06.935Z",
+   "updatedAt": "2026-10-01T08:06:07.720Z",
+   "input": "Workflow for worker isolation test",
+   "statedStack": "Node.js",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:06.935Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "0dc40b7a-f6de-443d-a3c7-668922ee78c3",
+  "orgId": "ws-gate-1-1790841971459",
+  "title": "Build a small note-taking API with search",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:11.500Z",
+  "updatedAt": "2026-10-01T08:06:11.912Z",
+  "state": {
+   "id": "0dc40b7a-f6de-443d-a3c7-668922ee78c3",
+   "createdAt": "2026-10-01T08:06:11.461Z",
+   "updatedAt": "2026-10-01T08:06:11.874Z",
+   "input": "Build a small note-taking API with search",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:11.465Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "8829bb3f-36d4-4fde-a301-39e898e20c9b",
+  "orgId": "ws-gate-ties-2-1790841971701",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:11.737Z",
+  "updatedAt": "2026-10-01T08:06:12.367Z",
+  "state": {
+   "id": "8829bb3f-36d4-4fde-a301-39e898e20c9b",
+   "createdAt": "2026-10-01T08:06:11.701Z",
+   "updatedAt": "2026-10-01T08:06:12.276Z",
+   "input": "Build a small invoicing API with recurring billing",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": true,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:11.701Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "b0115b9f-9deb-4549-8a55-36107de992a3",
+  "orgId": "ws-gate-notfinal-3-1790841972294",
+  "title": "T",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:12.453Z",
+  "updatedAt": "2026-10-01T08:06:13.056Z",
+  "state": {
+   "id": "b0115b9f-9deb-4549-8a55-36107de992a3",
+   "createdAt": "2026-10-01T08:06:12.294Z",
+   "updatedAt": "2026-10-01T08:06:13.009Z",
+   "input": "Build a small URL shortener with analytics",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:12.294Z"
+   },
+   "modelsFinalized": false,
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "ed535aec-86fe-4bfa-a024-c1fe9b457a4f",
+  "orgId": "ws-gate-final-4-1790841972929",
+  "title": "T",
+  "gate": "execution",
+  "gateStatus": "pending",
+  "createdAt": "2026-10-01T08:06:12.978Z",
+  "updatedAt": "2026-10-01T08:06:13.806Z",
+  "state": {
+   "id": "ed535aec-86fe-4bfa-a024-c1fe9b457a4f",
+   "createdAt": "2026-10-01T08:06:12.938Z",
+   "updatedAt": "2026-10-01T08:06:13.784Z",
+   "input": "Build a small habit tracker with streaks",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "execution",
+   "gateStatus": "pending",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": {
+    "title": "T",
+    "summary": "",
+    "tasks": [
+     {
+      "id": "t1",
+      "title": "T1",
+      "description": "",
+      "category": "backend",
+      "dependsOn": [],
+      "complexity": "low",
+      "risk": "low"
+     }
+    ]
+   },
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": {
+    "tasks": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selected": "direct implementation",
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ]
+   },
+   "routing": {
+    "routes": [
+     {
+      "taskId": "t1",
+      "taskTitle": "T1",
+      "selectedModel": "groq/llama-3.3-70b-versatile",
+      "reason": "test",
+      "confidence": 0.9,
+      "tieBreakRequired": false,
+      "options": []
+     }
+    ],
+    "policy": "balanced",
+    "estimatedCostUsd": 1,
+    "notes": ""
+   },
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:12.938Z"
+   },
+   "modelsFinalized": true
+  }
+ },
+ {
+  "id": "55be6263-287c-49d0-b54f-f439d5492a7b",
+  "orgId": "ws-retry-5-1790841973861",
+  "title": "Build a small wiki API with versioning",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:13.879Z",
+  "updatedAt": "2026-10-01T08:06:14.409Z",
+  "state": {
+   "id": "55be6263-287c-49d0-b54f-f439d5492a7b",
+   "createdAt": "2026-10-01T08:06:13.862Z",
+   "updatedAt": "2026-10-01T08:06:14.389Z",
+   "input": "Build a small wiki API with versioning",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:13.862Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "c2bc525e-80d2-41bb-b20d-3aa238092e3b",
+  "orgId": "ws-iso-a-6-1790841974124",
+  "title": "Org A project: task board with comments",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:14.152Z",
+  "updatedAt": "2026-10-01T08:06:14.905Z",
+  "state": {
+   "id": "c2bc525e-80d2-41bb-b20d-3aa238092e3b",
+   "createdAt": "2026-10-01T08:06:14.124Z",
+   "updatedAt": "2026-10-01T08:06:14.820Z",
+   "input": "Org A project: task board with comments",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:14.124Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
+ },
+ {
+  "id": "40e217a5-7c7d-4404-874f-b7fce78f6c4e",
+  "orgId": "ws-iso-b-7-1790841974124",
+  "title": "Org B project: recipe box with tags",
+  "gate": "suitability",
+  "gateStatus": "failed",
+  "createdAt": "2026-10-01T08:06:14.593Z",
+  "updatedAt": "2026-10-01T08:06:15.322Z",
+  "state": {
+   "id": "40e217a5-7c7d-4404-874f-b7fce78f6c4e",
+   "createdAt": "2026-10-01T08:06:14.552Z",
+   "updatedAt": "2026-10-01T08:06:15.310Z",
+   "input": "Org B project: recipe box with tags",
+   "statedStack": "",
+   "policy": "balanced",
+   "uploads": [],
+   "gate": "suitability",
+   "gateStatus": "failed",
+   "suitability": null,
+   "suggestedWorkflow": null,
+   "workflow": null,
+   "flawReport": null,
+   "flawConsensus": null,
+   "flawResolutions": [],
+   "stackGate": null,
+   "algorithms": null,
+   "routing": null,
+   "executions": [],
+   "humanFeedback": {
+    "ratings": {}
+   },
+   "inputSecurity": {
+    "risk": 0,
+    "findings": [],
+    "neutralized": false,
+    "scannedAt": "2026-10-01T08:06:14.552Z"
+   },
+   "error": "No AI provider is configured. Set at least one provider API key (GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY) in .env.local or backend/.env."
+  }
  }
 ]

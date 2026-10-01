@@ -1,0 +1,10 @@
+Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [Error: socket hang up] { code: 'ECONNRESET' }
+[Error: socket hang up] { code: 'ECONNRESET' }
+Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [Error: socket hang up] { code: 'ECONNRESET' }
+[Error: socket hang up] { code: 'ECONNRESET' }
+ ⚠ Cross origin request detected  to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ⚠ Cross origin request detected from n to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+Failed to proxy http://localhost:4000/api/ledger/records?sessionId=5840e83d-4dda-42a0-947e-2ffb3b4e8fd6 [Error: socket hang up] { code: 'ECONNRESET' }
+[Error: socket hang up] { code: 'ECONNRESET' }

@@ -5,6 +5,8 @@ import { StartRequestSchema, GateActionSchema } from "../schemas/pipeline";
 import { startPipeline, getPipeline, listPipelines, actOnPipeline } from "../services/pipeline";
 import { recordToLedger } from "../services/ledger";
 import { startExecution } from "../services/execution";
+import { ensurePreviewEntry } from "../services/scaffold";
+import { saveSession } from "../repositories/sessions";
 import { sanitizeInput, rateLimitKey } from "../lib/middleware";
 import { describeScan, scanInjection } from "../lib/security/injection";
 
@@ -60,6 +62,25 @@ export default async function pipelineRoutes(app: FastifyInstance): Promise<void
   app.post("/pipeline/:id/execute", async (req) => {
     const { id } = req.params as { id: string };
     return startExecution(req.auth.orgId, id);
+  });
+
+  // On-demand preview entry generation: for sessions executed before the
+  // guarantee existed (or whose entry generation failed), this backfills the
+  // missing index.html so the workspace Preview can render the app.
+  app.post("/pipeline/:id/preview-entry", async (req, reply) => {
+    const { id } = req.params as { id: string };
+    const session = await getPipeline(req.auth.orgId, id);
+    if (!session) return reply.status(404).send({ error: "Session not found" });
+    if ((session.workspaceFiles ?? []).length === 0) {
+      return reply.status(409).send({ error: "Nothing generated yet — run the pipeline first." });
+    }
+    if ((session.workspaceFiles ?? []).some((f) => f.path.toLowerCase().endsWith(".html"))) {
+      return reply.send({ ok: true, generated: false, reason: "A preview entry already exists." });
+    }
+    await ensurePreviewEntry(req.auth.orgId, session);
+    await saveSession(req.auth.orgId, session);
+    const generated = (session.workspaceFiles ?? []).some((f) => f.path.toLowerCase().endsWith(".html"));
+    return reply.send({ ok: true, generated, session });
   });
 
   // File upload intake (F1.3): text-like files appended into the project input.

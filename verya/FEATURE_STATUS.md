@@ -52,6 +52,19 @@ Status legend:
 > map, F6 accepts up to five algorithm options, and F8 thresholds are runtime
 > configurable through `VERYA_AUTO_FLOOR` and `VERYA_TIE_GAP`.
 
+> Update (2026-10-01, coding-workspace pass): **standing requirements** (noted for
+> all future work): (0) the Target platform gate offers **Web** alongside Android/iOS/Both
+> — web-targeted projects plan and verify against browser delivery; (1) the human user always has edit rights in the Verya editor —
+> real workspace files save through the versioned `/files/edit` endpoint at ANY gate,
+> never read-only-blocked; (2) EVERY generated project folder is professional /
+> industrial-grade — conventional layout (src, public, tests, docs, config), README.md,
+> .gitignore, package manifest — enforced both in the execution prompt and by a
+> deterministic post-execution scaffold pass; (3) EVERY web project previews as a real
+> running app — the execution prompt requires a self-contained index.html, and a
+> bounded post-execution pass (`services/scaffold.ts` → `ensurePreviewEntry`) generates
+> the entry page when no task produced one, so the IDE Preview is never empty for a
+> web project.
+>
 > Update (2026-09-20, governance pass): F15 now automatically runs a
 > cross-provider counterfactual comparison for high-risk tasks; F16 checks human
 > edits with the rules verifier; F17 has durable, evidence-backed policy
@@ -750,7 +763,13 @@ finalize unlocks), dependency blocking, retry authorization, and tenant isolatio
 - ✅ Dedicated Agent Status Header above the interactive AgentChat: live agent status dot, current task, assigned model, recent actions trail (✓/✗/●).
 - ✅ Collapsible Bottom Panel (`BottomPanel.tsx`) with 7 tabs: Execution Monitor, Problems (aggregated verification issues), Output, Changes, Tests (honestly disclaimed), Verification, Events.
 - ✅ Status Bar (`StatusBar.tsx`) displaying cursor position, language, UTF-8, Trust budget, and Risk level.
-- ✅ Global IDE keyboard shortcuts: Ctrl+P, Ctrl+Shift+P, Ctrl+B, Ctrl+`, Ctrl+W, Ctrl+Shift+F, Ctrl+S, Ctrl+F.
+- ✅ Global IDE keyboard shortcuts: Ctrl+P, Ctrl+Shift+P, Ctrl+B, Ctrl+`, Ctrl+W, Ctrl+Shift+F, Ctrl+S, Ctrl+F, Ctrl+Shift+V (Preview).
+- ✅ Agent auto-start after model finalization: when the shell first sees an armed state (`runState === "ready"`), execution dispatches automatically and the AgentChat announces the dispatch (task → model list). Failed dispatches re-arm for manual ▶ Run.
+- ✅ Human edit rights, always: the editor is writable at every stage. Real workspace files save via `POST /pipeline/:id/files/edit` (CAS versioned, ledger-audited, works pre/during/after execution — `WorkspaceShell.saveActive` routes to it automatically); legacy design artifacts keep the review-gate `code_edit` path.
+- ✅ Industrial project scaffolding (every project): the execution prompt mandates a conventional layout (src/, public/, tests/, docs/, manifests) and `ensureProjectScaffolding` deterministically adds a professional README.md (overview, stack, structure tree, setup steps, model-assignment table, Trust Ledger provenance) and a stack-aware .gitignore when the models didn't ship them.
+- ✅ Guaranteed preview entry (web projects): `ensurePreviewEntry` detects a completed web project with no .html and makes ONE bounded model call to generate the missing index.html front door (linked to the real generated pages); ledger-recorded as `preview_entry_generated`/`preview_entry_failed`. The workspace Preview can no longer be empty for a web project.
+- ✅ Project Preview (`PreviewPane.tsx`, toolbar button / View menu / Ctrl+Shift+V): renders the generated project inside a sandboxed iframe (`allow-scripts`, no same-origin) built client-side from the real workspace files (`lib/workspace/preview.ts`). Entry selection: root index.html → any index.html → shortest .html; sibling CSS/JS are inlined, small images become data URLs, and relative ES-module imports resolve via an injected import map. Multi-page apps work: relative `.html` links are intercepted and swapped virtually (postMessage), with an entry-page dropdown in the toolbar. "Open in new tab" exports the assembled document. Projects without an HTML entry (APIs, backends) get an honest inventory page listing the real files. Desktop/mobile viewport toggle, manual reload, and auto-reload when the agent edits files while previewing; when execution completes with a UI project, the preview opens automatically.
+- ✅ Web/UI execution contract: `EXECUTION_SYSTEM` now instructs routed models that web/UI tasks must ship a runnable, self-contained, professionally styled `index.html` (no build step, relative links between pages, realistic sample data) — every UI project previews as a real app, not a placeholder.
 - ✅ Full preservation of existing execution engine, Trust Ledger, tenant isolation, CAS saves, and backend contracts.
 
 ### F52 · Launch Checklist — **NOT BUILT**

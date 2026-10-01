@@ -7,6 +7,13 @@ import { clerkConfigured } from "./middleware/auth";
 const PORT = Number(process.env.PORT) > 0 ? Number(process.env.PORT) : 4000;
 const HOST = process.env.HOST || "0.0.0.0";
 
+// Last-resort resilience: a transient Neon WebSocket drop must never kill the
+// API. Route-level handlers already report per-request DB errors; this keeps the
+// process alive for failures that escape a request context (idle connections).
+process.on("unhandledRejection", (reason) => {
+  console.error("[server] unhandled rejection (process kept alive):", reason);
+});
+
 async function main(): Promise<void> {
   const app = await buildApp();
   try {

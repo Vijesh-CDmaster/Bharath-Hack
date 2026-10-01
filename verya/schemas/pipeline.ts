@@ -41,7 +41,7 @@ export const GateIdSchema = z.enum([
   "review",
 ]);
 export type GateId = z.infer<typeof GateIdSchema>;
-export const TargetPlatformSchema = z.enum(["android", "ios", "both"]);
+export const TargetPlatformSchema = z.enum(["web", "android", "ios", "both"]);
 export type TargetPlatform = z.infer<typeof TargetPlatformSchema>;
 
 export const GateStatusSchema = z.enum(["pending", "running", "awaiting_user", "cleared", "failed"]);

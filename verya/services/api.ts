@@ -85,6 +85,22 @@ export const api = {
   execute: (id: string) =>
     request<{ session: unknown }>(`/api/pipeline/${id}/execute`, { method: "POST" }),
 
+  // On-demand preview entry generation for sessions that lack an index.html
+  // (executed before the guarantee, or whose generation failed).
+  generatePreviewEntry: (id: string) =>
+    request<{ ok: boolean; generated: boolean; reason?: string; session?: unknown }>(
+      `/api/pipeline/${id}/preview-entry`,
+      { method: "POST" }
+    ),
+
+  // Human edit of a REAL generated workspace file — works at any stage (the
+  // editor is always writable), versioned for CAS and audited in the ledger.
+  editWorkspaceFile: (id: string, payload: { path: string; content: string; expectedVersion: number }) =>
+    request<{ ok: boolean; version: number }>(`/api/pipeline/${id}/files/edit`, {
+      method: "POST",
+      body: JSON.stringify(payload),
+    }),
+
   dashboard: () => request<Record<string, unknown>>("/api/dashboard"),
 
   verifyLedger: () => request<{ valid: boolean; checked: number }>("/api/ledger/verify"),

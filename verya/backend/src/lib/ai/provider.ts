@@ -19,6 +19,7 @@ import {
   ALGORITHM_SYSTEM,
   ROUTING_SYSTEM,
   EXECUTION_SYSTEM,
+  PREVIEW_ENTRY_SYSTEM,
   VERIFICATION_SYSTEM,
   SELF_AUDIT_SYSTEM,
 } from "./prompts";
@@ -734,7 +735,17 @@ export interface StageAdapters {
     stack: string;
     workflow: Workflow;
     model: string;
+    targetPlatform?: string;
   }): Promise<{ output: string; latencyMs: number; tokens: { input: number; output: number }; servedBy?: string }>;
+  /** Generates the missing preview entry (index.html) for a completed project. */
+  generatePreviewEntry(input: {
+    projectTitle: string;
+    summary: string;
+    stack: string;
+    platform: string;
+    files: { path: string; excerpt: string }[];
+    model: string;
+  }): Promise<{ output: string; servedBy?: string }>;
   verifyOutput(input: {
     task: Task;
     algorithm: string;
@@ -775,7 +786,12 @@ export const geminiAdapters: StageAdapters = {
 
   detectFlaws: async ({ raw, workflow, targetPlatform }) => {
     const platformContext = targetPlatform
-      ? `\nTARGET PLATFORM: ${targetPlatform === "both" ? "Android and iOS" : targetPlatform === "android" ? "Android only" : "iOS only"}`
+      ? `\nTARGET PLATFORM: ${
+          targetPlatform === "both" ? "Android and iOS"
+          : targetPlatform === "android" ? "Android only"
+          : targetPlatform === "ios" ? "iOS only"
+          : "Web application (browser)"
+        }`
       : "";
     const safeRaw = hardenUntrusted(raw).text;
     const descriptionBlock = wrapUntrusted("PROJECT DESCRIPTION", safeRaw);
@@ -837,14 +853,26 @@ export const geminiAdapters: StageAdapters = {
       RoutingPlanSchema
     ),
 
-  executeTask: async ({ task, algorithm, stack, workflow, model }) => {
+  executeTask: async ({ task, algorithm, stack, workflow, model, targetPlatform }) => {
     const res = await runModelText(
       model,
       EXECUTION_SYSTEM,
-      `WORKFLOW TITLE: ${workflow.title}\nWORKFLOW SUMMARY: ${workflow.summary}\n\nSTACK: ${stack}\n\nTASK: ${task.title}\nTASK DESCRIPTION: ${task.description}\nCATEGORY: ${task.category}\nCHOSEN APPROACH: ${algorithm}`,
+      `WORKFLOW TITLE: ${workflow.title}\nWORKFLOW SUMMARY: ${workflow.summary}\n\nTARGET PLATFORM: ${targetPlatform || "web"}\n\nSTACK: ${stack}\n\nTASK: ${task.title}\nTASK DESCRIPTION: ${task.description}\nCATEGORY: ${task.category}\nCHOSEN APPROACH: ${algorithm}`,
       "execution"
     );
     return { output: res.text, latencyMs: res.latencyMs, tokens: res.tokens, servedBy: res.servedBy };
+  },
+
+  generatePreviewEntry: async ({ projectTitle, summary, stack, platform, files, model }) => {
+    const res = await runModelText(
+      model,
+      PREVIEW_ENTRY_SYSTEM,
+      `PROJECT TITLE: ${projectTitle}\nSUMMARY: ${summary}\n\nTARGET PLATFORM: ${platform}\n\nSTACK: ${stack}\n\nGENERATED FILES (the delivered app — reference the .html pages with relative hrefs):\n${files
+        .map((f) => `- ${f.path}${f.excerpt ? `\n  ${f.excerpt}` : ""}`)
+        .join("\n")}`,
+      "execution"
+    );
+    return { output: res.text, servedBy: res.servedBy };
   },
 
   verifyRulesOnly: async ({ task, output }) => {
@@ -859,6 +887,21 @@ export const geminiAdapters: StageAdapters = {
       issues.push("Potentially dangerous raw SQL pattern in output.");
     if (task.category === "auth" && !/(hash|bcrypt|argon|scrypt)/.test(lower))
       issues.push("Auth task output does not mention password hashing.");
+
+    // Stub/placeholder detection — the user expects a working product, not skeletons.
+    const stubComments = output.match(/\/\/\s*(implement|todo|fixme|placeholder)[^\n]*/gi);
+    if (stubComments && stubComments.length > 0)
+      issues.push(`Stub/placeholder code found (${stubComments.length} "${stubComments[0].trim().slice(0, 60)}"). Every function must be implemented.`);
+    const emptyBodies = output.match(/\{\s*(\/\*[^*]*\*\/|\/\/[^\n]*)?\s*\}/g);
+    if (emptyBodies && emptyBodies.length >= 2)
+      issues.push(`${emptyBodies.length} empty function/method bodies detected — implementations are missing.`);
+    if (/not\s+implemented/i.test(output))
+      issues.push("Output contains an explicit not-implemented throw/branch.");
+    if (task.category === "frontend" || task.category === "ui") {
+      if (/lorem\s+ipsum|item\s*1|placeholder\s+text/i.test(output))
+        issues.push("UI uses lorem-ipsum/placeholder content — realistic sample data is required.");
+    }
+
     return { passed: issues.length === 0, issues, checkedBy: "rules" };
   },
 
@@ -874,6 +917,9 @@ export const geminiAdapters: StageAdapters = {
       issues.push("Potentially dangerous raw SQL pattern in output.");
     if (task.category === "auth" && !/(hash|bcrypt|argon|scrypt)/.test(lower))
       issues.push("Auth task output does not mention password hashing.");
+    const stubComments = output.match(/\/\/\s*(implement|todo|fixme|placeholder)[^\n]*/gi);
+    if (stubComments && stubComments.length > 0)
+      issues.push(`Stub/placeholder code found (${stubComments.length}).`);
     const checkedByRules = { passed: issues.length === 0, issues, checkedBy: "rules" };
 
     // Second-model verification on a DIFFERENT provider than the executor (independence).

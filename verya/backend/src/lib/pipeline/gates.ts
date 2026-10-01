@@ -707,7 +707,12 @@ export async function applyGateAction(
         eventType: "platform_selected",
         actor: "human",
         detail: {
-          summary: `Target platform: ${action.targetPlatform === "both" ? "Android and iOS" : action.targetPlatform}`,
+          summary: `Target platform: ${
+            action.targetPlatform === "both" ? "Android and iOS"
+            : action.targetPlatform === "web" ? "Web application (browser)"
+            : action.targetPlatform === "android" ? "Android"
+            : "iOS"
+          }`,
           targetPlatform: action.targetPlatform,
         },
       });

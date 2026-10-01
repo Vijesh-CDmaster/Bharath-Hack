@@ -10,12 +10,14 @@
 //                                 STATUS BAR (22px)
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 import { buildWorkspace, buildTree, languageOf } from "@/lib/workspace/build";
 import type { WsBuild } from "@/lib/workspace/build";
 import type { Session } from "@/schemas/pipeline";
 import { useWorkspaceStore } from "@/stores/workspace-store";
 import { useGateAction, useExecute } from "@/hooks/use-session";
 import { CodeEditor } from "./CodeEditor";
+import { PreviewPane } from "./PreviewPane";
 import { FileExplorer } from "./Sidebar";
 import { AgentChat } from "./AgentChat";
 import { BottomPanel } from "./BottomPanel";
@@ -38,6 +40,7 @@ export function WorkspaceShell({
   const ws = useMemo(() => buildWorkspace(session), [session]);
   const act = useGateAction(session.id);
   const execute = useExecute(session.id);
+  const qc = useQueryClient();
 
   const openPaths = useWorkspaceStore((s) => s.openPaths);
   const activePath = useWorkspaceStore((s) => s.activePath);
@@ -56,10 +59,17 @@ export function WorkspaceShell({
   const setCommandPaletteOpen = useWorkspaceStore((s) => s.setCommandPaletteOpen);
   const setQuickOpenOpen = useWorkspaceStore((s) => s.setQuickOpenOpen);
   const toggleBottom = useWorkspaceStore((s) => s.toggleBottom);
+  const centerView = useWorkspaceStore((s) => s.centerView);
+  const setCenterView = useWorkspaceStore((s) => s.setCenterView);
   const [saving, setSaving] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false);
   const menuBarRef = useRef<HTMLDivElement>(null);
+
+  // Preview pane toggle (Ctrl+Shift+V): swaps the editor area for the project preview.
+  const togglePreview = useCallback(() => {
+    setCenterView(useWorkspaceStore.getState().centerView === "preview" ? "editor" : "preview");
+  }, [setCenterView]);
 
   const projectTitle = ws.context.target.title || session.workflow?.title || "Project";
   const isRunning = ws.runState === "running" || session.gateStatus === "running";
@@ -135,6 +145,9 @@ export function WorkspaceShell({
         e.preventDefault();
         setActiveView("search");
         setExplorerOpen(true);
+      } else if (ctrl && e.shiftKey && e.key.toLowerCase() === "v") {
+        e.preventDefault();
+        setCenterView(useWorkspaceStore.getState().centerView === "preview" ? "editor" : "preview");
       } else if (e.altKey && e.key === "ArrowLeft") {
         e.preventDefault();
         handleBackClick();
@@ -144,6 +157,64 @@ export function WorkspaceShell({
     return () => window.removeEventListener("keydown", onKey);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // ---- Auto-start: models finalized ⇒ the routed agent starts coding NOW ----
+  // Fires once per session when the shell first sees an armed ("ready") state;
+  // a failed dispatch re-arms so the user can fix the cause and press Run again.
+  const autoStartArmed = useRef(true);
+  const autoStartTried = useRef<string | null>(null);
+  useEffect(() => {
+    if (!autoStartArmed.current || ws.runState !== "ready") return;
+    if (autoStartTried.current === session.id) return; // don't retry a failed dispatch in a render loop
+    autoStartTried.current = session.id;
+    autoStartArmed.current = false;
+    useWorkspaceStore.getState().addMsg({
+      role: "agent",
+      text: `Models finalized — dispatching ${ws.tasks.length} task(s) to the routed models. Generated files will stream into the editor as they are written.`,
+      steps: ws.tasks.slice(0, 4).map((t) => `${t.title} → ${t.model ?? "auto"}`),
+      pending: true,
+    });
+    execute.mutateAsync().catch((err: unknown) => {
+      autoStartArmed.current = true; // re-arm for a manual ▶ Run retry
+      useWorkspaceStore.getState().addMsg({
+        role: "agent",
+        text: `Auto-start failed: ${err instanceof Error ? err.message : "unknown error"}. Press ▶ Run to retry.`,
+        steps: [],
+      });
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ws.runState, session.id]);
+
+  // When execution completes and the generated project has a UI (HTML entry),
+  // surface the Preview pane automatically — the result is the point.
+  const prevRunState = useRef(ws.runState);
+  useEffect(() => {
+    const was = prevRunState.current;
+    prevRunState.current = ws.runState;
+    if (was !== "completed" && ws.runState === "completed" && ws.files.some((f) => f.path.toLowerCase().endsWith(".html"))) {
+      setCenterView("preview");
+    }
+  }, [ws.runState, ws.files, setCenterView]);
+
+  // Build Log: stream agent activity into the Terminal tab while running.
+  useEffect(() => {
+    if (ws.runState !== "running") return;
+    useWorkspaceStore.getState().setBottomTab("terminal");
+    const store = useWorkspaceStore.getState();
+    const done = new Set<string>();
+    for (const t of ws.tasks) {
+      if (t.status === "pending") continue;
+      done.add(t.id);
+      if (t.status === "running") {
+        store.addMsg({ role: "agent", text: `▶ ${t.title} — executing on ${t.servedBy ?? t.model ?? "routed model"}` });
+      } else if (t.status === "verified") {
+        store.addMsg({ role: "agent", text: `✓ ${t.title} — verified` });
+      } else if (t.status === "failed") {
+        store.addMsg({ role: "agent", text: `✗ ${t.title} — failed${t.verification?.issues[0] ? `: ${t.verification.issues[0]}` : ""}` });
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ws.runState]);
 
   const busy = act.isPending || execute.isPending || session.gateStatus === "running";
 
@@ -170,15 +241,29 @@ export function WorkspaceShell({
     if (!buf?.dirty) return;
     setSaving(true);
     try {
-      const res = await api.act(session.id, {
-        action: "code_edit",
-        taskId: buf.artifact.taskId,
-        code: buf.draft,
-        expectedVersion: buf.artifact.version,
-      });
-      const s = res.session as Session;
-      const exec = s.executions.find((e) => e.taskId === buf.artifact.taskId);
-      markSaved(activePath, exec?.code?.version ?? buf.artifact.version + 1);
+      // Human edit rights: files that exist in the REAL workspace store save through
+      // the versioned workspace endpoint (works at ANY stage — never blocked by a gate).
+      // Legacy design artifacts keep the review-gate `code_edit` path.
+      const wsFile = ws.files.find((f) => f.path === activePath && typeof f.content === "string");
+      if (wsFile) {
+        const res = await api.editWorkspaceFile(session.id, {
+          path: activePath.replace(/^project\//, ""),
+          content: buf.draft,
+          expectedVersion: buf.artifact.version,
+        });
+        markSaved(activePath, res.version);
+        void qc.invalidateQueries({ queryKey: ["session", session.id] });
+      } else {
+        const res = await api.act(session.id, {
+          action: "code_edit",
+          taskId: buf.artifact.taskId,
+          code: buf.draft,
+          expectedVersion: buf.artifact.version,
+        });
+        const s = res.session as Session;
+        const exec = s.executions.find((e) => e.taskId === buf.artifact.taskId);
+        markSaved(activePath, exec?.code?.version ?? buf.artifact.version + 1);
+      }
     } catch (err) {
       const detail = err instanceof ApiError ? err.message : "Save failed";
       useWorkspaceStore.getState().addMsg({
@@ -236,6 +321,7 @@ export function WorkspaceShell({
         { label: "Search", shortcut: "Ctrl+Shift+F", action: () => { setActiveView("search"); setExplorerOpen(true); } },
         { label: "Source Control", action: () => { setActiveView("changes"); setExplorerOpen(true); } },
         { label: "Run View", action: () => { setActiveView("run"); setExplorerOpen(true); } },
+        { label: "Project Preview", shortcut: "Ctrl+Shift+V", action: togglePreview },
         { label: "Toggle Primary Sidebar", shortcut: "Ctrl+B", action: () => setExplorerOpen(!explorerOpen) },
         { label: "Toggle Bottom Panel", shortcut: "Ctrl+J", action: () => toggleBottom() },
         { label: "Toggle Secondary Sidebar", action: () => setChatOpen(!chatOpen) },
@@ -278,6 +364,13 @@ export function WorkspaceShell({
       <header className="flex h-[35px] shrink-0 items-center justify-between border-b border-[#2d2d2d] bg-[#181818] px-2 text-[12px]">
         {/* Left: Brand + Back/Return + Project Name + Menus */}
         <div ref={menuBarRef} className="flex items-center gap-1.5 min-w-0">
+          {/* Freebuff-style window lights (purely aesthetic, like a native editor) */}
+          <div className="mr-1 flex shrink-0 items-center gap-[6px] select-none" aria-hidden>
+            <span className="h-[10px] w-[10px] rounded-full bg-[#ff5f57]" />
+            <span className="h-[10px] w-[10px] rounded-full bg-[#febc2e]" />
+            <span className="h-[10px] w-[10px] rounded-full bg-[#28c840]" />
+          </div>
+
           {/* Verya Brand Icon */}
           <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-sm bg-[#007acc] text-[10px] font-bold text-white shadow-xs select-none">
             V
@@ -390,6 +483,22 @@ export function WorkspaceShell({
               ▶ Run
             </button>
           )}
+
+          {/* Project Preview toggle */}
+          <button
+            type="button"
+            onClick={togglePreview}
+            className={`flex h-[22px] items-center gap-1 rounded px-2 text-[11px] font-medium transition-colors cursor-pointer ${
+              centerView === "preview" ? "bg-[#04395e] text-white" : "bg-[#252526] text-[#cccccc] hover:bg-[#2a2d2e]"
+            }`}
+            title="Toggle Project Preview (Ctrl+Shift+V) — renders the generated app from the live workspace files"
+          >
+            <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            Preview
+          </button>
 
           {/* Panel Layout Toggles */}
           <div className="flex items-center border-l border-[#2d2d2d] pl-1.5 ml-1 gap-0.5">
@@ -543,7 +652,9 @@ export function WorkspaceShell({
 
           {/* Code Editor Canvas: DOMINATES 55-65%+ OF SCREEN */}
           <div className="relative min-h-0 flex-1">
-            {activeBuffer ? (
+            {centerView === "preview" ? (
+              <PreviewPane ws={ws} sessionId={session.id} onClose={togglePreview} />
+            ) : activeBuffer ? (
               <CodeEditor
                 path={activeBuffer.path}
                 content={activeBuffer.draft}
@@ -592,7 +703,15 @@ export function WorkspaceShell({
             <AgentChat
               ws={ws}
               sessionId={session.id}
-              onExecute={() => { void execute.mutateAsync().catch(() => undefined); }}
+              onExecute={() => {
+              execute.mutateAsync().catch((err) => {
+                useWorkspaceStore.getState().addMsg({
+                  role: "agent",
+                  text: `Could not start execution: ${err instanceof Error ? err.message : "unknown error"}`,
+                  steps: [],
+                });
+              });
+            }}
               canExecute={canExecute}
             />
           </aside>

@@ -21658,10 +21658,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T03:31:21.938Z",
   "expiresAt": "2026-09-22T03:31:21.521Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T03:31:21.938Z",
-  "updatedAt": "2026-09-21T03:31:21.938Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-7adac5b7-aac3-4d0d-a543-c169be458c4c",
@@ -21684,10 +21684,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T03:31:21.981Z",
   "expiresAt": "2026-09-22T03:31:21.521Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T03:31:21.981Z",
-  "updatedAt": "2026-09-21T03:31:21.981Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-d19ab944-b857-4518-ba7f-973b126ccd07",
@@ -22882,10 +22882,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T04:00:09.922Z",
   "expiresAt": "2026-09-22T04:00:09.558Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T04:00:09.922Z",
-  "updatedAt": "2026-09-21T04:00:09.922Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-ce620f22-5ca6-4553-a092-ea7c5b766886",
@@ -22908,10 +22908,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T04:00:09.968Z",
   "expiresAt": "2026-09-22T04:00:09.558Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T04:00:09.968Z",
-  "updatedAt": "2026-09-21T04:00:09.968Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-2e96c86a-f831-446d-b771-6daf0814d3a4",
@@ -24106,10 +24106,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T04:22:34.471Z",
   "expiresAt": "2026-09-22T04:22:34.119Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T04:22:34.471Z",
-  "updatedAt": "2026-09-21T04:22:34.471Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-7f9e47a0-76ed-456c-91e6-3459541b8f8d",
@@ -24132,10 +24132,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T04:22:34.542Z",
   "expiresAt": "2026-09-22T04:22:34.119Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T04:22:34.542Z",
-  "updatedAt": "2026-09-21T04:22:34.542Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-d8602cfd-2cbf-422c-a8cb-08e424c6638f",
@@ -25330,10 +25330,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T05:14:59.059Z",
   "expiresAt": "2026-09-22T05:14:58.584Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T05:14:59.059Z",
-  "updatedAt": "2026-09-21T05:14:59.059Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-fc977a79-5d33-4a40-bb8a-305564cc5be3",
@@ -25356,10 +25356,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T05:14:59.144Z",
   "expiresAt": "2026-09-22T05:14:58.584Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T05:14:59.144Z",
-  "updatedAt": "2026-09-21T05:14:59.144Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-1da51734-e411-4837-a39b-33da52bbbc8f",
@@ -26554,10 +26554,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T05:48:16.208Z",
   "expiresAt": "2026-09-22T05:48:15.545Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T05:48:16.208Z",
-  "updatedAt": "2026-09-21T05:48:16.208Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-af2d8c9b-bd83-47dd-8a36-7e9bf9005d5d",
@@ -26580,10 +26580,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T05:48:16.333Z",
   "expiresAt": "2026-09-22T05:48:15.545Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T05:48:16.333Z",
-  "updatedAt": "2026-09-21T05:48:16.333Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-c0d7b81f-d1f9-44b2-8edd-e93ee8332b64",
@@ -27778,10 +27778,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T05:57:15.895Z",
   "expiresAt": "2026-09-22T05:57:15.244Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T05:57:15.895Z",
-  "updatedAt": "2026-09-21T05:57:15.895Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-a0bf41d4-f406-41e7-89d5-912772e5ea49",
@@ -27804,10 +27804,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T05:57:16.044Z",
   "expiresAt": "2026-09-22T05:57:15.244Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T05:57:16.044Z",
-  "updatedAt": "2026-09-21T05:57:16.044Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-8c27d7ab-2f1a-4804-a2ec-4dfbe139b433",
@@ -29002,10 +29002,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T06:23:35.716Z",
   "expiresAt": "2026-09-22T06:23:35.287Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T06:23:35.716Z",
-  "updatedAt": "2026-09-21T06:23:35.716Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-5f2f191d-d165-4100-956a-928fed69e636",
@@ -29028,10 +29028,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T06:23:35.797Z",
   "expiresAt": "2026-09-22T06:23:35.287Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T06:23:35.797Z",
-  "updatedAt": "2026-09-21T06:23:35.797Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-1d34538e-739d-43b2-97f0-fd7a8649559c",
@@ -30226,10 +30226,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T14:59:06.531Z",
   "expiresAt": "2026-09-22T14:59:06.249Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T14:59:06.531Z",
-  "updatedAt": "2026-09-21T14:59:06.531Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-7066464b-38e4-4ce4-a7f7-cf2a633506a8",
@@ -30252,10 +30252,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T14:59:06.612Z",
   "expiresAt": "2026-09-22T14:59:06.249Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T14:59:06.612Z",
-  "updatedAt": "2026-09-21T14:59:06.612Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-2a276256-113e-402a-af25-df6e972c09a2",
@@ -31450,10 +31450,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T15:16:08.894Z",
   "expiresAt": "2026-09-22T15:16:08.635Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T15:16:08.894Z",
-  "updatedAt": "2026-09-21T15:16:08.894Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-e365a6a4-580d-48f5-bd38-87974227e08e",
@@ -31476,10 +31476,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T15:16:08.929Z",
   "expiresAt": "2026-09-22T15:16:08.635Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T15:16:08.929Z",
-  "updatedAt": "2026-09-21T15:16:08.929Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-75bdbfee-68c9-4b16-9875-3c34cb86785f",
@@ -32674,10 +32674,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T15:55:09.141Z",
   "expiresAt": "2026-09-22T15:55:08.752Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T15:55:09.141Z",
-  "updatedAt": "2026-09-21T15:55:09.141Z"
+  "updatedAt": "2026-10-01T07:14:20.868Z"
  },
  {
   "delegationId": "delg-327196e6-ea91-415e-9788-508578f1fd3c",
@@ -32700,10 +32700,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T15:55:09.194Z",
   "expiresAt": "2026-09-22T15:55:08.752Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T15:55:09.194Z",
-  "updatedAt": "2026-09-21T15:55:09.194Z"
+  "updatedAt": "2026-10-01T07:14:20.867Z"
  },
  {
   "delegationId": "delg-cc753914-dd02-4db9-bcdd-ca9235b6f95e",
@@ -33898,10 +33898,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T16:10:49.565Z",
   "expiresAt": "2026-09-22T16:10:49.237Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T16:10:49.565Z",
-  "updatedAt": "2026-09-21T16:10:49.565Z"
+  "updatedAt": "2026-10-01T07:14:20.867Z"
  },
  {
   "delegationId": "delg-71d0e6d5-c4f9-4bd8-b80b-9e42bc80fb0d",
@@ -33924,10 +33924,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T16:10:49.616Z",
   "expiresAt": "2026-09-22T16:10:49.237Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T16:10:49.616Z",
-  "updatedAt": "2026-09-21T16:10:49.616Z"
+  "updatedAt": "2026-10-01T07:14:20.867Z"
  },
  {
   "delegationId": "delg-5c735388-cf1f-4e81-aee8-8d4d9d9e40cb",
@@ -35122,10 +35122,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T16:20:53.496Z",
   "expiresAt": "2026-09-22T16:20:53.133Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T16:20:53.496Z",
-  "updatedAt": "2026-09-21T16:20:53.496Z"
+  "updatedAt": "2026-10-01T07:14:20.867Z"
  },
  {
   "delegationId": "delg-18d05578-288f-4dcf-b0f5-0881185c3e9b",
@@ -35148,10 +35148,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T16:20:53.551Z",
   "expiresAt": "2026-09-22T16:20:53.133Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T16:20:53.551Z",
-  "updatedAt": "2026-09-21T16:20:53.551Z"
+  "updatedAt": "2026-10-01T07:14:20.867Z"
  },
  {
   "delegationId": "delg-0e89ad2a-7b83-4e24-bfa8-e2fa4b8f6cab",
@@ -36346,10 +36346,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T16:33:23.114Z",
   "expiresAt": "2026-09-22T16:33:22.743Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T16:33:23.114Z",
-  "updatedAt": "2026-09-21T16:33:23.114Z"
+  "updatedAt": "2026-10-01T07:14:20.867Z"
  },
  {
   "delegationId": "delg-ded5b668-f0ad-4e73-bb7c-5b68a4ce9af0",
@@ -36372,10 +36372,10 @@
   "canDelegate": false,
   "issuedAt": "2026-09-21T16:33:23.164Z",
   "expiresAt": "2026-09-22T16:33:22.743Z",
-  "status": "ACTIVE",
-  "version": 1,
+  "status": "EXPIRED",
+  "version": 2,
   "createdAt": "2026-09-21T16:33:23.164Z",
-  "updatedAt": "2026-09-21T16:33:23.164Z"
+  "updatedAt": "2026-10-01T07:14:20.867Z"
  },
  {
   "delegationId": "delg-0a2f14db-637e-44f5-977c-a9efa3fdf007",
@@ -37496,5 +37496,2453 @@
   "version": 1,
   "createdAt": "2026-09-21T16:33:30.395Z",
   "updatedAt": "2026-09-21T16:33:30.395Z"
+ },
+ {
+  "delegationId": "delg-cf36316b-0569-43e1-9e2f-a493e0d6df6e",
+  "orgId": "delg-test-org-1",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-60658a1a-aedf-4ed2-a2c2-5ece2051f077",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:19.624Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:19.624Z",
+  "updatedAt": "2026-10-01T07:14:19.624Z"
+ },
+ {
+  "delegationId": "delg-65369a96-1d05-4d25-b688-de2db71be96b",
+  "orgId": "delg-test-org-2",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-dd513e4b-539a-4007-afb9-6713dd03f173",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:19.986Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:19.986Z",
+  "updatedAt": "2026-10-01T07:14:19.986Z"
+ },
+ {
+  "delegationId": "delg-e59647f2-a8a2-41f0-9299-c13d5d2eada2",
+  "orgId": "delg-test-org-3",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-aaf57bb5-b448-4f9d-b88f-9e8746d0ec83",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:20.530Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:20.530Z",
+  "updatedAt": "2026-10-01T07:14:20.530Z"
+ },
+ {
+  "delegationId": "delg-7b3d89a8-c56c-4e85-8d4a-9ee5552e11ae",
+  "orgId": "delg-test-org-3",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-37d62e14-3811-4f32-8bdd-3640b984af6c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:20.712Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:20.712Z",
+  "updatedAt": "2026-10-01T07:14:20.712Z"
+ },
+ {
+  "delegationId": "delg-352eaa6b-9693-407a-9088-743dd79515cf",
+  "orgId": "delg-test-org-4",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-2d54784f-f9df-4964-bb72-d8ca266eeb12",
+  "parentDelegationId": null,
+  "purpose": "Narrowed update purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:25.765Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:25.765Z",
+  "updatedAt": "2026-10-01T07:14:25.978Z"
+ },
+ {
+  "delegationId": "delg-c2532592-b667-41b1-8010-840d8dc429a5",
+  "orgId": "delg-test-org-5",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-d87c6797-7f35-402e-89b2-22f033c12da0",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:26.381Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "SUSPENDED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:26.381Z",
+  "updatedAt": "2026-10-01T07:14:26.582Z"
+ },
+ {
+  "delegationId": "delg-b0eca50b-dabf-44d2-92ed-99fcd2b22234",
+  "orgId": "delg-test-org-6",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-72ad2f45-41f4-4ec5-90fa-a6643f7b41e4",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:26.996Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:26.996Z",
+  "updatedAt": "2026-10-01T07:14:27.182Z"
+ },
+ {
+  "delegationId": "delg-c7a4d913-b59c-4ab2-aed1-d3e7323d0529",
+  "orgId": "delg-test-org-7",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-0db93f3d-0bf4-4f5c-b1b0-5cf11a1d4119",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:27.603Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 3,
+  "createdAt": "2026-10-01T07:14:27.603Z",
+  "updatedAt": "2026-10-01T07:14:28.025Z"
+ },
+ {
+  "delegationId": "delg-8314c093-64bf-4f68-afa8-ce6198554088",
+  "orgId": "delg-test-org-8",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-7d5cab75-0a7c-4a43-9a84-e2951242a355",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:28.425Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:28.425Z",
+  "updatedAt": "2026-10-01T07:14:28.740Z"
+ },
+ {
+  "delegationId": "delg-1959b0c5-4378-4954-af23-0ffbf5154c28",
+  "orgId": "delg-test-org-9",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-782b5857-65a2-4953-b068-82cf553d4b77",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:29.301Z",
+  "expiresAt": "2026-10-01T07:14:29.326Z",
+  "status": "EXPIRED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:29.301Z",
+  "updatedAt": "2026-10-01T07:14:29.595Z"
+ },
+ {
+  "delegationId": "delg-f52f80c9-9eaa-4fe5-9cd7-03c10f65f9d9",
+  "orgId": "delg-test-org-10",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-69dd4b60-a276-4ffc-8f52-75a845a2fbb6",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:29.978Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:29.978Z",
+  "updatedAt": "2026-10-01T07:14:29.978Z"
+ },
+ {
+  "delegationId": "delg-266f9285-c5ae-491e-bf31-a81f070b432d",
+  "orgId": "delg-test-org-11a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-7c7ffd68-be89-4cb1-9430-72de70a3beb4",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:30.364Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:30.364Z",
+  "updatedAt": "2026-10-01T07:14:30.364Z"
+ },
+ {
+  "delegationId": "delg-ae211538-1c50-4f77-9e1b-5ca401747593",
+  "orgId": "delg-test-org-12a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-2945e0e5-5dc1-457d-9a83-9d3c35f54d71",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:30.773Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:30.773Z",
+  "updatedAt": "2026-10-01T07:14:30.773Z"
+ },
+ {
+  "delegationId": "delg-3f2fb75f-03ac-46e1-b2a1-e562b21e81ab",
+  "orgId": "delg-test-org-13a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-d14af465-06e8-48ea-8955-cfce994f297b",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:31.265Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:31.265Z",
+  "updatedAt": "2026-10-01T07:14:31.265Z"
+ },
+ {
+  "delegationId": "delg-1307af46-cbe5-493e-880a-fb9fc0e143f3",
+  "orgId": "delg-test-org-14b",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-f89ccc1a-b88b-466c-9f20-987604d7a752",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:31.689Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:31.689Z",
+  "updatedAt": "2026-10-01T07:14:31.689Z"
+ },
+ {
+  "delegationId": "delg-0c22a399-bd77-4eaf-9403-3ac5e2c19c5f",
+  "orgId": "delg-test-org-15",
+  "delegatorUserId": "admin",
+  "agentId": "agent-6868f3b8-0e91-4954-843d-60045d7c7e59",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:32.387Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:32.387Z",
+  "updatedAt": "2026-10-01T07:14:32.387Z"
+ },
+ {
+  "delegationId": "delg-ffc4ab40-d8fd-48c6-ae28-ab95f55c4410",
+  "orgId": "delg-test-org-16",
+  "delegatorUserId": "admin",
+  "agentId": "agent-9e6325e8-f169-4eeb-9249-38cd6592460c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:32.839Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:32.839Z",
+  "updatedAt": "2026-10-01T07:14:32.839Z"
+ },
+ {
+  "delegationId": "delg-08002111-f469-4a4c-80ee-73162e3f2f1a",
+  "orgId": "delg-test-org-17",
+  "delegatorUserId": "admin",
+  "agentId": "agent-962b01b7-771c-491a-994a-2203f4176207",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:33.259Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:33.259Z",
+  "updatedAt": "2026-10-01T07:14:33.259Z"
+ },
+ {
+  "delegationId": "delg-c59b28f0-7620-457b-b619-6901089fe62f",
+  "orgId": "delg-test-org-18",
+  "delegatorUserId": "admin",
+  "agentId": "agent-cdc78a11-b49a-46da-a35c-a3842c50dfe5",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:33.802Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:33.802Z",
+  "updatedAt": "2026-10-01T07:14:33.802Z"
+ },
+ {
+  "delegationId": "delg-4cb9d707-0de7-45c6-b823-29a254626fac",
+  "orgId": "delg-test-org-19",
+  "delegatorUserId": "admin",
+  "agentId": "agent-71bb7882-5798-40ef-9654-ec18678d4f6a",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [
+   {
+    "resource": "db:payments"
+   }
+  ],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:34.250Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:34.250Z",
+  "updatedAt": "2026-10-01T07:14:34.250Z"
+ },
+ {
+  "delegationId": "delg-d10d1339-7e63-4cfe-8513-edb92b395eb9",
+  "orgId": "delg-test-org-20",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-2673950f-2c02-4d6e-ba64-9085af47676c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:34.770Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:34.770Z",
+  "updatedAt": "2026-10-01T07:14:34.770Z"
+ },
+ {
+  "delegationId": "delg-69f31d72-404a-4403-a204-6bbb615a6bde",
+  "orgId": "delg-test-org-21",
+  "delegatorUserId": "admin",
+  "agentId": "agent-594694bf-bb9e-432e-83d2-3572125a5156",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:35.191Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:35.191Z",
+  "updatedAt": "2026-10-01T07:14:35.191Z"
+ },
+ {
+  "delegationId": "delg-5f344fea-055d-4aea-a04d-af1449beabd3",
+  "orgId": "delg-test-org-21",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-594694bf-bb9e-432e-83d2-3572125a5156",
+  "parentDelegationId": "delg-69f31d72-404a-4403-a204-6bbb615a6bde",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:35.466Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:35.466Z",
+  "updatedAt": "2026-10-01T07:14:35.466Z"
+ },
+ {
+  "delegationId": "delg-524d68ea-fe84-4b46-afe1-dc36e77e8896",
+  "orgId": "delg-test-org-22",
+  "delegatorUserId": "admin",
+  "agentId": "agent-d4267497-bc8f-41dd-be33-c393eb263c5d",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:35.951Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:35.951Z",
+  "updatedAt": "2026-10-01T07:14:36.457Z"
+ },
+ {
+  "delegationId": "delg-29a7484b-38ae-4410-956e-3f42c630bd8f",
+  "orgId": "delg-test-org-22",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-d4267497-bc8f-41dd-be33-c393eb263c5d",
+  "parentDelegationId": "delg-524d68ea-fe84-4b46-afe1-dc36e77e8896",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:36.228Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:36.228Z",
+  "updatedAt": "2026-10-01T07:14:36.228Z"
+ },
+ {
+  "delegationId": "delg-acbba3ca-72eb-44f9-bbde-a4674d697192",
+  "orgId": "delg-test-org-23",
+  "delegatorUserId": "admin",
+  "agentId": "agent-823ffa58-83eb-4fee-9f72-c03be81ce564",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:37.042Z",
+  "expiresAt": "2026-10-01T06:14:37.481Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:37.042Z",
+  "updatedAt": "2026-10-01T07:14:37.042Z"
+ },
+ {
+  "delegationId": "delg-71af5314-e8e7-43f4-bf6e-0a3b08db1401",
+  "orgId": "delg-test-org-23",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-823ffa58-83eb-4fee-9f72-c03be81ce564",
+  "parentDelegationId": "delg-acbba3ca-72eb-44f9-bbde-a4674d697192",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:37.262Z",
+  "expiresAt": "2026-10-03T07:14:37.231Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:37.262Z",
+  "updatedAt": "2026-10-01T07:14:37.262Z"
+ },
+ {
+  "delegationId": "delg-94d1e4a6-325a-44e0-81fb-23e87af8b556",
+  "orgId": "delg-test-org-25",
+  "delegatorUserId": "admin",
+  "agentId": "agent-91487b24-80f8-4898-82dd-ee00e44206c7",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "critical",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:38.194Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:38.194Z",
+  "updatedAt": "2026-10-01T07:14:38.194Z"
+ },
+ {
+  "delegationId": "delg-8f342822-8046-4fa0-95d4-b733de656b53",
+  "orgId": "delg-test-org-26",
+  "delegatorUserId": "admin",
+  "agentId": "agent-8287ad4f-b775-4fd3-8c72-f11636d34ad1",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "restricted",
+  "maximumRisk": "high",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:38.595Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:38.595Z",
+  "updatedAt": "2026-10-01T07:14:38.595Z"
+ },
+ {
+  "delegationId": "delg-8ab095f5-95c5-4784-b03b-3bb81e9e1c7f",
+  "orgId": "delg-test-org-26",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-8287ad4f-b775-4fd3-8c72-f11636d34ad1",
+  "parentDelegationId": "delg-8f342822-8046-4fa0-95d4-b733de656b53",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "sensitive",
+  "maximumRisk": "medium",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:38.833Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:38.833Z",
+  "updatedAt": "2026-10-01T07:14:38.833Z"
+ },
+ {
+  "delegationId": "delg-b6745992-96bb-4244-834d-b8f6b7cfc869",
+  "orgId": "delg-test-org-27",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-f27da6ff-3bc1-4686-9874-f85e5c36ac68",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:39.282Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:39.282Z",
+  "updatedAt": "2026-10-01T07:14:39.282Z"
+ },
+ {
+  "delegationId": "delg-d6c5190d-d806-4ea0-b576-60c653f914cc",
+  "orgId": "delg-test-org-28",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-47f1cdd8-a535-4791-bd7c-4d3a6bf24d39",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:39.744Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:39.744Z",
+  "updatedAt": "2026-10-01T07:14:39.744Z"
+ },
+ {
+  "delegationId": "delg-21933368-2e0b-4147-95cc-bd952a164612",
+  "orgId": "delg-test-org-29",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-4d15d9b0-36a9-4b7e-b11c-b13702f5c8c8",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:40.372Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:40.372Z",
+  "updatedAt": "2026-10-01T07:14:40.372Z"
+ },
+ {
+  "delegationId": "delg-ab5bddbb-62d8-4122-a375-c681f3fe5c4f",
+  "orgId": "delg-test-org-30",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-a783cf32-bfb4-465c-893e-a11bb1c30c3c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:40.963Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:40.963Z",
+  "updatedAt": "2026-10-01T07:14:40.963Z"
+ },
+ {
+  "delegationId": "delg-5cf73428-e79f-4991-bf58-e19d44cdfd63",
+  "orgId": "delg-test-org-31",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-14b9c5c1-1af0-4233-bbf1-8260f22d25fb",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [
+   {
+    "resource": "db:payments"
+   }
+  ],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:41.548Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:41.548Z",
+  "updatedAt": "2026-10-01T07:14:41.548Z"
+ },
+ {
+  "delegationId": "delg-f2b25067-7dec-47a5-bccf-c334e9f86dc2",
+  "orgId": "delg-test-org-32",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-08a874e1-2121-4b4e-a5c9-2a163b035a27",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:42.317Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:42.317Z",
+  "updatedAt": "2026-10-01T07:14:42.317Z"
+ },
+ {
+  "delegationId": "delg-060ead9d-c4bc-4f73-a990-8f0dbeeef675",
+  "orgId": "delg-test-org-33",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-ade1cc8f-3fea-4e5f-8a38-6967a0e41721",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:42.867Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:42.867Z",
+  "updatedAt": "2026-10-01T07:14:42.867Z"
+ },
+ {
+  "delegationId": "delg-590b4a79-28b3-465d-a6a1-b6c797c01a1a",
+  "orgId": "delg-test-org-34",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-0e3f4b30-4a19-443f-ab38-31c598c923a7",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:43.634Z",
+  "expiresAt": "2026-10-01T07:14:43.666Z",
+  "status": "EXPIRED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:43.634Z",
+  "updatedAt": "2026-10-01T07:14:43.937Z"
+ },
+ {
+  "delegationId": "delg-39018201-2d05-4e8c-8919-6b81c40b29ac",
+  "orgId": "delg-test-org-35",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-1604bf0b-17a5-46e6-85d8-edf2cf4eb863",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:44.508Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:44.508Z",
+  "updatedAt": "2026-10-01T07:14:44.715Z"
+ },
+ {
+  "delegationId": "delg-c426fff9-8c29-434e-be4d-450bedb44dc3",
+  "orgId": "delg-test-org-36",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-e918c186-e1d4-4229-8412-680552bea254",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:45.278Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "SUSPENDED",
+  "version": 2,
+  "createdAt": "2026-10-01T07:14:45.278Z",
+  "updatedAt": "2026-10-01T07:14:45.487Z"
+ },
+ {
+  "delegationId": "delg-5720fb1d-0b11-4e28-8f33-6fc8b38e1be1",
+  "orgId": "delg-test-org-37",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-195ebf71-99da-45ff-9800-d5aed5f24094",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:46.047Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:46.047Z",
+  "updatedAt": "2026-10-01T07:14:46.047Z"
+ },
+ {
+  "delegationId": "delg-ba89e90d-4538-47b7-a072-47fe45fb5fa9",
+  "orgId": "delg-test-org-39",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-19951f11-d211-4813-947f-04ffd2c94dfe",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:47.088Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:47.088Z",
+  "updatedAt": "2026-10-01T07:14:47.088Z"
+ },
+ {
+  "delegationId": "delg-db770d7f-243c-4a69-ab20-bc8bb2c8b04b",
+  "orgId": "delg-test-org-40a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-d401eae8-4cd5-480c-bb45-b49e99f4dee6",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:47.685Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:47.685Z",
+  "updatedAt": "2026-10-01T07:14:47.685Z"
+ },
+ {
+  "delegationId": "delg-f7e72bdc-5cfb-40c6-95d0-d72d6d2f67e2",
+  "orgId": "delg-test-org-45",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-cb2acdc0-cd91-41b4-9d30-3f42b037b598",
+  "parentDelegationId": null,
+  "purpose": "Audited updated purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:48.523Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "REVOKED",
+  "version": 5,
+  "createdAt": "2026-10-01T07:14:48.523Z",
+  "updatedAt": "2026-10-01T07:14:49.370Z"
+ },
+ {
+  "delegationId": "delg-0120edfb-0317-4cd1-958d-a95ff8f8d4ad",
+  "orgId": "delg-test-org-46",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-a2fdeae4-c7a2-4e32-b140-d3ef99ffba33",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:50.091Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:50.091Z",
+  "updatedAt": "2026-10-01T07:14:50.091Z"
+ },
+ {
+  "delegationId": "delg-067f6d43-db1e-47e1-b5f8-ed33c3256f90",
+  "orgId": "delg-test-org-48",
+  "delegatorUserId": "admin",
+  "agentId": "agent-c16e09f0-011a-43f7-8147-0da2c491403c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T07:14:51.439Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:51.439Z",
+  "updatedAt": "2026-10-01T07:14:51.439Z"
+ },
+ {
+  "delegationId": "delg-bc5587de-f5ba-4cdd-8b71-9f52912a283c",
+  "orgId": "delg-test-org-48",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-c16e09f0-011a-43f7-8147-0da2c491403c",
+  "parentDelegationId": "delg-067f6d43-db1e-47e1-b5f8-ed33c3256f90",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T07:14:51.736Z",
+  "expiresAt": "2026-10-02T07:14:19.412Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T07:14:51.736Z",
+  "updatedAt": "2026-10-01T07:14:51.736Z"
+ },
+ {
+  "delegationId": "delg-81c49533-f79e-45ac-a5e6-f31a5ef4d7ac",
+  "orgId": "delg-test-org-1",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-9c781793-a9de-469c-9efb-530931fa4fda",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:33.025Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:33.025Z",
+  "updatedAt": "2026-10-01T08:05:33.025Z"
+ },
+ {
+  "delegationId": "delg-cbd46445-c8dd-42f2-a72a-8d9d0f31a77f",
+  "orgId": "delg-test-org-2",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-efc242ef-d42d-40dd-ae5f-108258f97170",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:33.379Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:33.379Z",
+  "updatedAt": "2026-10-01T08:05:33.379Z"
+ },
+ {
+  "delegationId": "delg-ad10ca49-ffbe-4ec2-8ea6-825b8b05100c",
+  "orgId": "delg-test-org-3",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-32a4d24f-fa1c-496e-bf59-4b9cd88577f3",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:33.883Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:33.883Z",
+  "updatedAt": "2026-10-01T08:05:33.883Z"
+ },
+ {
+  "delegationId": "delg-09329b5f-b2e1-4d8d-bca3-1a7f51bdd0d4",
+  "orgId": "delg-test-org-3",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-bac0f1d4-884b-4303-9daf-6dcf7ce98e20",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:34.077Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:34.077Z",
+  "updatedAt": "2026-10-01T08:05:34.077Z"
+ },
+ {
+  "delegationId": "delg-80ec9563-eb46-4442-875f-58a195f0712e",
+  "orgId": "delg-test-org-4",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-1ca6c9aa-4b47-4357-b25d-96acdb371e4b",
+  "parentDelegationId": null,
+  "purpose": "Narrowed update purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:34.458Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:34.458Z",
+  "updatedAt": "2026-10-01T08:05:34.608Z"
+ },
+ {
+  "delegationId": "delg-91db697a-7b3b-4234-a8fb-3cf08f2399c2",
+  "orgId": "delg-test-org-5",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-ee3b3c0b-ce91-4db3-9ddc-f94dd158f7c3",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:34.943Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "SUSPENDED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:34.943Z",
+  "updatedAt": "2026-10-01T08:05:35.149Z"
+ },
+ {
+  "delegationId": "delg-c074a421-541e-43eb-af9d-bf7b20df8637",
+  "orgId": "delg-test-org-6",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-49d6e6ef-4018-44de-8670-8428cc2e7d22",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:35.593Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:35.593Z",
+  "updatedAt": "2026-10-01T08:05:35.837Z"
+ },
+ {
+  "delegationId": "delg-2afc659b-3b4a-4b00-bbe2-9492ab0e6b74",
+  "orgId": "delg-test-org-7",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-0229263a-ec08-4d18-8af7-8d977dcde890",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:36.327Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 3,
+  "createdAt": "2026-10-01T08:05:36.327Z",
+  "updatedAt": "2026-10-01T08:05:36.785Z"
+ },
+ {
+  "delegationId": "delg-9135d024-4a2e-4f1e-a7bf-8f402cb70679",
+  "orgId": "delg-test-org-8",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-860441bc-5e49-4fee-8fab-b6aae47c6107",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:37.277Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:37.277Z",
+  "updatedAt": "2026-10-01T08:05:37.488Z"
+ },
+ {
+  "delegationId": "delg-e88c40f2-49d0-44ef-a075-b6147158cd8c",
+  "orgId": "delg-test-org-9",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-ff7b8b50-aa42-4400-a55a-b755e77f111c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:37.949Z",
+  "expiresAt": "2026-10-01T08:05:37.977Z",
+  "status": "EXPIRED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:37.949Z",
+  "updatedAt": "2026-10-01T08:05:38.237Z"
+ },
+ {
+  "delegationId": "delg-73a5ba68-c8ae-46d1-a887-79d14c0c011a",
+  "orgId": "delg-test-org-10",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-25f2593d-d882-4be7-b6f4-752b932ebfb6",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:38.714Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:38.714Z",
+  "updatedAt": "2026-10-01T08:05:38.714Z"
+ },
+ {
+  "delegationId": "delg-1a101279-5fd9-48ab-aae1-45612e15b63e",
+  "orgId": "delg-test-org-11a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-977f4e9e-8804-43e5-bdcc-cb951a61bb4c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:39.132Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:39.132Z",
+  "updatedAt": "2026-10-01T08:05:39.132Z"
+ },
+ {
+  "delegationId": "delg-2128d865-fb1b-4931-a773-f493d516e4c5",
+  "orgId": "delg-test-org-12a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-60cf7c58-d3bc-4b23-8869-3665fc0fa03e",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:39.591Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:39.591Z",
+  "updatedAt": "2026-10-01T08:05:39.591Z"
+ },
+ {
+  "delegationId": "delg-ef6f2df6-841f-41d4-ba4c-77fa5dbd6d1c",
+  "orgId": "delg-test-org-13a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-d433bd3b-119f-4f46-99fc-4e939b3e5bfd",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:40.053Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:40.053Z",
+  "updatedAt": "2026-10-01T08:05:40.053Z"
+ },
+ {
+  "delegationId": "delg-696cbf0e-6451-4950-9864-5c3bfd7a7a9f",
+  "orgId": "delg-test-org-14b",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-70a85f21-561d-4ffe-b5ac-bb3cfb462bc4",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:40.512Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:40.512Z",
+  "updatedAt": "2026-10-01T08:05:40.512Z"
+ },
+ {
+  "delegationId": "delg-8e3fa495-58c9-4e8b-8cac-5fea0744850d",
+  "orgId": "delg-test-org-15",
+  "delegatorUserId": "admin",
+  "agentId": "agent-7458b4ec-cf47-4a50-bf03-cc46b59b9344",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:41.196Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:41.196Z",
+  "updatedAt": "2026-10-01T08:05:41.196Z"
+ },
+ {
+  "delegationId": "delg-c6d983dd-a53d-4c02-b545-1648cc4c445d",
+  "orgId": "delg-test-org-16",
+  "delegatorUserId": "admin",
+  "agentId": "agent-cbe354ff-5da4-4f1d-947b-47aa743d7ef5",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:41.651Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:41.651Z",
+  "updatedAt": "2026-10-01T08:05:41.651Z"
+ },
+ {
+  "delegationId": "delg-63899b1b-55dd-47d8-9c23-9d7b15ca5e67",
+  "orgId": "delg-test-org-17",
+  "delegatorUserId": "admin",
+  "agentId": "agent-c230b615-8251-4506-a252-c140b578b003",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:42.205Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:42.205Z",
+  "updatedAt": "2026-10-01T08:05:42.205Z"
+ },
+ {
+  "delegationId": "delg-58353af2-5528-490a-8c90-5944e8cdf2d9",
+  "orgId": "delg-test-org-18",
+  "delegatorUserId": "admin",
+  "agentId": "agent-b85f6a41-93a7-4307-a3ae-f6d7121b619a",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:42.685Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:42.685Z",
+  "updatedAt": "2026-10-01T08:05:42.685Z"
+ },
+ {
+  "delegationId": "delg-74f8bf3a-c939-47bc-8f7a-c723b55f3d44",
+  "orgId": "delg-test-org-19",
+  "delegatorUserId": "admin",
+  "agentId": "agent-3616805e-05d7-43a2-a871-06d6c0b3e073",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [
+   {
+    "resource": "db:payments"
+   }
+  ],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:43.232Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:43.232Z",
+  "updatedAt": "2026-10-01T08:05:43.232Z"
+ },
+ {
+  "delegationId": "delg-23742039-67ed-4f7d-97fc-8f83a66e0ae9",
+  "orgId": "delg-test-org-20",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-3ca1e331-a1ee-4661-9778-88dee6df4628",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:43.708Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:43.708Z",
+  "updatedAt": "2026-10-01T08:05:43.708Z"
+ },
+ {
+  "delegationId": "delg-d705a791-839f-4bec-ae84-0d17e6f44ab8",
+  "orgId": "delg-test-org-21",
+  "delegatorUserId": "admin",
+  "agentId": "agent-767f67ee-db10-4ac3-848e-11fb1151e660",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:44.139Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:44.139Z",
+  "updatedAt": "2026-10-01T08:05:44.139Z"
+ },
+ {
+  "delegationId": "delg-8eedba2e-8998-4829-8b7e-413b23b871d4",
+  "orgId": "delg-test-org-21",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-767f67ee-db10-4ac3-848e-11fb1151e660",
+  "parentDelegationId": "delg-d705a791-839f-4bec-ae84-0d17e6f44ab8",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:44.421Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:44.421Z",
+  "updatedAt": "2026-10-01T08:05:44.421Z"
+ },
+ {
+  "delegationId": "delg-138a9382-4c7c-491e-a610-13943c15d0e1",
+  "orgId": "delg-test-org-22",
+  "delegatorUserId": "admin",
+  "agentId": "agent-2dd9aa14-b9f3-4e00-a6ef-6db6a9dffbf9",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:44.902Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:44.902Z",
+  "updatedAt": "2026-10-01T08:05:45.359Z"
+ },
+ {
+  "delegationId": "delg-ea86cd20-af9f-4d9c-b8bb-8c7cc9d1557f",
+  "orgId": "delg-test-org-22",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-2dd9aa14-b9f3-4e00-a6ef-6db6a9dffbf9",
+  "parentDelegationId": "delg-138a9382-4c7c-491e-a610-13943c15d0e1",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:45.132Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:45.132Z",
+  "updatedAt": "2026-10-01T08:05:45.132Z"
+ },
+ {
+  "delegationId": "delg-8a233829-be42-44ad-903d-45004ff99ccb",
+  "orgId": "delg-test-org-23",
+  "delegatorUserId": "admin",
+  "agentId": "agent-54afb6f4-bc7f-4a53-9043-58a982eb4f3c",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:45.977Z",
+  "expiresAt": "2026-10-01T07:05:46.487Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:45.977Z",
+  "updatedAt": "2026-10-01T08:05:45.977Z"
+ },
+ {
+  "delegationId": "delg-4d84c6a5-d473-4f71-a464-b2f90e293dbf",
+  "orgId": "delg-test-org-23",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-54afb6f4-bc7f-4a53-9043-58a982eb4f3c",
+  "parentDelegationId": "delg-8a233829-be42-44ad-903d-45004ff99ccb",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:46.245Z",
+  "expiresAt": "2026-10-03T08:05:46.198Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:46.245Z",
+  "updatedAt": "2026-10-01T08:05:46.245Z"
+ },
+ {
+  "delegationId": "delg-1aa0dbed-7595-48c7-9dd7-b524efb849ad",
+  "orgId": "delg-test-org-25",
+  "delegatorUserId": "admin",
+  "agentId": "agent-f62ada93-4f3b-4a06-89a4-fe674bcd2a06",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "critical",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:47.201Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:47.201Z",
+  "updatedAt": "2026-10-01T08:05:47.201Z"
+ },
+ {
+  "delegationId": "delg-c691f13a-f9f1-45e7-ae02-f8ea54cdf33c",
+  "orgId": "delg-test-org-26",
+  "delegatorUserId": "admin",
+  "agentId": "agent-19643e89-1f8b-489c-bb48-00e3a5f87b06",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "restricted",
+  "maximumRisk": "high",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:05:47.622Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:47.622Z",
+  "updatedAt": "2026-10-01T08:05:47.622Z"
+ },
+ {
+  "delegationId": "delg-7a4315d5-e26f-4086-97dd-2bf0fbf1fb1b",
+  "orgId": "delg-test-org-26",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-19643e89-1f8b-489c-bb48-00e3a5f87b06",
+  "parentDelegationId": "delg-c691f13a-f9f1-45e7-ae02-f8ea54cdf33c",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "sensitive",
+  "maximumRisk": "medium",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:47.862Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:47.862Z",
+  "updatedAt": "2026-10-01T08:05:47.862Z"
+ },
+ {
+  "delegationId": "delg-11c2cc6d-f586-402c-8485-783f2723548c",
+  "orgId": "delg-test-org-27",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-01bb9571-2e38-41ee-9f1e-be0d9601ea4e",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:48.325Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:48.325Z",
+  "updatedAt": "2026-10-01T08:05:48.325Z"
+ },
+ {
+  "delegationId": "delg-006bfea8-cdc9-4ebe-ad88-1bd5be64f7cf",
+  "orgId": "delg-test-org-28",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-34658780-0917-446c-b53a-9ba002eacfbf",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:48.774Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:48.774Z",
+  "updatedAt": "2026-10-01T08:05:48.774Z"
+ },
+ {
+  "delegationId": "delg-531c0a9f-1044-4eff-9d53-b118028e2aed",
+  "orgId": "delg-test-org-29",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-0be199de-92fb-48ee-8413-d038b5724865",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:49.458Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:49.458Z",
+  "updatedAt": "2026-10-01T08:05:49.458Z"
+ },
+ {
+  "delegationId": "delg-f2ef63ba-566b-4afd-a764-31d7ffd85b85",
+  "orgId": "delg-test-org-30",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-109d0da2-22dc-4acc-84a6-dff39944a6b1",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:50.140Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:50.140Z",
+  "updatedAt": "2026-10-01T08:05:50.140Z"
+ },
+ {
+  "delegationId": "delg-6322230a-f9c2-403b-9337-a70c8962db5c",
+  "orgId": "delg-test-org-31",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-0861284d-da62-4b44-911a-7099aea78ca2",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [
+   {
+    "resource": "db:payments"
+   }
+  ],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:50.817Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:50.817Z",
+  "updatedAt": "2026-10-01T08:05:50.817Z"
+ },
+ {
+  "delegationId": "delg-6584cc9e-4f67-49ba-8b3a-3dc4cefaac35",
+  "orgId": "delg-test-org-32",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-ee19d6b3-af45-418e-af52-d5bdd8872f77",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "task",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:51.670Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:51.670Z",
+  "updatedAt": "2026-10-01T08:05:51.670Z"
+ },
+ {
+  "delegationId": "delg-44070905-9efc-417b-886a-b0fc7357f25f",
+  "orgId": "delg-test-org-33",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-b05ce3d5-72b6-4905-a297-019c239e2f02",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:52.323Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:52.323Z",
+  "updatedAt": "2026-10-01T08:05:52.323Z"
+ },
+ {
+  "delegationId": "delg-e65fc2ad-38b5-4387-a0bc-77fbb66acac7",
+  "orgId": "delg-test-org-34",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-fcc2649c-d0eb-4aa3-88d8-cf397e32a80d",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:53.058Z",
+  "expiresAt": "2026-10-01T08:05:53.089Z",
+  "status": "EXPIRED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:53.058Z",
+  "updatedAt": "2026-10-01T08:05:53.391Z"
+ },
+ {
+  "delegationId": "delg-9e790589-5cd7-4237-b881-8460a6c15749",
+  "orgId": "delg-test-org-35",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-b841908d-fc25-47ad-a32a-b28add125f08",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:54.055Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "REVOKED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:54.055Z",
+  "updatedAt": "2026-10-01T08:05:54.265Z"
+ },
+ {
+  "delegationId": "delg-d249a80a-8d40-4a73-a8a8-f4dd90b0991b",
+  "orgId": "delg-test-org-36",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-e65e39be-03a1-4bf0-9ca9-af8a9885318b",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:54.970Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "SUSPENDED",
+  "version": 2,
+  "createdAt": "2026-10-01T08:05:54.970Z",
+  "updatedAt": "2026-10-01T08:05:55.238Z"
+ },
+ {
+  "delegationId": "delg-ff0776ab-0f03-4440-ba62-1ecc89cf0d54",
+  "orgId": "delg-test-org-37",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-8c850b3e-dfb9-42cf-a4f3-23dba03f87ff",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:55.935Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:55.935Z",
+  "updatedAt": "2026-10-01T08:05:55.935Z"
+ },
+ {
+  "delegationId": "delg-82faa7a8-6ec3-4a47-a1a2-a7434acde8b9",
+  "orgId": "delg-test-org-39",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-d67d9098-6fce-4332-90fb-a7341bc36490",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:57.019Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:57.019Z",
+  "updatedAt": "2026-10-01T08:05:57.019Z"
+ },
+ {
+  "delegationId": "delg-d9e1866d-05da-4b80-8edc-468523129732",
+  "orgId": "delg-test-org-40a",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-35ea74d8-d856-44ac-957b-f9f946e75d12",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:57.634Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:05:57.634Z",
+  "updatedAt": "2026-10-01T08:05:57.634Z"
+ },
+ {
+  "delegationId": "delg-68f6669e-ecec-43b7-b13b-fa72eb5e0957",
+  "orgId": "delg-test-org-45",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-a925ac01-f570-4795-af48-91ef0d932a3a",
+  "parentDelegationId": null,
+  "purpose": "Audited updated purpose",
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:05:58.498Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "REVOKED",
+  "version": 5,
+  "createdAt": "2026-10-01T08:05:58.498Z",
+  "updatedAt": "2026-10-01T08:05:59.499Z"
+ },
+ {
+  "delegationId": "delg-2c60f10d-315d-4263-ba48-be6191c9d75e",
+  "orgId": "delg-test-org-46",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-d7487516-eafc-415b-ab0c-b7132b210939",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:06:00.296Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:06:00.296Z",
+  "updatedAt": "2026-10-01T08:06:00.296Z"
+ },
+ {
+  "delegationId": "delg-d47ac1a7-a66a-476f-a068-cdfc368e1b53",
+  "orgId": "delg-test-org-48",
+  "delegatorUserId": "admin",
+  "agentId": "agent-aa438d22-c903-4a0f-9b1d-095cbad91e82",
+  "parentDelegationId": null,
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": true,
+  "issuedAt": "2026-10-01T08:06:01.711Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:06:01.711Z",
+  "updatedAt": "2026-10-01T08:06:01.711Z"
+ },
+ {
+  "delegationId": "delg-5546eb1c-377d-4af0-8899-eb3df6dc7982",
+  "orgId": "delg-test-org-48",
+  "delegatorUserId": "user-1",
+  "agentId": "agent-aa438d22-c903-4a0f-9b1d-095cbad91e82",
+  "parentDelegationId": "delg-d47ac1a7-a66a-476f-a068-cdfc368e1b53",
+  "purpose": "Test delegation purpose",
+  "allowedActions": [
+   "read"
+  ],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedResources": [],
+  "dataScope": "organization",
+  "maximumRisk": "low",
+  "constraints": {},
+  "canDelegate": false,
+  "issuedAt": "2026-10-01T08:06:01.952Z",
+  "expiresAt": "2026-10-02T08:05:32.809Z",
+  "status": "ACTIVE",
+  "version": 1,
+  "createdAt": "2026-10-01T08:06:01.952Z",
+  "updatedAt": "2026-10-01T08:06:01.952Z"
  }
 ]

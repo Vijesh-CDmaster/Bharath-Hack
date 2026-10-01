@@ -35,6 +35,7 @@ export function CommandPalette({
   const setBottomTab = useWorkspaceStore((s) => s.setBottomTab);
   const setExplorerOpen = useWorkspaceStore((s) => s.setExplorerOpen);
   const setChatOpen = useWorkspaceStore((s) => s.setChatOpen);
+  const setCenterView = useWorkspaceStore((s) => s.setCenterView);
 
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -51,6 +52,7 @@ export function CommandPalette({
       { id: "toggle-sidebar", label: "Toggle Sidebar", shortcut: "Ctrl+B", action: () => setExplorerOpen(!useWorkspaceStore.getState().explorerOpen) },
       { id: "toggle-panel", label: "Toggle Bottom Panel", shortcut: "Ctrl+`", action: () => toggleBottom() },
       { id: "toggle-agent", label: "Toggle Agent Panel", action: () => setChatOpen(!useWorkspaceStore.getState().chatOpen) },
+      { id: "preview", label: "Preview: Toggle Project Preview", shortcut: "Ctrl+Shift+V", action: () => setCenterView(useWorkspaceStore.getState().centerView === "preview" ? "editor" : "preview") },
       { id: "problems", label: "Show Problems", action: () => setBottomTab("problems") },
       { id: "output", label: "Show Output", action: () => setBottomTab("output") },
       { id: "events", label: "Show Events", action: () => setBottomTab("events") },

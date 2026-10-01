@@ -18,6 +18,7 @@ import { codeArtifactOf, type ExecutionResult, type PipelineSession } from "../s
 import { applyFileOpToSession } from "../services/workspace";
 import { extractFileOps } from "../services/fileops";
 import { assertModelsFinalized } from "../services/execution";
+import { ensurePreviewEntry, ensureProjectScaffolding } from "../services/scaffold";
 
 async function executeSession(orgId: string, sessionId: string): Promise<void> {
   const session: PipelineSession | null = await getSession(orgId, sessionId);
@@ -67,9 +68,9 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
       const challengerModel = task.risk === "high" ? alternateModelOf(model) : undefined;
       const failureForecast = await forecastTaskFailure({ orgId, model, taskCategory: task.category, risk: task.risk });
       const [exec, challenger] = await Promise.all([
-        geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model }),
+        geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model, targetPlatform: session.targetPlatform }),
         challengerModel
-          ? geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model: challengerModel })
+          ? geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model: challengerModel, targetPlatform: session.targetPlatform })
           : Promise.resolve(undefined),
       ]);
 
@@ -189,6 +190,11 @@ async function executeSession(orgId: string, sessionId: string): Promise<void> {
     }
     await saveSession(orgId, session);
   }
+
+  // Same post-pass as the inline executor: industrial scaffolding + guaranteed
+  // preview entry for web projects (best-effort, never fails the run).
+  await ensureProjectScaffolding(orgId, session);
+  await ensurePreviewEntry(orgId, session);
 
   session.gate = "review";
   session.gateStatus = "awaiting_user";

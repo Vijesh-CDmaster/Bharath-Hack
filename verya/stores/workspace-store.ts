@@ -26,6 +26,9 @@ export type Buffer = {
 
 export type ActiveView = "explorer" | "search" | "changes" | "run" | "governance";
 
+/** Center-area overlay: null shows the editor, "preview" shows the preview pane. */
+export type CenterView = "editor" | "preview";
+
 export type BottomTab = "terminal" | "problems" | "output" | "changes" | "tests" | "verification" | "events";
 
 type WorkspaceState = {
@@ -39,6 +42,7 @@ type WorkspaceState = {
   activeView: ActiveView;
 
   // Panels
+  centerView: CenterView;
   bottomTab: BottomTab;
   bottomOpen: boolean;
   explorerOpen: boolean;
@@ -69,6 +73,7 @@ type WorkspaceState = {
   markSaved: (path: string, version: number) => void;
   setSearch: (q: string) => void;
   setActiveView: (view: ActiveView) => void;
+  setCenterView: (view: CenterView) => void;
   setBottomTab: (tab: BottomTab) => void;
   toggleBottom: () => void;
   setExplorerOpen: (open: boolean) => void;
@@ -96,6 +101,7 @@ export const useWorkspaceStore = create<WorkspaceState>()((set) => ({
 
   activeView: "explorer",
 
+  centerView: "editor" as CenterView,
   bottomTab: "output",
   bottomOpen: true,
   explorerOpen: true,
@@ -159,6 +165,7 @@ export const useWorkspaceStore = create<WorkspaceState>()((set) => ({
     }),
 
   setSearch: (q) => set({ search: q }),
+  setCenterView: (view) => set({ centerView: view }),
   setActiveView: (view) => set({ activeView: view, explorerOpen: true }),
   setBottomTab: (tab) => set({ bottomTab: tab, bottomOpen: true }),
   toggleBottom: () => set((s) => ({ bottomOpen: !s.bottomOpen })),
@@ -178,5 +185,5 @@ export const useWorkspaceStore = create<WorkspaceState>()((set) => ({
   selectTask: (id) => set({ selectedTaskId: id }),
 
   reset: () =>
-    set({ openPaths: [], activePath: null, buffers: {}, messages: [], chatBusy: false, selectedTaskId: null, search: "", activeView: "explorer", commandPaletteOpen: false, quickOpenOpen: false }),
+    set({ openPaths: [], activePath: null, buffers: {}, messages: [], chatBusy: false, selectedTaskId: null, search: "", activeView: "explorer", centerView: "editor" as CenterView, commandPaletteOpen: false, quickOpenOpen: false }),
 }));

@@ -19,6 +19,7 @@ import { initialTrustBudget, trustCostFor } from "../lib/trust-budget";
 import { certificateFor } from "../lib/certificates";
 import { applyFileOpToSession, type FileOp } from "./workspace";
 import { extractFileOps } from "./fileops";
+import { ensurePreviewEntry, ensureProjectScaffolding } from "./scaffold";
 
 /** Sessions whose execution loop is currently running in this process. */
 const executing = new Set<string>();
@@ -189,9 +190,9 @@ export async function runExecution(orgId: string, sessionId: string): Promise<{ 
       const challengerModel = task.risk === "high" ? alternateModelOf(model) : undefined;
       const failureForecast = await forecastTaskFailure({ orgId, model, taskCategory: task.category, risk: task.risk, injectionRisk: session.inputSecurity?.risk });
       const [exec, challenger] = await Promise.all([
-        geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model }),
+        geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model, targetPlatform: session.targetPlatform }),
         challengerModel
-          ? geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model: challengerModel })
+          ? geminiAdapters.executeTask({ task, algorithm, stack: stackText, workflow: session.workflow, model: challengerModel, targetPlatform: session.targetPlatform })
           : Promise.resolve(undefined),
       ]);
 
@@ -402,6 +403,12 @@ export async function runExecution(orgId: string, sessionId: string): Promise<{ 
       detail: { summary: `${task.title} blocked by failed dependency ${failingDep}` },
     });
   }
+
+  // Post-pass (best-effort, never fails the run): industrial scaffolding for every
+  // project + a guaranteed preview entry for web projects so the IDE Preview
+  // always renders the real app.
+  await ensureProjectScaffolding(orgId, session);
+  await ensurePreviewEntry(orgId, session);
 
   const anyFailed = session.executions.some((e) => e.status === "failed");
   session.gate = "review";

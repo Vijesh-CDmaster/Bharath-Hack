@@ -6,7 +6,7 @@ import { z } from "zod";
 
 export type Severity = "critical" | "high" | "medium" | "low";
 export const SeveritySchema = z.enum(["critical", "high", "medium", "low"]);
-export const TargetPlatformSchema = z.enum(["android", "ios", "both"]);
+export const TargetPlatformSchema = z.enum(["web", "android", "ios", "both"]);
 export type TargetPlatform = z.infer<typeof TargetPlatformSchema>;
 
 // Gemini 3.x quirks: explicit null for absent optionals, and arrays sometimes arrive as

@@ -47421,5 +47421,3115 @@
   "delegationChain": [],
   "createdAt": "2026-09-21T16:33:30.252Z",
   "updatedAt": "2026-09-21T16:33:30.252Z"
+ },
+ {
+  "agentId": "agent-d2b58c90-f153-4f74-94b3-3e23e45b5d86",
+  "orgId": "agent-test-org-1",
+  "owner": "user-1",
+  "name": "Planner Agent 1",
+  "description": "Planning specialist",
+  "purpose": "Decomposes complex goals into tasks",
+  "agentType": "planner",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [
+   "google/gemini-2.5-flash"
+  ],
+  "allowedTools": [
+   "jira"
+  ],
+  "allowedActions": [
+   "create",
+   "read"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:11.906Z",
+  "updatedAt": "2026-10-01T07:14:11.906Z"
+ },
+ {
+  "agentId": "agent-9336386e-96e1-41f8-9e93-940da5dd5978",
+  "orgId": "agent-test-org-2",
+  "owner": "user-1",
+  "name": "Analyzer Agent 2",
+  "description": "",
+  "purpose": "Analyzes system bottlenecks",
+  "agentType": "analyzer",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:12.097Z",
+  "updatedAt": "2026-10-01T07:14:12.097Z"
+ },
+ {
+  "agentId": "agent-11b56372-b59e-4672-909b-b2496bfea28e",
+  "orgId": "agent-test-org-3",
+  "owner": "user-1",
+  "name": "Verifier Alpha",
+  "description": "",
+  "purpose": "Output verifier",
+  "agentType": "verifier",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:12.229Z",
+  "updatedAt": "2026-10-01T07:14:12.229Z"
+ },
+ {
+  "agentId": "agent-60c778f8-edbd-4f62-a33e-5711edaf1601",
+  "orgId": "agent-test-org-4",
+  "owner": "user-1",
+  "name": "Updated Name",
+  "description": "",
+  "purpose": "Initial purpose statement",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:12.399Z",
+  "updatedAt": "2026-10-01T07:14:12.631Z"
+ },
+ {
+  "agentId": "agent-480e5a25-e45a-4499-ad3c-49ead60e4bf0",
+  "orgId": "agent-test-org-5",
+  "owner": "user-1",
+  "name": "Agent to Suspend",
+  "description": "",
+  "purpose": "Testing suspension transition",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:12.813Z",
+  "updatedAt": "2026-10-01T07:14:12.966Z"
+ },
+ {
+  "agentId": "agent-2a6bbdd2-577f-4ea2-b9d1-f89cf65b45f7",
+  "orgId": "agent-test-org-6",
+  "owner": "user-1",
+  "name": "Agent to Revoke",
+  "description": "",
+  "purpose": "Testing revocation transition",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_3",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "high",
+  "status": "revoked",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:13.119Z",
+  "updatedAt": "2026-10-01T07:14:13.356Z"
+ },
+ {
+  "agentId": "agent-26b85ee4-63d5-4004-aa3e-cf228638d0b7",
+  "orgId": "agent-test-org-7",
+  "owner": "user-1",
+  "name": "Agent to Archive",
+  "description": "",
+  "purpose": "Testing archival transition",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "archived",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:13.562Z",
+  "updatedAt": "2026-10-01T07:14:13.776Z"
+ },
+ {
+  "agentId": "agent-9e8fd9d4-d523-4a75-a0cf-659b7b831447",
+  "orgId": "agent-test-org-8",
+  "owner": "user-1",
+  "name": "Server ID Agent",
+  "description": "",
+  "purpose": "Proving ID is server-generated",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:14.007Z",
+  "updatedAt": "2026-10-01T07:14:14.007Z"
+ },
+ {
+  "agentId": "agent-115145d6-ffc4-4350-9ffd-ee3b930e581d",
+  "orgId": "agent-test-org-9",
+  "owner": "user-1",
+  "name": "Org Scoped Agent",
+  "description": "",
+  "purpose": "Proving org scoping",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:14.186Z",
+  "updatedAt": "2026-10-01T07:14:14.186Z"
+ },
+ {
+  "agentId": "agent-1c82f1b2-992a-4e0c-b9ec-0f5ceb1ee6b4",
+  "orgId": "agent-test-org-10a",
+  "owner": "user-1",
+  "name": "Org A Secret Agent",
+  "description": "",
+  "purpose": "Secret agent for Org A",
+  "agentType": "auditor",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "high",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:14.381Z",
+  "updatedAt": "2026-10-01T07:14:14.381Z"
+ },
+ {
+  "agentId": "agent-3bf4caf1-03b7-4cd9-ae84-cdec35fa8b2e",
+  "orgId": "agent-test-org-11a",
+  "owner": "user-1",
+  "name": "Org A Agent",
+  "description": "",
+  "purpose": "Agent for Org A",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:14.628Z",
+  "updatedAt": "2026-10-01T07:14:14.628Z"
+ },
+ {
+  "agentId": "agent-b1d89871-da0b-4361-a2d0-57fbb97c54e6",
+  "orgId": "agent-test-org-12a",
+  "owner": "user-1",
+  "name": "Org A Agent to Archive",
+  "description": "",
+  "purpose": "Agent for Org A",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:14.861Z",
+  "updatedAt": "2026-10-01T07:14:14.861Z"
+ },
+ {
+  "agentId": "agent-402ace4e-769b-409f-ac0d-e7c93d59c6bc",
+  "orgId": "agent-test-org-13a",
+  "owner": "user-1",
+  "name": "Org A Agent to Revoke",
+  "description": "",
+  "purpose": "Agent for Org A",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:15.082Z",
+  "updatedAt": "2026-10-01T07:14:15.082Z"
+ },
+ {
+  "agentId": "agent-ef9779b4-285f-48c9-834e-a683bf678930",
+  "orgId": "agent-test-org-14b",
+  "owner": "user-1",
+  "name": "Parent Agent in Org B",
+  "description": "",
+  "purpose": "Parent agent in Org B",
+  "agentType": "planner",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:15.284Z",
+  "updatedAt": "2026-10-01T07:14:15.284Z"
+ },
+ {
+  "agentId": "agent-c29606f7-2142-497a-b817-e446ffac22ef",
+  "orgId": "agent-test-org-19",
+  "owner": "user-1",
+  "name": "Lifecycle Agent",
+  "description": "",
+  "purpose": "Lifecycle state transitions",
+  "agentType": "reviewer",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "archived",
+  "version": 4,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:15.515Z",
+  "updatedAt": "2026-10-01T07:14:16.274Z"
+ },
+ {
+  "agentId": "agent-f569a80b-3d43-4009-b4c1-3e8ddc9ec95f",
+  "orgId": "agent-test-org-20",
+  "owner": "user-1",
+  "name": "Audited Creation Agent",
+  "description": "",
+  "purpose": "Audit event test",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:16.447Z",
+  "updatedAt": "2026-10-01T07:14:16.447Z"
+ },
+ {
+  "agentId": "agent-a997ab55-0a15-4c6e-8417-43ace17e95ce",
+  "orgId": "agent-test-org-21",
+  "owner": "user-1",
+  "name": "Renamed Audited Agent",
+  "description": "",
+  "purpose": "Audit event test",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:16.703Z",
+  "updatedAt": "2026-10-01T07:14:16.941Z"
+ },
+ {
+  "agentId": "agent-5af0b200-a6e8-4120-8be8-5aa9e4335efa",
+  "orgId": "agent-test-org-22",
+  "owner": "user-1",
+  "name": "Audited Suspension Agent",
+  "description": "",
+  "purpose": "Audit event test",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:17.219Z",
+  "updatedAt": "2026-10-01T07:14:17.508Z"
+ },
+ {
+  "agentId": "agent-60658a1a-aedf-4ed2-a2c2-5ece2051f077",
+  "orgId": "delg-test-org-1",
+  "owner": "test-user",
+  "name": "Create Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:19.433Z",
+  "updatedAt": "2026-10-01T07:14:19.433Z"
+ },
+ {
+  "agentId": "agent-dd513e4b-539a-4007-afb9-6713dd03f173",
+  "orgId": "delg-test-org-2",
+  "owner": "test-user",
+  "name": "Get Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:19.791Z",
+  "updatedAt": "2026-10-01T07:14:19.791Z"
+ },
+ {
+  "agentId": "agent-aaf57bb5-b448-4f9d-b88f-9e8746d0ec83",
+  "orgId": "delg-test-org-3",
+  "owner": "test-user",
+  "name": "List Agent A",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:20.195Z",
+  "updatedAt": "2026-10-01T07:14:20.195Z"
+ },
+ {
+  "agentId": "agent-37d62e14-3811-4f32-8bdd-3640b984af6c",
+  "orgId": "delg-test-org-3",
+  "owner": "test-user",
+  "name": "List Agent B",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:20.354Z",
+  "updatedAt": "2026-10-01T07:14:20.354Z"
+ },
+ {
+  "agentId": "agent-2d54784f-f9df-4964-bb72-d8ca266eeb12",
+  "orgId": "delg-test-org-4",
+  "owner": "test-user",
+  "name": "Update Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:25.522Z",
+  "updatedAt": "2026-10-01T07:14:25.522Z"
+ },
+ {
+  "agentId": "agent-d87c6797-7f35-402e-89b2-22f033c12da0",
+  "orgId": "delg-test-org-5",
+  "owner": "test-user",
+  "name": "Suspend Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:26.163Z",
+  "updatedAt": "2026-10-01T07:14:26.163Z"
+ },
+ {
+  "agentId": "agent-72ad2f45-41f4-4ec5-90fa-a6643f7b41e4",
+  "orgId": "delg-test-org-6",
+  "owner": "test-user",
+  "name": "Revoke Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:26.769Z",
+  "updatedAt": "2026-10-01T07:14:26.769Z"
+ },
+ {
+  "agentId": "agent-0db93f3d-0bf4-4f5c-b1b0-5cf11a1d4119",
+  "orgId": "delg-test-org-7",
+  "owner": "test-user",
+  "name": "Reactivate Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:27.357Z",
+  "updatedAt": "2026-10-01T07:14:27.357Z"
+ },
+ {
+  "agentId": "agent-7d5cab75-0a7c-4a43-9a84-e2951242a355",
+  "orgId": "delg-test-org-8",
+  "owner": "test-user",
+  "name": "Terminal Revoked Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:28.216Z",
+  "updatedAt": "2026-10-01T07:14:28.216Z"
+ },
+ {
+  "agentId": "agent-782b5857-65a2-4953-b068-82cf553d4b77",
+  "orgId": "delg-test-org-9",
+  "owner": "test-user",
+  "name": "Terminal Expired Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:29.023Z",
+  "updatedAt": "2026-10-01T07:14:29.023Z"
+ },
+ {
+  "agentId": "agent-69dd4b60-a276-4ffc-8f52-75a845a2fbb6",
+  "orgId": "delg-test-org-10",
+  "owner": "test-user",
+  "name": "Patch Status Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:29.782Z",
+  "updatedAt": "2026-10-01T07:14:29.782Z"
+ },
+ {
+  "agentId": "agent-7c7ffd68-be89-4cb1-9430-72de70a3beb4",
+  "orgId": "delg-test-org-11a",
+  "owner": "test-user",
+  "name": "Secret Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:30.169Z",
+  "updatedAt": "2026-10-01T07:14:30.169Z"
+ },
+ {
+  "agentId": "agent-2945e0e5-5dc1-457d-9a83-9d3c35f54d71",
+  "orgId": "delg-test-org-12a",
+  "owner": "test-user",
+  "name": "Cross Modify Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:30.576Z",
+  "updatedAt": "2026-10-01T07:14:30.576Z"
+ },
+ {
+  "agentId": "agent-d14af465-06e8-48ea-8955-cfce994f297b",
+  "orgId": "delg-test-org-13a",
+  "owner": "test-user",
+  "name": "Cross Revoke Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:31.026Z",
+  "updatedAt": "2026-10-01T07:14:31.026Z"
+ },
+ {
+  "agentId": "agent-f89ccc1a-b88b-466c-9f20-987604d7a752",
+  "orgId": "delg-test-org-14b",
+  "owner": "test-user",
+  "name": "Cross Parent Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:31.486Z",
+  "updatedAt": "2026-10-01T07:14:31.486Z"
+ },
+ {
+  "agentId": "agent-deb59b3e-4591-41bc-a984-783ed63aa3ff",
+  "orgId": "delg-test-org-14a",
+  "owner": "test-user",
+  "name": "Cross Child Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:31.884Z",
+  "updatedAt": "2026-10-01T07:14:31.884Z"
+ },
+ {
+  "agentId": "agent-6868f3b8-0e91-4954-843d-60045d7c7e59",
+  "orgId": "delg-test-org-15",
+  "owner": "test-user",
+  "name": "Escalate Risk Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:32.119Z",
+  "updatedAt": "2026-10-01T07:14:32.119Z"
+ },
+ {
+  "agentId": "agent-9e6325e8-f169-4eeb-9249-38cd6592460c",
+  "orgId": "delg-test-org-16",
+  "owner": "test-user",
+  "name": "Escalate Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:32.624Z",
+  "updatedAt": "2026-10-01T07:14:32.624Z"
+ },
+ {
+  "agentId": "agent-962b01b7-771c-491a-994a-2203f4176207",
+  "orgId": "delg-test-org-17",
+  "owner": "test-user",
+  "name": "Escalate Action Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:33.038Z",
+  "updatedAt": "2026-10-01T07:14:33.038Z"
+ },
+ {
+  "agentId": "agent-cdc78a11-b49a-46da-a35c-a3842c50dfe5",
+  "orgId": "delg-test-org-18",
+  "owner": "test-user",
+  "name": "Escalate Tool Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:33.585Z",
+  "updatedAt": "2026-10-01T07:14:33.585Z"
+ },
+ {
+  "agentId": "agent-71bb7882-5798-40ef-9654-ec18678d4f6a",
+  "orgId": "delg-test-org-19",
+  "owner": "test-user",
+  "name": "Escalate Resource Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:34.023Z",
+  "updatedAt": "2026-10-01T07:14:34.023Z"
+ },
+ {
+  "agentId": "agent-2673950f-2c02-4d6e-ba64-9085af47676c",
+  "orgId": "delg-test-org-20",
+  "owner": "test-user",
+  "name": "No Subdelegate Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:34.503Z",
+  "updatedAt": "2026-10-01T07:14:34.503Z"
+ },
+ {
+  "agentId": "agent-594694bf-bb9e-432e-83d2-3572125a5156",
+  "orgId": "delg-test-org-21",
+  "owner": "test-user",
+  "name": "Multi Level Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:34.988Z",
+  "updatedAt": "2026-10-01T07:14:34.988Z"
+ },
+ {
+  "agentId": "agent-d4267497-bc8f-41dd-be33-c393eb263c5d",
+  "orgId": "delg-test-org-22",
+  "owner": "test-user",
+  "name": "Revoked Chain Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:35.724Z",
+  "updatedAt": "2026-10-01T07:14:35.724Z"
+ },
+ {
+  "agentId": "agent-823ffa58-83eb-4fee-9f72-c03be81ce564",
+  "orgId": "delg-test-org-23",
+  "owner": "test-user",
+  "name": "Expired Chain Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:36.834Z",
+  "updatedAt": "2026-10-01T07:14:36.834Z"
+ },
+ {
+  "agentId": "agent-6710edbd-240e-4364-972d-bb28a4eba12d",
+  "orgId": "delg-test-org-24",
+  "owner": "test-user",
+  "name": "Wildcard Root Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:37.747Z",
+  "updatedAt": "2026-10-01T07:14:37.747Z"
+ },
+ {
+  "agentId": "agent-91487b24-80f8-4898-82dd-ee00e44206c7",
+  "orgId": "delg-test-org-25",
+  "owner": "test-user",
+  "name": "Critical Root Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:37.988Z",
+  "updatedAt": "2026-10-01T07:14:37.988Z"
+ },
+ {
+  "agentId": "agent-8287ad4f-b775-4fd3-8c72-f11636d34ad1",
+  "orgId": "delg-test-org-26",
+  "owner": "test-user",
+  "name": "Restricted Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:38.382Z",
+  "updatedAt": "2026-10-01T07:14:38.382Z"
+ },
+ {
+  "agentId": "agent-f27da6ff-3bc1-4686-9874-f85e5c36ac68",
+  "orgId": "delg-test-org-27",
+  "owner": "test-user",
+  "name": "Narrow Root Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:39.064Z",
+  "updatedAt": "2026-10-01T07:14:39.064Z"
+ },
+ {
+  "agentId": "agent-47f1cdd8-a535-4791-bd7c-4d3a6bf24d39",
+  "orgId": "delg-test-org-28",
+  "owner": "test-user",
+  "name": "Allow Path Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:39.482Z",
+  "updatedAt": "2026-10-01T07:14:39.482Z"
+ },
+ {
+  "agentId": "agent-4d15d9b0-36a9-4b7e-b11c-b13702f5c8c8",
+  "orgId": "delg-test-org-29",
+  "owner": "test-user",
+  "name": "Missing Action Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:40.126Z",
+  "updatedAt": "2026-10-01T07:14:40.126Z"
+ },
+ {
+  "agentId": "agent-a783cf32-bfb4-465c-893e-a11bb1c30c3c",
+  "orgId": "delg-test-org-30",
+  "owner": "test-user",
+  "name": "Wrong Tool Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:40.747Z",
+  "updatedAt": "2026-10-01T07:14:40.747Z"
+ },
+ {
+  "agentId": "agent-14b9c5c1-1af0-4233-bbf1-8260f22d25fb",
+  "orgId": "delg-test-org-31",
+  "owner": "test-user",
+  "name": "Resource Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:41.321Z",
+  "updatedAt": "2026-10-01T07:14:41.321Z"
+ },
+ {
+  "agentId": "agent-08a874e1-2121-4b4e-a5c9-2a163b035a27",
+  "orgId": "delg-test-org-32",
+  "owner": "test-user",
+  "name": "Wrong Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:42.115Z",
+  "updatedAt": "2026-10-01T07:14:42.115Z"
+ },
+ {
+  "agentId": "agent-ade1cc8f-3fea-4e5f-8a38-6967a0e41721",
+  "orgId": "delg-test-org-33",
+  "owner": "test-user",
+  "name": "Excessive Risk Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:42.657Z",
+  "updatedAt": "2026-10-01T07:14:42.657Z"
+ },
+ {
+  "agentId": "agent-0e3f4b30-4a19-443f-ab38-31c598c923a7",
+  "orgId": "delg-test-org-34",
+  "owner": "test-user",
+  "name": "Expiry Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:43.393Z",
+  "updatedAt": "2026-10-01T07:14:43.393Z"
+ },
+ {
+  "agentId": "agent-1604bf0b-17a5-46e6-85d8-edf2cf4eb863",
+  "orgId": "delg-test-org-35",
+  "owner": "test-user",
+  "name": "Revoked Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:44.291Z",
+  "updatedAt": "2026-10-01T07:14:44.291Z"
+ },
+ {
+  "agentId": "agent-e918c186-e1d4-4229-8412-680552bea254",
+  "orgId": "delg-test-org-36",
+  "owner": "test-user",
+  "name": "Suspended Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:45.056Z",
+  "updatedAt": "2026-10-01T07:14:45.056Z"
+ },
+ {
+  "agentId": "agent-195ebf71-99da-45ff-9800-d5aed5f24094",
+  "orgId": "delg-test-org-37",
+  "owner": "test-user",
+  "name": "Inactive Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:45.852Z",
+  "updatedAt": "2026-10-01T07:14:46.276Z"
+ },
+ {
+  "agentId": "agent-19951f11-d211-4813-947f-04ffd2c94dfe",
+  "orgId": "delg-test-org-39",
+  "owner": "test-user",
+  "name": "Unknown Delg Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:46.866Z",
+  "updatedAt": "2026-10-01T07:14:46.866Z"
+ },
+ {
+  "agentId": "agent-d401eae8-4cd5-480c-bb45-b49e99f4dee6",
+  "orgId": "delg-test-org-40a",
+  "owner": "test-user",
+  "name": "Tenant Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:47.444Z",
+  "updatedAt": "2026-10-01T07:14:47.444Z"
+ },
+ {
+  "agentId": "agent-cb2acdc0-cd91-41b4-9d30-3f42b037b598",
+  "orgId": "delg-test-org-45",
+  "owner": "test-user",
+  "name": "Audited Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:48.206Z",
+  "updatedAt": "2026-10-01T07:14:48.206Z"
+ },
+ {
+  "agentId": "agent-a2fdeae4-c7a2-4e32-b140-d3ef99ffba33",
+  "orgId": "delg-test-org-46",
+  "owner": "test-user",
+  "name": "Audited Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:49.882Z",
+  "updatedAt": "2026-10-01T07:14:49.882Z"
+ },
+ {
+  "agentId": "agent-b523de05-a120-4421-8856-d9c29891dcd5",
+  "orgId": "delg-test-org-47",
+  "owner": "test-user",
+  "name": "Inactive Target Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:50.767Z",
+  "updatedAt": "2026-10-01T07:14:51.015Z"
+ },
+ {
+  "agentId": "agent-c16e09f0-011a-43f7-8147-0da2c491403c",
+  "orgId": "delg-test-org-48",
+  "owner": "test-user",
+  "name": "Update Escalation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T07:14:51.220Z",
+  "updatedAt": "2026-10-01T07:14:51.220Z"
+ },
+ {
+  "agentId": "agent-192d0874-7d72-47bb-a824-4e933161ef73",
+  "orgId": "agent-test-org-1",
+  "owner": "user-1",
+  "name": "Planner Agent 1",
+  "description": "Planning specialist",
+  "purpose": "Decomposes complex goals into tasks",
+  "agentType": "planner",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [
+   "google/gemini-2.5-flash"
+  ],
+  "allowedTools": [
+   "jira"
+  ],
+  "allowedActions": [
+   "create",
+   "read"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:25.559Z",
+  "updatedAt": "2026-10-01T08:05:25.559Z"
+ },
+ {
+  "agentId": "agent-a437b5b9-097c-4675-bfc9-f27004547133",
+  "orgId": "agent-test-org-2",
+  "owner": "user-1",
+  "name": "Analyzer Agent 2",
+  "description": "",
+  "purpose": "Analyzes system bottlenecks",
+  "agentType": "analyzer",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:25.771Z",
+  "updatedAt": "2026-10-01T08:05:25.771Z"
+ },
+ {
+  "agentId": "agent-2dae6e88-c4dc-4911-83bf-13c4c513ab97",
+  "orgId": "agent-test-org-3",
+  "owner": "user-1",
+  "name": "Verifier Alpha",
+  "description": "",
+  "purpose": "Output verifier",
+  "agentType": "verifier",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:25.945Z",
+  "updatedAt": "2026-10-01T08:05:25.945Z"
+ },
+ {
+  "agentId": "agent-b44f6328-335b-45ac-bfb1-7188f690c970",
+  "orgId": "agent-test-org-4",
+  "owner": "user-1",
+  "name": "Updated Name",
+  "description": "",
+  "purpose": "Initial purpose statement",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:26.120Z",
+  "updatedAt": "2026-10-01T08:05:26.321Z"
+ },
+ {
+  "agentId": "agent-9bade9bf-6227-4b25-8973-aaecfccac394",
+  "orgId": "agent-test-org-5",
+  "owner": "user-1",
+  "name": "Agent to Suspend",
+  "description": "",
+  "purpose": "Testing suspension transition",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:26.482Z",
+  "updatedAt": "2026-10-01T08:05:26.621Z"
+ },
+ {
+  "agentId": "agent-0ba1a506-595a-49e3-9a91-44ffec3c88db",
+  "orgId": "agent-test-org-6",
+  "owner": "user-1",
+  "name": "Agent to Revoke",
+  "description": "",
+  "purpose": "Testing revocation transition",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_3",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "high",
+  "status": "revoked",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:26.766Z",
+  "updatedAt": "2026-10-01T08:05:26.987Z"
+ },
+ {
+  "agentId": "agent-37110c59-1289-4cb3-9a84-34efdf7a1655",
+  "orgId": "agent-test-org-7",
+  "owner": "user-1",
+  "name": "Agent to Archive",
+  "description": "",
+  "purpose": "Testing archival transition",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "archived",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:27.184Z",
+  "updatedAt": "2026-10-01T08:05:27.409Z"
+ },
+ {
+  "agentId": "agent-bd87b12e-5677-4b7a-a941-2d388329d792",
+  "orgId": "agent-test-org-8",
+  "owner": "user-1",
+  "name": "Server ID Agent",
+  "description": "",
+  "purpose": "Proving ID is server-generated",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:27.606Z",
+  "updatedAt": "2026-10-01T08:05:27.606Z"
+ },
+ {
+  "agentId": "agent-b18d2b8d-6b4b-4bb2-ab75-dcb0f294f14b",
+  "orgId": "agent-test-org-9",
+  "owner": "user-1",
+  "name": "Org Scoped Agent",
+  "description": "",
+  "purpose": "Proving org scoping",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:27.847Z",
+  "updatedAt": "2026-10-01T08:05:27.847Z"
+ },
+ {
+  "agentId": "agent-952b96cc-7fbf-4e9f-adf5-091e8acbc049",
+  "orgId": "agent-test-org-10a",
+  "owner": "user-1",
+  "name": "Org A Secret Agent",
+  "description": "",
+  "purpose": "Secret agent for Org A",
+  "agentType": "auditor",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "high",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:28.040Z",
+  "updatedAt": "2026-10-01T08:05:28.040Z"
+ },
+ {
+  "agentId": "agent-d9075b38-a981-4d7f-baff-6788cab5b3c7",
+  "orgId": "agent-test-org-11a",
+  "owner": "user-1",
+  "name": "Org A Agent",
+  "description": "",
+  "purpose": "Agent for Org A",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:28.323Z",
+  "updatedAt": "2026-10-01T08:05:28.323Z"
+ },
+ {
+  "agentId": "agent-ced117e2-6211-4bea-9b07-74c880abf86b",
+  "orgId": "agent-test-org-12a",
+  "owner": "user-1",
+  "name": "Org A Agent to Archive",
+  "description": "",
+  "purpose": "Agent for Org A",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:28.540Z",
+  "updatedAt": "2026-10-01T08:05:28.540Z"
+ },
+ {
+  "agentId": "agent-6705adb3-303d-4e80-aa81-300203c84ffa",
+  "orgId": "agent-test-org-13a",
+  "owner": "user-1",
+  "name": "Org A Agent to Revoke",
+  "description": "",
+  "purpose": "Agent for Org A",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:28.738Z",
+  "updatedAt": "2026-10-01T08:05:28.738Z"
+ },
+ {
+  "agentId": "agent-dee419c3-6133-4956-9706-cbcd0a917c01",
+  "orgId": "agent-test-org-14b",
+  "owner": "user-1",
+  "name": "Parent Agent in Org B",
+  "description": "",
+  "purpose": "Parent agent in Org B",
+  "agentType": "planner",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:28.959Z",
+  "updatedAt": "2026-10-01T08:05:28.959Z"
+ },
+ {
+  "agentId": "agent-6648fe52-165e-4dcf-b074-b847c847ab76",
+  "orgId": "agent-test-org-19",
+  "owner": "user-1",
+  "name": "Lifecycle Agent",
+  "description": "",
+  "purpose": "Lifecycle state transitions",
+  "agentType": "reviewer",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "archived",
+  "version": 4,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:29.177Z",
+  "updatedAt": "2026-10-01T08:05:29.886Z"
+ },
+ {
+  "agentId": "agent-cb4d11ab-61c0-4db5-a15a-09732a96edb7",
+  "orgId": "agent-test-org-20",
+  "owner": "user-1",
+  "name": "Audited Creation Agent",
+  "description": "",
+  "purpose": "Audit event test",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:30.071Z",
+  "updatedAt": "2026-10-01T08:05:30.071Z"
+ },
+ {
+  "agentId": "agent-0b7ac412-bc73-418b-8e8d-c2764ed2a00d",
+  "orgId": "agent-test-org-21",
+  "owner": "user-1",
+  "name": "Renamed Audited Agent",
+  "description": "",
+  "purpose": "Audit event test",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "active",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:30.391Z",
+  "updatedAt": "2026-10-01T08:05:30.622Z"
+ },
+ {
+  "agentId": "agent-75371916-f874-44ab-a76c-05510cb85d1f",
+  "orgId": "agent-test-org-22",
+  "owner": "user-1",
+  "name": "Audited Suspension Agent",
+  "description": "",
+  "purpose": "Audit event test",
+  "agentType": "custom",
+  "autonomyLevel": "LEVEL_1",
+  "allowedModels": [],
+  "allowedTools": [],
+  "allowedActions": [],
+  "dataScope": "organization",
+  "riskLevel": "low",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:30.890Z",
+  "updatedAt": "2026-10-01T08:05:31.111Z"
+ },
+ {
+  "agentId": "agent-9c781793-a9de-469c-9efb-530931fa4fda",
+  "orgId": "delg-test-org-1",
+  "owner": "test-user",
+  "name": "Create Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:32.825Z",
+  "updatedAt": "2026-10-01T08:05:32.825Z"
+ },
+ {
+  "agentId": "agent-efc242ef-d42d-40dd-ae5f-108258f97170",
+  "orgId": "delg-test-org-2",
+  "owner": "test-user",
+  "name": "Get Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:33.160Z",
+  "updatedAt": "2026-10-01T08:05:33.160Z"
+ },
+ {
+  "agentId": "agent-32a4d24f-fa1c-496e-bf59-4b9cd88577f3",
+  "orgId": "delg-test-org-3",
+  "owner": "test-user",
+  "name": "List Agent A",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:33.524Z",
+  "updatedAt": "2026-10-01T08:05:33.524Z"
+ },
+ {
+  "agentId": "agent-bac0f1d4-884b-4303-9daf-6dcf7ce98e20",
+  "orgId": "delg-test-org-3",
+  "owner": "test-user",
+  "name": "List Agent B",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:33.681Z",
+  "updatedAt": "2026-10-01T08:05:33.681Z"
+ },
+ {
+  "agentId": "agent-1ca6c9aa-4b47-4357-b25d-96acdb371e4b",
+  "orgId": "delg-test-org-4",
+  "owner": "test-user",
+  "name": "Update Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:34.282Z",
+  "updatedAt": "2026-10-01T08:05:34.282Z"
+ },
+ {
+  "agentId": "agent-ee3b3c0b-ce91-4db3-9ddc-f94dd158f7c3",
+  "orgId": "delg-test-org-5",
+  "owner": "test-user",
+  "name": "Suspend Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:34.750Z",
+  "updatedAt": "2026-10-01T08:05:34.750Z"
+ },
+ {
+  "agentId": "agent-49d6e6ef-4018-44de-8670-8428cc2e7d22",
+  "orgId": "delg-test-org-6",
+  "owner": "test-user",
+  "name": "Revoke Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:35.352Z",
+  "updatedAt": "2026-10-01T08:05:35.352Z"
+ },
+ {
+  "agentId": "agent-0229263a-ec08-4d18-8af7-8d977dcde890",
+  "orgId": "delg-test-org-7",
+  "owner": "test-user",
+  "name": "Reactivate Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:36.045Z",
+  "updatedAt": "2026-10-01T08:05:36.045Z"
+ },
+ {
+  "agentId": "agent-860441bc-5e49-4fee-8fab-b6aae47c6107",
+  "orgId": "delg-test-org-8",
+  "owner": "test-user",
+  "name": "Terminal Revoked Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:37.041Z",
+  "updatedAt": "2026-10-01T08:05:37.041Z"
+ },
+ {
+  "agentId": "agent-ff7b8b50-aa42-4400-a55a-b755e77f111c",
+  "orgId": "delg-test-org-9",
+  "owner": "test-user",
+  "name": "Terminal Expired Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:37.689Z",
+  "updatedAt": "2026-10-01T08:05:37.689Z"
+ },
+ {
+  "agentId": "agent-25f2593d-d882-4be7-b6f4-752b932ebfb6",
+  "orgId": "delg-test-org-10",
+  "owner": "test-user",
+  "name": "Patch Status Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:38.471Z",
+  "updatedAt": "2026-10-01T08:05:38.471Z"
+ },
+ {
+  "agentId": "agent-977f4e9e-8804-43e5-bdcc-cb951a61bb4c",
+  "orgId": "delg-test-org-11a",
+  "owner": "test-user",
+  "name": "Secret Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:38.919Z",
+  "updatedAt": "2026-10-01T08:05:38.919Z"
+ },
+ {
+  "agentId": "agent-60cf7c58-d3bc-4b23-8869-3665fc0fa03e",
+  "orgId": "delg-test-org-12a",
+  "owner": "test-user",
+  "name": "Cross Modify Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:39.355Z",
+  "updatedAt": "2026-10-01T08:05:39.355Z"
+ },
+ {
+  "agentId": "agent-d433bd3b-119f-4f46-99fc-4e939b3e5bfd",
+  "orgId": "delg-test-org-13a",
+  "owner": "test-user",
+  "name": "Cross Revoke Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:39.824Z",
+  "updatedAt": "2026-10-01T08:05:39.824Z"
+ },
+ {
+  "agentId": "agent-70a85f21-561d-4ffe-b5ac-bb3cfb462bc4",
+  "orgId": "delg-test-org-14b",
+  "owner": "test-user",
+  "name": "Cross Parent Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:40.280Z",
+  "updatedAt": "2026-10-01T08:05:40.280Z"
+ },
+ {
+  "agentId": "agent-09b9aa4f-a55a-464e-9f86-3318c3f50dd1",
+  "orgId": "delg-test-org-14a",
+  "owner": "test-user",
+  "name": "Cross Child Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:40.726Z",
+  "updatedAt": "2026-10-01T08:05:40.726Z"
+ },
+ {
+  "agentId": "agent-7458b4ec-cf47-4a50-bf03-cc46b59b9344",
+  "orgId": "delg-test-org-15",
+  "owner": "test-user",
+  "name": "Escalate Risk Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:40.966Z",
+  "updatedAt": "2026-10-01T08:05:40.966Z"
+ },
+ {
+  "agentId": "agent-cbe354ff-5da4-4f1d-947b-47aa743d7ef5",
+  "orgId": "delg-test-org-16",
+  "owner": "test-user",
+  "name": "Escalate Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:41.423Z",
+  "updatedAt": "2026-10-01T08:05:41.423Z"
+ },
+ {
+  "agentId": "agent-c230b615-8251-4506-a252-c140b578b003",
+  "orgId": "delg-test-org-17",
+  "owner": "test-user",
+  "name": "Escalate Action Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:41.884Z",
+  "updatedAt": "2026-10-01T08:05:41.884Z"
+ },
+ {
+  "agentId": "agent-b85f6a41-93a7-4307-a3ae-f6d7121b619a",
+  "orgId": "delg-test-org-18",
+  "owner": "test-user",
+  "name": "Escalate Tool Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:42.452Z",
+  "updatedAt": "2026-10-01T08:05:42.452Z"
+ },
+ {
+  "agentId": "agent-3616805e-05d7-43a2-a871-06d6c0b3e073",
+  "orgId": "delg-test-org-19",
+  "owner": "test-user",
+  "name": "Escalate Resource Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:42.993Z",
+  "updatedAt": "2026-10-01T08:05:42.993Z"
+ },
+ {
+  "agentId": "agent-3ca1e331-a1ee-4661-9778-88dee6df4628",
+  "orgId": "delg-test-org-20",
+  "owner": "test-user",
+  "name": "No Subdelegate Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:43.474Z",
+  "updatedAt": "2026-10-01T08:05:43.474Z"
+ },
+ {
+  "agentId": "agent-767f67ee-db10-4ac3-848e-11fb1151e660",
+  "orgId": "delg-test-org-21",
+  "owner": "test-user",
+  "name": "Multi Level Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:43.929Z",
+  "updatedAt": "2026-10-01T08:05:43.929Z"
+ },
+ {
+  "agentId": "agent-2dd9aa14-b9f3-4e00-a6ef-6db6a9dffbf9",
+  "orgId": "delg-test-org-22",
+  "owner": "test-user",
+  "name": "Revoked Chain Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:44.657Z",
+  "updatedAt": "2026-10-01T08:05:44.657Z"
+ },
+ {
+  "agentId": "agent-54afb6f4-bc7f-4a53-9043-58a982eb4f3c",
+  "orgId": "delg-test-org-23",
+  "owner": "test-user",
+  "name": "Expired Chain Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:45.731Z",
+  "updatedAt": "2026-10-01T08:05:45.731Z"
+ },
+ {
+  "agentId": "agent-f6deec03-6c0d-41ff-a013-7c5be012d161",
+  "orgId": "delg-test-org-24",
+  "owner": "test-user",
+  "name": "Wildcard Root Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:46.730Z",
+  "updatedAt": "2026-10-01T08:05:46.730Z"
+ },
+ {
+  "agentId": "agent-f62ada93-4f3b-4a06-89a4-fe674bcd2a06",
+  "orgId": "delg-test-org-25",
+  "owner": "test-user",
+  "name": "Critical Root Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:46.948Z",
+  "updatedAt": "2026-10-01T08:05:46.948Z"
+ },
+ {
+  "agentId": "agent-19643e89-1f8b-489c-bb48-00e3a5f87b06",
+  "orgId": "delg-test-org-26",
+  "owner": "test-user",
+  "name": "Restricted Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:47.417Z",
+  "updatedAt": "2026-10-01T08:05:47.417Z"
+ },
+ {
+  "agentId": "agent-01bb9571-2e38-41ee-9f1e-be0d9601ea4e",
+  "orgId": "delg-test-org-27",
+  "owner": "test-user",
+  "name": "Narrow Root Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:48.089Z",
+  "updatedAt": "2026-10-01T08:05:48.089Z"
+ },
+ {
+  "agentId": "agent-34658780-0917-446c-b53a-9ba002eacfbf",
+  "orgId": "delg-test-org-28",
+  "owner": "test-user",
+  "name": "Allow Path Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:48.535Z",
+  "updatedAt": "2026-10-01T08:05:48.535Z"
+ },
+ {
+  "agentId": "agent-0be199de-92fb-48ee-8413-d038b5724865",
+  "orgId": "delg-test-org-29",
+  "owner": "test-user",
+  "name": "Missing Action Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:49.161Z",
+  "updatedAt": "2026-10-01T08:05:49.161Z"
+ },
+ {
+  "agentId": "agent-109d0da2-22dc-4acc-84a6-dff39944a6b1",
+  "orgId": "delg-test-org-30",
+  "owner": "test-user",
+  "name": "Wrong Tool Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:49.877Z",
+  "updatedAt": "2026-10-01T08:05:49.877Z"
+ },
+ {
+  "agentId": "agent-0861284d-da62-4b44-911a-7099aea78ca2",
+  "orgId": "delg-test-org-31",
+  "owner": "test-user",
+  "name": "Resource Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:50.564Z",
+  "updatedAt": "2026-10-01T08:05:50.564Z"
+ },
+ {
+  "agentId": "agent-ee19d6b3-af45-418e-af52-d5bdd8872f77",
+  "orgId": "delg-test-org-32",
+  "owner": "test-user",
+  "name": "Wrong Scope Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:51.437Z",
+  "updatedAt": "2026-10-01T08:05:51.437Z"
+ },
+ {
+  "agentId": "agent-b05ce3d5-72b6-4905-a297-019c239e2f02",
+  "orgId": "delg-test-org-33",
+  "owner": "test-user",
+  "name": "Excessive Risk Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:52.091Z",
+  "updatedAt": "2026-10-01T08:05:52.091Z"
+ },
+ {
+  "agentId": "agent-fcc2649c-d0eb-4aa3-88d8-cf397e32a80d",
+  "orgId": "delg-test-org-34",
+  "owner": "test-user",
+  "name": "Expiry Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:52.855Z",
+  "updatedAt": "2026-10-01T08:05:52.855Z"
+ },
+ {
+  "agentId": "agent-b841908d-fc25-47ad-a32a-b28add125f08",
+  "orgId": "delg-test-org-35",
+  "owner": "test-user",
+  "name": "Revoked Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:53.751Z",
+  "updatedAt": "2026-10-01T08:05:53.751Z"
+ },
+ {
+  "agentId": "agent-e65e39be-03a1-4bf0-9ca9-af8a9885318b",
+  "orgId": "delg-test-org-36",
+  "owner": "test-user",
+  "name": "Suspended Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:54.697Z",
+  "updatedAt": "2026-10-01T08:05:54.697Z"
+ },
+ {
+  "agentId": "agent-8c850b3e-dfb9-42cf-a4f3-23dba03f87ff",
+  "orgId": "delg-test-org-37",
+  "owner": "test-user",
+  "name": "Inactive Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:55.653Z",
+  "updatedAt": "2026-10-01T08:05:56.194Z"
+ },
+ {
+  "agentId": "agent-d67d9098-6fce-4332-90fb-a7341bc36490",
+  "orgId": "delg-test-org-39",
+  "owner": "test-user",
+  "name": "Unknown Delg Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:56.786Z",
+  "updatedAt": "2026-10-01T08:05:56.786Z"
+ },
+ {
+  "agentId": "agent-35ea74d8-d856-44ac-957b-f9f946e75d12",
+  "orgId": "delg-test-org-40a",
+  "owner": "test-user",
+  "name": "Tenant Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:57.395Z",
+  "updatedAt": "2026-10-01T08:05:57.395Z"
+ },
+ {
+  "agentId": "agent-a925ac01-f570-4795-af48-91ef0d932a3a",
+  "orgId": "delg-test-org-45",
+  "owner": "test-user",
+  "name": "Audited Delegation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:05:58.202Z",
+  "updatedAt": "2026-10-01T08:05:58.202Z"
+ },
+ {
+  "agentId": "agent-d7487516-eafc-415b-ab0c-b7132b210939",
+  "orgId": "delg-test-org-46",
+  "owner": "test-user",
+  "name": "Audited Eval Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:06:00.072Z",
+  "updatedAt": "2026-10-01T08:06:00.072Z"
+ },
+ {
+  "agentId": "agent-27f20420-8297-485e-8f39-497ed7a751a2",
+  "orgId": "delg-test-org-47",
+  "owner": "test-user",
+  "name": "Inactive Target Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "suspended",
+  "version": 2,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:06:01.013Z",
+  "updatedAt": "2026-10-01T08:06:01.260Z"
+ },
+ {
+  "agentId": "agent-aa438d22-c903-4a0f-9b1d-095cbad91e82",
+  "orgId": "delg-test-org-48",
+  "owner": "test-user",
+  "name": "Update Escalation Agent",
+  "description": "",
+  "purpose": "Delegation test agent",
+  "agentType": "executor",
+  "autonomyLevel": "LEVEL_2",
+  "allowedModels": [],
+  "allowedTools": [
+   "postgres"
+  ],
+  "allowedActions": [
+   "read",
+   "analyze"
+  ],
+  "dataScope": "organization",
+  "riskLevel": "medium",
+  "status": "active",
+  "version": 1,
+  "parentAgentId": null,
+  "delegationChain": [],
+  "createdAt": "2026-10-01T08:06:01.482Z",
+  "updatedAt": "2026-10-01T08:06:01.482Z"
  }
 ]

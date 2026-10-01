@@ -8,10 +8,18 @@ const OPTIONS: Array<{
   title: string;
   description: string;
 }> = [
+  { value: "web", title: "Web app", description: "A browser-based application — responsive UI, REST API, and a live in-workspace preview." },
   { value: "android", title: "Android only", description: "Optimize the review for Android APIs, devices, and release tooling." },
   { value: "ios", title: "iOS only", description: "Optimize the review for Apple platforms, APIs, and App Store delivery." },
   { value: "both", title: "Android + iOS", description: "Review a shared cross-platform product and both native targets." },
 ];
+
+const LABELS: Record<TargetPlatform, string> = {
+  web: "Web app",
+  android: "Android",
+  ios: "iOS",
+  both: "Android + iOS",
+};
 
 export function GatePlatform({
   session,
@@ -29,7 +37,7 @@ export function GatePlatform({
         Choose the target before Verya checks for platform-specific flaws. You can change this choice
         only by starting a new analysis.
       </p>
-      <div className="mt-5 grid gap-3 md:grid-cols-3">
+      <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
         {OPTIONS.map((option) => (
           <button
             key={option.value}
@@ -46,7 +54,7 @@ export function GatePlatform({
       </div>
       {session.targetPlatform && (
         <Button className="mt-4" disabled>
-          Selected: {session.targetPlatform === "both" ? "Android + iOS" : session.targetPlatform}
+          Selected: {LABELS[session.targetPlatform] ?? session.targetPlatform}
         </Button>
       )}
     </div>
